@@ -1,0 +1,93 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+bram             0x0000000000000000 0x0000000000001000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                __DYNAMIC = 0x0
+                0x0000000000000000                _BRAM_START = 0x0
+                0x0000000000001000                _BRAM_SIZE = 0x1000
+                0x0000000000001000                _BRAM_END = (_BRAM_START + _BRAM_SIZE)
+
+.text           0x0000000000000000       0xfc
+                0x0000000000000000                _ftext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000000       0x8c crt0ram.o
+                0x0000000000000000                _start
+                0x0000000000000060                irq_enable
+                0x000000000000006c                irq_mask
+                0x0000000000000078                irq_disable
+                0x0000000000000084                jump
+                0x0000000000000088                halt
+ .text          0x000000000000008c       0x70 main.o
+                0x000000000000008c                function
+                0x00000000000000a8                main
+                0x00000000000000fc                _etext = .
+
+.rodata         0x00000000000000fc        0x0
+                0x00000000000000fc                . = ALIGN (0x4)
+                0x00000000000000fc                _frodata = .
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ *(.rodata1)
+                0x00000000000000fc                _erodata = .
+
+.data           0x00000000000000fc        0x0
+                0x00000000000000fc                . = ALIGN (0x4)
+                0x00000000000000fc                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000000000fc        0x0 crt0ram.o
+ .data          0x00000000000000fc        0x0 main.o
+ *(.data1)
+                0x0000000000000100                _gp = ALIGN (0x10)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x00000000000000fc                _edata = .
+
+.bss            0x00000000000000fc        0x0
+                0x00000000000000fc                . = ALIGN (0x4)
+                0x00000000000000fc                _fbss = .
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000000000fc        0x0 crt0ram.o
+ .bss           0x00000000000000fc        0x0 main.o
+ *(COMMON)
+                0x00000000000000fc                _ebss = .
+                0x00000000000000fc                _end = .
+                0x0000000000000ffc                PROVIDE (_fstack, ((ORIGIN (bram) + 0x1000) - 0x4))
+LOAD crt0ram.o
+LOAD main.o
+OUTPUT(image elf32-lm32)
+
+.debug_abbrev   0x0000000000000000       0x8b
+ .debug_abbrev  0x0000000000000000       0x8b main.o
+
+.debug_info     0x0000000000000000      0x10f
+ .debug_info    0x0000000000000000      0x10f main.o
+
+.debug_line     0x0000000000000000       0x8e
+ .debug_line    0x0000000000000000       0x8e main.o
+
+.debug_frame    0x0000000000000000       0x30
+ .debug_frame   0x0000000000000000       0x30 main.o
+
+.debug_pubnames
+                0x0000000000000000       0x28
+ .debug_pubnames
+                0x0000000000000000       0x28 main.o
+
+.debug_aranges  0x0000000000000000       0x20
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+
+.debug_str      0x0000000000000000       0xcc
+ .debug_str     0x0000000000000000       0xcc main.o
+                                         0xd9 (size before relaxing)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 main.o
+                                         0x12 (size before relaxing)

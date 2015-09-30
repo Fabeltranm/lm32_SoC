@@ -1,0 +1,1228 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map system.ngd 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Mon Sep 28 10:23:29 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    4
+Slice Logic Utilization:
+  Number of Slice Registers:                 1,211 out of 126,800    1%
+    Number used as Flip Flops:               1,210
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                1
+  Number of Slice LUTs:                      1,403 out of  63,400    2%
+    Number used as logic:                    1,308 out of  63,400    2%
+      Number using O6 output only:           1,035
+      Number using O5 output only:              95
+      Number using O5 and O6:                  178
+      Number used as ROM:                        0
+    Number used as Memory:                      68 out of  19,000    1%
+      Number used as Dual Port RAM:             68
+        Number using O6 output only:             4
+        Number using O5 output only:             4
+        Number using O5 and O6:                 60
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:     27
+      Number with same-slice register load:     23
+      Number with same-slice carry load:         4
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   538 out of  15,850    3%
+  Number of LUT Flip Flop pairs used:        1,736
+    Number with an unused Flip Flop:           628 out of   1,736   36%
+    Number with an unused LUT:                 333 out of   1,736   19%
+    Number of fully used LUT-FF pairs:         775 out of   1,736   44%
+    Number of unique control sets:              42
+    Number of slice register sites lost
+      to control set restrictions:              70 out of 126,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         8 out of     210    3%
+    Number of LOCed IOBs:                        8 out of       8  100%
+    IOB Flip Flops:                              4
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  1 out of     135    1%
+    Number using RAMB36E1 only:                  1
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     270    0%
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        1 out of     300    1%
+    Number used as ILOGICE2s:                    1
+  Number used as  ILOGICE3s:                     0
+    Number used as ISERDESE2s:                   0
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        4 out of     300    1%
+    Number used as OLOGICE2s:                    4
+    Number used as OLOGICE3s:                    0
+    Number used as OSERDESE2s:                   0
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      24    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      96    0%
+  Number of BUFRs:                               0 out of      24    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            3 out of     240    1%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of IBUFDS_GTE2s:                        0 out of       4    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       6    0%
+  Number of IN_FIFOs:                            0 out of      24    0%
+  Number of MMCME2_ADVs:                         0 out of       6    0%
+  Number of OUT_FIFOs:                           0 out of      24    0%
+  Number of PCIE_2_1s:                           0 out of       1    0%
+  Number of PHASER_REFs:                         0 out of       6    0%
+  Number of PHY_CONTROLs:                        0 out of       6    0%
+  Number of PLLE2_ADVs:                          0 out of       6    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.89
+
+Peak Memory Usage:  1297 MB
+Total REAL time to MAP completion:  54 mins 18 secs 
+Total CPU time to MAP completion:   4 mins 34 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:701 - PAD symbol "i2c_scl" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "i2c_scl" is not constrained (LOC) to a specific
+   location.
+WARNING:MapLib:701 - Signal i2c_sda connected to top level port i2c_sda has been
+   removed.
+WARNING:MapLib:701 - Signal i2c_scl connected to top level port i2c_scl has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network lm0/Mram_registers141/SPO has no load.
+INFO:LIT:395 - The above info message is repeated 63 more times for the
+   following (max. 5 shown):
+   lm0/Mram_registers140/SPO,
+   lm0/Mram_registers138/SPO,
+   lm0/Mram_registers137/SPO,
+   lm0/Mram_registers139/SPO,
+   lm0/Mram_registers135/SPO
+   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 250 block(s) removed
+  80 block(s) optimized away
+ 262 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "i2c_scl" is unused and has been removed.
+ Unused block "i2c_scl" (PAD) removed.
+ Unused block "i2c_scl_IOBUF/OBUFT" (TRI) removed.
+  The signal "i2c0/bit_controller/scl_oen_1" is unused and has been removed.
+   Unused block "i2c0/bit_controller/scl_oen_1" (FF) removed.
+    The signal "i2c0/bit_controller/_n0143_inv" is unused and has been removed.
+     Unused block "i2c0/bit_controller/_n0143_inv1" (ROM) removed.
+      The signal "i2c0/bit_controller/al" is unused and has been removed.
+       Unused block "i2c0/bit_controller/al" (FF) removed.
+        The signal "i2c0/bit_controller/sda_chk_GND_27_o_MUX_339_o" is unused and has
+been removed.
+         Unused block "i2c0/bit_controller/Mmux_sda_chk_GND_27_o_MUX_339_o13" (ROM)
+removed.
+          The signal "i2c0/bit_controller/sSDA" is unused and has been removed.
+           Unused block "i2c0/bit_controller/sSDA" (FF) removed.
+            The signal "i2c0/bit_controller/sda_i_PWR_25_o_MUX_331_o" is unused and has been
+removed.
+             Unused block "i2c0/bit_controller/Mmux_sda_i_PWR_25_o_MUX_331_o11" (ROM)
+removed.
+              The signal "N178" is unused and has been removed.
+               Unused block "i2c_sda_IOBUF/IBUF" (BUF) removed.
+                The signal "i2c_sda" is unused and has been removed.
+                 Unused block "i2c_sda" (PAD) removed.
+                 Unused block "i2c_sda_IOBUF/OBUFT" (TRI) removed.
+                  The signal "i2c0/bit_controller/sda_oen_1" is unused and has been removed.
+                   Unused block "i2c0/bit_controller/sda_oen_1" (FF) removed.
+                    The signal "i2c0/bit_controller/sda_oen_PWR_25_o_MUX_364_o" is unused and has
+been removed.
+                     Unused block "i2c0/bit_controller/Mmux_sda_oen_PWR_25_o_MUX_364_o13" (ROM)
+removed.
+                      The signal "i2c0/bit_controller/Mmux_sda_oen_PWR_25_o_MUX_364_o1" is unused and
+has been removed.
+                       Unused block "i2c0/bit_controller/Mmux_sda_oen_PWR_25_o_MUX_364_o11" (ROM)
+removed.
+                        The signal "i2c0/bit_controller/c_state_FSM_FFd6" is unused and has been
+removed.
+                         Unused block "i2c0/bit_controller/c_state_FSM_FFd6" (FF) removed.
+                          The signal "i2c0/bit_controller/c_state_FSM_FFd6-In" is unused and has been
+removed.
+                           Unused block "i2c0/bit_controller/c_state_FSM_FFd6-In1" (ROM) removed.
+                            The signal "i2c0/bit_controller/clk_en" is unused and has been removed.
+                             Unused block "i2c0/bit_controller/clk_en" (FF) removed.
+                              The signal "i2c0/bit_controller/cnt[15]_PWR_25_o_MUX_329_o" is unused and has
+been removed.
+                               Unused block "i2c0/bit_controller/Mmux_cnt[15]_PWR_25_o_MUX_329_o11" (ROM)
+removed.
+                            The signal "i2c0/bit_controller/c_state_FSM_FFd7" is unused and has been
+removed.
+                             Unused block "i2c0/bit_controller/c_state_FSM_FFd7" (FF) removed.
+                              The signal "i2c0/bit_controller/c_state_FSM_FFd7-In" is unused and has been
+removed.
+                               Unused block "i2c0/bit_controller/c_state_FSM_FFd7-In1" (ROM) removed.
+                                The signal "i2c0/bit_controller/c_state_FSM_FFd8" is unused and has been
+removed.
+                                 Unused block "i2c0/bit_controller/c_state_FSM_FFd8" (FF) removed.
+                                  The signal "i2c0/bit_controller/c_state_FSM_FFd8-In" is unused and has been
+removed.
+                                   Unused block "i2c0/bit_controller/c_state_FSM_FFd8-In" (ROM) removed.
+                                    The signal "i2c0/byte_controller/rst_i2c_al_OR_312_o" is unused and has been
+removed.
+                                     Unused block "i2c0/byte_controller/rst_i2c_al_OR_312_o1" (ROM) removed.
+                                    The signal "i2c0/byte_controller/core_cmd<3>" is unused and has been removed.
+                                     Unused block "i2c0/byte_controller/core_cmd_3" (FF) removed.
+                                      The signal "i2c0/byte_controller/c_state[4]_GND_26_o_mux_54_OUT<3>" is unused
+and has been removed.
+                                       Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT43" (ROM)
+removed.
+                                        The signal "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT4" is unused
+and has been removed.
+                                         Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT41" (ROM)
+removed.
+                                          The signal "i2c0/byte_controller/c_state_FSM_FFd2" is unused and has been
+removed.
+                                           Unused block "i2c0/byte_controller/c_state_FSM_FFd2" (FF) removed.
+                                            The signal "i2c0/byte_controller/c_state_FSM_FFd2-In" is unused and has been
+removed.
+                                             Unused block "i2c0/byte_controller/c_state_FSM_FFd2-In2" (ROM) removed.
+                                              The signal "i2c0/byte_controller/c_state_FSM_FFd1" is unused and has been
+removed.
+                                               Unused block "i2c0/byte_controller/c_state_FSM_FFd1" (FF) removed.
+                                                The signal "i2c0/byte_controller/c_state_FSM_FFd1-In" is unused and has been
+removed.
+                                                 Unused block "i2c0/byte_controller/c_state_FSM_FFd1-In3" (ROM) removed.
+*The signal "i2c0/bit_controller/cmd_ack" is unused and has been removed.
+* Unused block "i2c0/bit_controller/cmd_ack" (FF) removed.
+*  The signal "i2c0/bit_controller/GND_27_o_GND_27_o_MUX_362_o" is unused and has
+been removed.
+*   Unused block "i2c0/bit_controller/Mmux_GND_27_o_GND_27_o_MUX_362_o11" (ROM)
+removed.
+*    The signal "i2c0/bit_controller/c_state_FSM_FFd13" is unused and has been
+removed.
+*     Unused block "i2c0/bit_controller/c_state_FSM_FFd13" (FF) removed.
+*      The signal "i2c0/bit_controller/c_state_FSM_FFd13-In" is unused and has been
+removed.
+*       Unused block "i2c0/bit_controller/c_state_FSM_FFd13-In1" (ROM) removed.
+*        The signal "i2c0/bit_controller/c_state_FSM_FFd14" is unused and has been
+removed.
+*         Unused block "i2c0/bit_controller/c_state_FSM_FFd14" (FF) removed.
+*          The signal "i2c0/bit_controller/c_state_FSM_FFd14-In" is unused and has been
+removed.
+*           Unused block "i2c0/bit_controller/c_state_FSM_FFd14-In1" (ROM) removed.
+*            The signal "i2c0/bit_controller/c_state_FSM_FFd15" is unused and has been
+removed.
+*             Unused block "i2c0/bit_controller/c_state_FSM_FFd15" (FF) removed.
+*              The signal "i2c0/bit_controller/c_state_FSM_FFd15-In" is unused and has been
+removed.
+*               Unused block "i2c0/bit_controller/c_state_FSM_FFd15-In1" (ROM) removed.
+*                The signal "i2c0/bit_controller/c_state_FSM_FFd16" is unused and has been
+removed.
+*                 Unused block "i2c0/bit_controller/c_state_FSM_FFd16" (FF) removed.
+*                  The signal "i2c0/bit_controller/c_state_FSM_FFd16-In" is unused and has been
+removed.
+*                   Unused block "i2c0/bit_controller/c_state_FSM_FFd16-In1" (ROM) removed.
+*                    The signal "i2c0/bit_controller/c_state_FSM_FFd17" is unused and has been
+removed.
+*                     Unused block "i2c0/bit_controller/c_state_FSM_FFd17" (FF) removed.
+*                      The signal "i2c0/bit_controller/c_state_FSM_FFd17-In" is unused and has been
+removed.
+*                       Unused block "i2c0/bit_controller/c_state_FSM_FFd17-In" (ROM) removed.
+*                        The signal "i2c0/byte_controller/core_cmd<2>" is unused and has been removed.
+*                         Unused block "i2c0/byte_controller/core_cmd_2" (FF) removed.
+*                          The signal "i2c0/byte_controller/c_state[4]_GND_26_o_mux_54_OUT<2>" is unused
+and has been removed.
+*                           Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT33" (ROM)
+removed.
+*                            The signal "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT31" is
+unused and has been removed.
+*                             Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT32" (ROM)
+removed.
+*                              The signal "i2c0/byte_controller/c_state_FSM_FFd3" is unused and has been
+removed.
+*                               Unused block "i2c0/byte_controller/c_state_FSM_FFd3" (FF) removed.
+*                                The signal "i2c0/byte_controller/c_state_FSM_FFd3-In" is unused and has been
+removed.
+*                                 Unused block "i2c0/byte_controller/c_state_FSM_FFd3-In3" (ROM) removed.
+*                                  The signal "i2c0/byte_controller/c_state_FSM_FFd3-In13" is unused and has been
+removed.
+*                                   Unused block "i2c0/byte_controller/c_state_FSM_FFd3-In131" (ROM) removed.
+*                                    The signal "i2c0/byte_controller/cmd_ack" is unused and has been removed.
+*                                     Unused block "i2c0/byte_controller/cmd_ack" (FF) removed.
+*                                      The signal "i2c0/byte_controller/c_state[4]_GND_26_o_MUX_327_o" is unused and
+has been removed.
+*                                       Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_MUX_327_o11" (ROM)
+removed.
+*                                  The signal "i2c0/byte_controller/c_state_FSM_FFd3-In1" is unused and has been
+removed.
+*                                   Unused block "i2c0/byte_controller/c_state_FSM_FFd3-In1" (ROM) removed.
+*                                  The signal "i2c0/byte_controller/c_state_FSM_FFd3-In2" is unused and has been
+removed.
+*                                   Unused block "i2c0/byte_controller/c_state_FSM_FFd3-In2" (ROM) removed.
+*                                    The signal "i2c0/byte_controller/dcnt[2]_reduce_or_11_o" is unused and has been
+removed.
+*                                     Unused block "i2c0/byte_controller/out1" (ROM) removed.
+*                                      The signal "i2c0/byte_controller/dcnt<1>" is unused and has been removed.
+*                                       Unused block "i2c0/byte_controller/dcnt_1" (FF) removed.
+*                                        The signal "i2c0/byte_controller/_n0139_inv" is unused and has been removed.
+*                                         Unused block "i2c0/byte_controller/_n0139_inv1" (ROM) removed.
+*                                          The signal "i2c0/byte_controller/ld" is unused and has been removed.
+*                                           Unused block "i2c0/byte_controller/ld" (FF) removed.
+*                                            The signal "i2c0/byte_controller/c_state[4]_GND_26_o_MUX_326_o" is unused and
+has been removed.
+*                                             Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_MUX_326_o11" (ROM)
+removed.
+*                                              The signal "i2c0/byte_controller/go" is unused and has been removed.
+*                                               Unused block "i2c0/byte_controller/go1" (ROM) removed.
+*                                          The signal "i2c0/byte_controller/shift" is unused and has been removed.
+*                                           Unused block "i2c0/byte_controller/shift" (FF) removed.
+*                                            The signal "i2c0/byte_controller/c_state[4]_GND_26_o_MUX_325_o" is unused and
+has been removed.
+*                                             Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_MUX_325_o11" (ROM)
+removed.
+*                                              The signal "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT412" is
+unused and has been removed.
+*                                               Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT4121"
+(ROM) removed.
+*                                        The signal "i2c0/byte_controller/dcnt[2]_GND_26_o_mux_8_OUT<1>" is unused and
+has been removed.
+*                                         Unused block "i2c0/byte_controller/Mmux_dcnt[2]_GND_26_o_mux_8_OUT21" (ROM)
+removed.
+*                                          The signal "i2c0/byte_controller/dcnt<0>" is unused and has been removed.
+*                                           Unused block "i2c0/byte_controller/dcnt_0" (FF) removed.
+*                                            The signal "i2c0/byte_controller/dcnt[2]_GND_26_o_mux_8_OUT<0>" is unused and
+has been removed.
+*                                             Unused block "i2c0/byte_controller/Mmux_dcnt[2]_GND_26_o_mux_8_OUT11" (ROM)
+removed.
+*                                      The signal "i2c0/byte_controller/dcnt<2>" is unused and has been removed.
+*                                       Unused block "i2c0/byte_controller/dcnt_2" (FF) removed.
+*                                        The signal "i2c0/byte_controller/dcnt[2]_GND_26_o_mux_8_OUT<2>" is unused and
+has been removed.
+*                                         Unused block "i2c0/byte_controller/Mmux_dcnt[2]_GND_26_o_mux_8_OUT31" (ROM)
+removed.
+*                              The signal "i2c0/byte_controller/Mmux_core_cmd[3]_GND_26_o_mux_18_OUT31" is
+unused and has been removed.
+*                               Unused block "i2c0/byte_controller/Mmux_core_cmd[3]_GND_26_o_mux_18_OUT311"
+(ROM) removed.
+*                            The signal "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT3" is unused
+and has been removed.
+*                             Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT31" (ROM)
+removed.
+*                              The signal "i2c0/byte_controller/c_state[4]_core_cmd[3]_select_44_OUT<3>3" is
+unused and has been removed.
+*                               Unused block "i2c0/byte_controller/c_state[4]_core_cmd[3]_select_44_OUT<3>31"
+(ROM) removed.
+*                        The signal "N112" is unused and has been removed.
+*                         Unused block "i2c0/bit_controller/c_state_FSM_FFd17-In_SW0" (ROM) removed.
+*                          The signal "i2c0/byte_controller/core_cmd<1>" is unused and has been removed.
+*                           Unused block "i2c0/byte_controller/core_cmd_1" (FF) removed.
+*                            The signal "i2c0/byte_controller/c_state[4]_GND_26_o_mux_54_OUT<1>" is unused
+and has been removed.
+*                             Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT23" (ROM)
+removed.
+*                              The signal "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT2" is unused
+and has been removed.
+*                               Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT21" (ROM)
+removed.
+*                              The signal "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT21" is
+unused and has been removed.
+*                               Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT22" (ROM)
+removed.
+*                          The signal "i2c0/byte_controller/core_cmd<0>" is unused and has been removed.
+*                           Unused block "i2c0/byte_controller/core_cmd_0" (FF) removed.
+*                            The signal "i2c0/byte_controller/c_state[4]_GND_26_o_mux_54_OUT<0>" is unused
+and has been removed.
+*                             Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT1" (ROM)
+removed.
+*                              The signal "N102" is unused and has been removed.
+*                               Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT1_SW0"
+(ROM) removed.
+*                          The signal "i2c0/bit_controller/c_state_FSM_FFd18" is unused and has been
+removed.
+*                           Unused block "i2c0/bit_controller/c_state_FSM_FFd18" (FF) removed.
+*                            The signal "i2c0/bit_controller/c_state_FSM_FFd18-In" is unused and has been
+removed.
+*                             Unused block "i2c0/bit_controller/c_state_FSM_FFd18-In3" (ROM) removed.
+*                              The signal "i2c0/bit_controller/c_state_FSM_FFd18-In2" is unused and has been
+removed.
+*                               Unused block "i2c0/bit_controller/c_state_FSM_FFd18-In2" (ROM) removed.
+*                                The signal "i2c0/bit_controller/c_state_FSM_FFd5" is unused and has been
+removed.
+*                                 Unused block "i2c0/bit_controller/c_state_FSM_FFd5" (FF) removed.
+*                                  The signal "i2c0/bit_controller/c_state_FSM_FFd5-In" is unused and has been
+removed.
+*                                   Unused block "i2c0/bit_controller/c_state_FSM_FFd5-In1" (ROM) removed.
+*                                The signal "i2c0/bit_controller/c_state_FSM_FFd1" is unused and has been
+removed.
+*                                 Unused block "i2c0/bit_controller/c_state_FSM_FFd1" (FF) removed.
+*                                  The signal "i2c0/bit_controller/c_state_FSM_FFd1-In" is unused and has been
+removed.
+*                                   Unused block "i2c0/bit_controller/c_state_FSM_FFd1-In1" (ROM) removed.
+*                                    The signal "i2c0/bit_controller/c_state_FSM_FFd2" is unused and has been
+removed.
+*                                     Unused block "i2c0/bit_controller/c_state_FSM_FFd2" (FF) removed.
+*                                      The signal "i2c0/bit_controller/c_state_FSM_FFd2-In" is unused and has been
+removed.
+*                                       Unused block "i2c0/bit_controller/c_state_FSM_FFd2-In1" (ROM) removed.
+*                                        The signal "i2c0/bit_controller/c_state_FSM_FFd3" is unused and has been
+removed.
+*                                         Unused block "i2c0/bit_controller/c_state_FSM_FFd3" (FF) removed.
+*                                          The signal "i2c0/bit_controller/c_state_FSM_FFd3-In" is unused and has been
+removed.
+*                                           Unused block "i2c0/bit_controller/c_state_FSM_FFd3-In1" (ROM) removed.
+*                                            The signal "i2c0/bit_controller/c_state_FSM_FFd4" is unused and has been
+removed.
+*                                             Unused block "i2c0/bit_controller/c_state_FSM_FFd4" (FF) removed.
+*                                              The signal "i2c0/bit_controller/c_state_FSM_FFd4-In" is unused and has been
+removed.
+*                                               Unused block "i2c0/bit_controller/c_state_FSM_FFd4-In" (ROM) removed.
+*                                                The signal "N108" is unused and has been removed.
+*                                                 Unused block "i2c0/bit_controller/c_state_FSM_FFd4-In_SW0" (ROM) removed.
+*                                The signal "i2c0/bit_controller/c_state_FSM_FFd9" is unused and has been
+removed.
+*                                 Unused block "i2c0/bit_controller/c_state_FSM_FFd9" (FF) removed.
+*                                  The signal "i2c0/bit_controller/c_state_FSM_FFd9-In" is unused and has been
+removed.
+*                                   Unused block "i2c0/bit_controller/c_state_FSM_FFd9-In1" (ROM) removed.
+*                                    The signal "i2c0/bit_controller/c_state_FSM_FFd10" is unused and has been
+removed.
+*                                     Unused block "i2c0/bit_controller/c_state_FSM_FFd10" (FF) removed.
+*                                      The signal "i2c0/bit_controller/c_state_FSM_FFd10-In" is unused and has been
+removed.
+*                                       Unused block "i2c0/bit_controller/c_state_FSM_FFd10-In1" (ROM) removed.
+*                                        The signal "i2c0/bit_controller/c_state_FSM_FFd11" is unused and has been
+removed.
+*                                         Unused block "i2c0/bit_controller/c_state_FSM_FFd11" (FF) removed.
+*                                          The signal "i2c0/bit_controller/c_state_FSM_FFd11-In" is unused and has been
+removed.
+*                                           Unused block "i2c0/bit_controller/c_state_FSM_FFd11-In1" (ROM) removed.
+*                                            The signal "i2c0/bit_controller/c_state_FSM_FFd12" is unused and has been
+removed.
+*                                             Unused block "i2c0/bit_controller/c_state_FSM_FFd12" (FF) removed.
+*                                              The signal "i2c0/bit_controller/c_state_FSM_FFd12-In" is unused and has been
+removed.
+*                                               Unused block "i2c0/bit_controller/c_state_FSM_FFd12-In" (ROM) removed.
+*                                                The signal "N106" is unused and has been removed.
+*                                                 Unused block "i2c0/bit_controller/c_state_FSM_FFd12-In_SW0" (ROM) removed.
+*                              The signal "i2c0/bit_controller/c_state_FSM_FFd18-In1" is unused and has been
+removed.
+*                               Unused block "i2c0/bit_controller/c_state_FSM_FFd18-In1" (ROM) removed.
+*The signal "i2c0/byte_controller/c_state_FSM_FFd1-In2" is unused and has been
+removed.
+* Unused block "i2c0/byte_controller/c_state_FSM_FFd1-In2" (ROM) removed.
+*  The signal "i2c0/byte_controller/c_state_FSM_FFd1-In1" is unused and has been
+removed.
+*   Unused block "i2c0/byte_controller/c_state_FSM_FFd1-In1" (ROM) removed.
+                                              The signal "i2c0/byte_controller/c_state_FSM_FFd2-In1" is unused and has been
+removed.
+                                               Unused block "i2c0/byte_controller/c_state_FSM_FFd2-In1" (ROM) removed.
+                                        The signal "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT41" is
+unused and has been removed.
+                                         Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_mux_54_OUT42" (ROM)
+removed.
+                      The signal "i2c0/bit_controller/sda_oen" is unused and has been removed.
+                       Unused block "i2c0/bit_controller/sda_oen" (FF) removed.
+                      The signal "i2c0/bit_controller/Mmux_sda_oen_PWR_25_o_MUX_364_o11" is unused and
+has been removed.
+                       Unused block "i2c0/bit_controller/Mmux_sda_oen_PWR_25_o_MUX_364_o12" (ROM)
+removed.
+                        The signal "i2c0/byte_controller/core_txd" is unused and has been removed.
+                         Unused block "i2c0/byte_controller/core_txd" (FF) removed.
+                          The signal "i2c0/byte_controller/c_state[4]_GND_26_o_MUX_324_o" is unused and
+has been removed.
+                           Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_MUX_324_o1" (ROM)
+removed.
+                            The signal "N104" is unused and has been removed.
+                             Unused block "i2c0/byte_controller/Mmux_c_state[4]_GND_26_o_MUX_324_o1_SW0"
+(ROM) removed.
+          The signal "i2c0/bit_controller/sda_chk" is unused and has been removed.
+           Unused block "i2c0/bit_controller/sda_chk" (FF) removed.
+            The signal "i2c0/bit_controller/sda_chk_GND_27_o_MUX_365_o" is unused and has
+been removed.
+             Unused block "i2c0/bit_controller/c_state_sda_chk_GND_27_o_MUX_365_o1" (ROM)
+removed.
+          The signal "i2c0/bit_controller/Mmux_sda_chk_GND_27_o_MUX_339_o11" is unused and
+has been removed.
+           Unused block "i2c0/bit_controller/Mmux_sda_chk_GND_27_o_MUX_339_o12" (ROM)
+removed.
+            The signal "i2c0/bit_controller/sto_condition" is unused and has been removed.
+             Unused block "i2c0/bit_controller/sto_condition" (FF) removed.
+              The signal "i2c0/bit_controller/sSDA_GND_27_o_MUX_335_o" is unused and has been
+removed.
+               Unused block "i2c0/bit_controller/Mmux_sSDA_GND_27_o_MUX_335_o11" (ROM) removed.
+                The signal "i2c0/bit_controller/dSDA" is unused and has been removed.
+                 Unused block "i2c0/bit_controller/dSDA" (FF) removed.
+                  The signal "i2c0/bit_controller/sSDA_PWR_25_o_MUX_333_o" is unused and has been
+removed.
+                   Unused block "i2c0/bit_controller/Mmux_sSDA_PWR_25_o_MUX_333_o11" (ROM) removed.
+            The signal "i2c0/bit_controller/cmd_stop" is unused and has been removed.
+             Unused block "i2c0/bit_controller/cmd_stop" (FF) removed.
+              The signal "i2c0/bit_controller/cmd_stop_rstpot" is unused and has been removed.
+               Unused block "i2c0/bit_controller/cmd_stop_rstpot" (ROM) removed.
+                The signal "i2c0/bit_controller/cmd_stop_GND_27_o_MUX_338_o" is unused and has
+been removed.
+                 Unused block "i2c0/bit_controller/Mmux_cmd_stop_GND_27_o_MUX_338_o11" (ROM)
+removed.
+            The signal "i2c0/bit_controller/Mmux_sda_chk_GND_27_o_MUX_339_o1" is unused and
+has been removed.
+             Unused block "i2c0/bit_controller/Mmux_sda_chk_GND_27_o_MUX_339_o11" (ROM)
+removed.
+            The signal "i2c0/bit_controller/sda_chk_c_state[16]_OR_358_o11" is unused and
+has been removed.
+             Unused block "i2c0/bit_controller/sda_chk_c_state[16]_OR_358_o11" (ROM) removed.
+              The signal "N114" is unused and has been removed.
+               Unused block "i2c0/bit_controller/sda_chk_c_state[16]_OR_358_o11_SW0" (ROM)
+removed.
+    The signal "i2c0/bit_controller/scl_oen_PWR_25_o_MUX_363_o" is unused and has
+been removed.
+     Unused block "i2c0/bit_controller/Mmux_scl_oen_PWR_25_o_MUX_363_o11" (ROM)
+removed.
+      The signal "i2c0/bit_controller/scl_oen" is unused and has been removed.
+       Unused block "i2c0/bit_controller/scl_oen" (FF) removed.
+The signal "i2c0/wb_wacc" is unused and has been removed.
+ Unused block "i2c0/wb_wacc1" (ROM) removed.
+The signal "i2c0/bit_controller/dout" is unused and has been removed.
+ Unused block "i2c0/bit_controller/dout" (FF) removed.
+  The signal "i2c0/bit_controller/dout_rstpot" is unused and has been removed.
+   Unused block "i2c0/bit_controller/dout_rstpot" (ROM) removed.
+    The signal "i2c0/bit_controller/dSCL" is unused and has been removed.
+     Unused block "i2c0/bit_controller/dSCL" (FF) removed.
+      The signal "i2c0/bit_controller/sSCL_PWR_25_o_MUX_332_o" is unused and has been
+removed.
+       Unused block "i2c0/bit_controller/Mmux_sSCL_PWR_25_o_MUX_332_o11" (ROM) removed.
+The signal "i2c0/byte_controller/ack_out" is unused and has been removed.
+ Unused block "i2c0/byte_controller/ack_out" (FF) removed.
+  The signal "i2c0/byte_controller/ack_out_rstpot" is unused and has been removed.
+   Unused block "i2c0/byte_controller/ack_out_rstpot" (ROM) removed.
+The signal "i2c0/registers/_n0191_inv" is unused and has been removed.
+ Unused block "i2c0/registers/_n0191_inv1" (ROM) removed.
+The signal "i2c0/registers/_n0156_inv" is unused and has been removed.
+ Unused block "i2c0/registers/_n0156_inv1" (ROM) removed.
+  The signal "i2c0/registers/_n0186_inv" is unused and has been removed.
+   Unused block "i2c0/registers/_n0186_inv1" (ROM) removed.
+The signal "i2c0/registers/_n0136_inv" is unused and has been removed.
+ Unused block "i2c0/registers/_n0136_inv1" (ROM) removed.
+The signal "i2c0/registers/_n0148_inv" is unused and has been removed.
+ Unused block "i2c0/registers/_n0148_inv1" (ROM) removed.
+The signal "i2c0/registers/_n0142_inv" is unused and has been removed.
+ Unused block "i2c0/registers/_n0142_inv1" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<0>" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_cr[7]_GND_29_o_mux_20_OUT<0>11" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<1>" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_cr[7]_GND_29_o_mux_20_OUT<1>11" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<2>" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_cr[7]_GND_29_o_mux_20_OUT<2>11" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<3>" is unused and has been
+removed.
+ Unused block "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<3>1" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<4>" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_cr[7]_GND_29_o_mux_20_OUT<4>11" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<5>" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_cr[7]_GND_29_o_mux_20_OUT<5>11" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<6>" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_cr[7]_GND_29_o_mux_20_OUT<6>11" (ROM) removed.
+The signal "i2c0/registers/cr[7]_GND_29_o_mux_20_OUT<7>" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_cr[7]_GND_29_o_mux_20_OUT<7>11" (ROM) removed.
+The signal "i2c0/registers/done_GND_29_o_MUX_373_o" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_done_GND_29_o_MUX_373_o11" (ROM) removed.
+The signal "i2c0/registers/cr[5]_GND_29_o_MUX_372_o" is unused and has been
+removed.
+The signal "i2c0/registers/irxack_GND_29_o_MUX_371_o" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_irxack_GND_29_o_MUX_371_o11" (ROM) removed.
+The signal "i2c0/registers/i2c_al_GND_29_o_MUX_370_o" is unused and has been
+removed.
+ Unused block "i2c0/registers/Mmux_i2c_al_GND_29_o_MUX_370_o11" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<0>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT17" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<1>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT81" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<2>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT91" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<3>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT101" (ROM)
+removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<4>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT111" (ROM)
+removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<5>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT121" (ROM)
+removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<6>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT131" (ROM)
+removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<7>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT141" (ROM)
+removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<8>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT151" (ROM)
+removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<9>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT161" (ROM)
+removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<10>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT21" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<11>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT31" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<12>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT41" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<13>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT51" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<14>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT61" (ROM) removed.
+The signal "i2c0/registers/prer[15]_PWR_27_o_mux_11_OUT<15>" is unused and has
+been removed.
+ Unused block "i2c0/registers/Mmux_prer[15]_PWR_27_o_mux_11_OUT71" (ROM) removed.
+The signal "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<0>" is unused and has been
+removed.
+ Unused block "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<0>1" (ROM) removed.
+The signal "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<1>" is unused and has been
+removed.
+ Unused block "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<1>1" (ROM) removed.
+The signal "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<2>" is unused and has been
+removed.
+ Unused block "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<2>1" (ROM) removed.
+The signal "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<4>" is unused and has been
+removed.
+ Unused block "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<4>1" (ROM) removed.
+The signal "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<5>" is unused and has been
+removed.
+ Unused block "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<5>1" (ROM) removed.
+The signal "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<6>" is unused and has been
+removed.
+ Unused block "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<6>1" (ROM) removed.
+The signal "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<7>" is unused and has been
+removed.
+ Unused block "i2c0/registers/ctr[7]_GND_29_o_mux_12_OUT<7>1" (ROM) removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<0>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT11" (ROM)
+removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<1>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT21" (ROM)
+removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<2>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT31" (ROM)
+removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<3>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT41" (ROM)
+removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<4>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT51" (ROM)
+removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<5>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT61" (ROM)
+removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<6>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT71" (ROM)
+removed.
+The signal "i2c0/byte_controller/sr[7]_GND_26_o_mux_3_OUT<7>" is unused and has
+been removed.
+ Unused block "i2c0/byte_controller/Mmux_sr[7]_GND_26_o_mux_3_OUT81" (ROM)
+removed.
+The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<15>" is
+unused and has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<15>_INV_0"
+(BUF) removed.
+The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<14>" is
+unused and has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<14>" (MUX)
+removed.
+  The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<13>" is
+unused and has been removed.
+   Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<13>" (MUX)
+removed.
+    The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<12>" is
+unused and has been removed.
+     Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<12>" (MUX)
+removed.
+      The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<11>" is
+unused and has been removed.
+       Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<11>" (MUX)
+removed.
+        The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<10>" is
+unused and has been removed.
+         Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<10>" (MUX)
+removed.
+          The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<9>" is unused
+and has been removed.
+           Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<9>" (MUX)
+removed.
+            The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<8>" is unused
+and has been removed.
+             Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<8>" (MUX)
+removed.
+              The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<7>" is unused
+and has been removed.
+               Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<7>" (MUX)
+removed.
+                The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<6>" is unused
+and has been removed.
+                 Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<6>" (MUX)
+removed.
+                  The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<5>" is unused
+and has been removed.
+                   Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<5>" (MUX)
+removed.
+                    The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<4>" is unused
+and has been removed.
+                     Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<4>" (MUX)
+removed.
+                      The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<3>" is unused
+and has been removed.
+                       Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<3>" (MUX)
+removed.
+                        The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<2>" is unused
+and has been removed.
+                         Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<2>" (MUX)
+removed.
+                          The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<1>" is unused
+and has been removed.
+                           Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<1>" (MUX)
+removed.
+                            The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<0>" is unused
+and has been removed.
+                             Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<0>" (MUX)
+removed.
+                              The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<0>_rt" is
+unused and has been removed.
+                               Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_cy<0>_rt"
+(ROM) removed.
+                                The signal "i2c0/bit_controller/cnt<0>" is unused and has been removed.
+                            The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<1>" is
+unused and has been removed.
+                             Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<1>_INV_0"
+(BUF) removed.
+                              The signal "i2c0/bit_controller/cnt<1>" is unused and has been removed.
+                          The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<2>" is
+unused and has been removed.
+                           Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<2>_INV_0"
+(BUF) removed.
+                            The signal "i2c0/bit_controller/cnt<2>" is unused and has been removed.
+                        The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<3>" is
+unused and has been removed.
+                         Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<3>_INV_0"
+(BUF) removed.
+                          The signal "i2c0/bit_controller/cnt<3>" is unused and has been removed.
+                      The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<4>" is
+unused and has been removed.
+                       Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<4>_INV_0"
+(BUF) removed.
+                        The signal "i2c0/bit_controller/cnt<4>" is unused and has been removed.
+                    The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<5>" is
+unused and has been removed.
+                     Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<5>_INV_0"
+(BUF) removed.
+                      The signal "i2c0/bit_controller/cnt<5>" is unused and has been removed.
+                  The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<6>" is
+unused and has been removed.
+                   Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<6>_INV_0"
+(BUF) removed.
+                    The signal "i2c0/bit_controller/cnt<6>" is unused and has been removed.
+                The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<7>" is
+unused and has been removed.
+                 Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<7>_INV_0"
+(BUF) removed.
+                  The signal "i2c0/bit_controller/cnt<7>" is unused and has been removed.
+              The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<8>" is
+unused and has been removed.
+               Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<8>_INV_0"
+(BUF) removed.
+                The signal "i2c0/bit_controller/cnt<8>" is unused and has been removed.
+            The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<9>" is
+unused and has been removed.
+             Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<9>_INV_0"
+(BUF) removed.
+              The signal "i2c0/bit_controller/cnt<9>" is unused and has been removed.
+          The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<10>" is
+unused and has been removed.
+           Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<10>_INV_0"
+(BUF) removed.
+            The signal "i2c0/bit_controller/cnt<10>" is unused and has been removed.
+        The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<11>" is
+unused and has been removed.
+         Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<11>_INV_0"
+(BUF) removed.
+          The signal "i2c0/bit_controller/cnt<11>" is unused and has been removed.
+      The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<12>" is
+unused and has been removed.
+       Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<12>_INV_0"
+(BUF) removed.
+    The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<13>" is
+unused and has been removed.
+     Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<13>_INV_0"
+(BUF) removed.
+  The signal "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<14>" is
+unused and has been removed.
+   Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_lut<14>_INV_0"
+(BUF) removed.
+The signal "i2c0/bit_controller/_n0137_inv" is unused and has been removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<0>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<0>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<1>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<1>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<2>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<2>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<3>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<3>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<4>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<4>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<5>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<5>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<6>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<6>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<7>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<7>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<8>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<8>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<9>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<9>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<10>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<10>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<11>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<11>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<12>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<12>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<13>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<13>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<14>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<14>" (XOR)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_sub_3_OUT<15>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Msub_cnt[15]_GND_27_o_sub_3_OUT_xor<15>" (XOR)
+removed.
+The signal "i2c0/bit_controller/sta_condition_GND_27_o_MUX_336_o" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Mmux_sta_condition_GND_27_o_MUX_336_o11" (ROM)
+removed.
+  The signal "i2c0/bit_controller/sta_condition" is unused and has been removed.
+   Unused block "i2c0/bit_controller/sta_condition" (FF) removed.
+    The signal "i2c0/bit_controller/sSDA_GND_27_o_MUX_334_o" is unused and has been
+removed.
+     Unused block "i2c0/bit_controller/Mmux_sSDA_GND_27_o_MUX_334_o11" (ROM) removed.
+The signal "i2c0/bit_controller/scl_i_PWR_25_o_MUX_330_o" is unused and has been
+removed.
+ Unused block "i2c0/bit_controller/Mmux_scl_i_PWR_25_o_MUX_330_o11" (ROM)
+removed.
+  The signal "N179" is unused and has been removed.
+   Unused block "i2c_scl_IOBUF/IBUF" (BUF) removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<0>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT17" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<1>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT81" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<2>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT91" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<3>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT101" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<4>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT111" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<5>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT121" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<6>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT131" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<7>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT141" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<8>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT151" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<9>" is unused and has
+been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT161" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<10>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT21" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<11>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT31" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<12>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT41" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<13>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT51" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<14>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT61" (ROM)
+removed.
+The signal "i2c0/bit_controller/cnt[15]_GND_27_o_mux_5_OUT<15>" is unused and
+has been removed.
+ Unused block "i2c0/bit_controller/Mmux_cnt[15]_GND_27_o_mux_5_OUT71" (ROM)
+removed.
+The signal "i2c0/bit_controller/dscl_oen" is unused and has been removed.
+ Unused block "i2c0/bit_controller/dscl_oen" (FF) removed.
+The signal "i2c0/registers/cr_3_rstpot" is unused and has been removed.
+ Unused block "i2c0/registers/cr_3_rstpot" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+LUT5 		i2c0/Mmux_wb_adr_i[2]_GND_25_o_wide_mux_2_OUT13_G
+   optimized to 0
+LUT6 		i2c0/Mmux_wb_adr_i[2]_GND_25_o_wide_mux_2_OUT33_G
+   optimized to 0
+LUT4 		i2c0/bit_controller/_n0137_inv1
+   optimized to 1
+FDC 		i2c0/bit_controller/busy
+   optimized to 0
+LUT6 		i2c0/bit_controller/cnt[15]_ena_OR_340_o1
+   optimized to 1
+LUT6 		i2c0/bit_controller/cnt[15]_ena_OR_340_o2
+   optimized to 1
+LUT4 		i2c0/bit_controller/cnt[15]_ena_OR_340_o3
+   optimized to 1
+LUT4 		i2c0/bit_controller/cnt[15]_ena_OR_340_o4
+   optimized to 1
+FDCE 		i2c0/bit_controller/cnt_0
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_1
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_10
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_11
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_12
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_13
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_14
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_15
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_2
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_3
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_4
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_5
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_6
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_7
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_8
+   optimized to 0
+FDCE 		i2c0/bit_controller/cnt_9
+   optimized to 0
+FDP 		i2c0/bit_controller/sSCL
+   optimized to 1
+FDCE 		i2c0/byte_controller/sr_0
+   optimized to 0
+FDCE 		i2c0/byte_controller/sr_1
+   optimized to 0
+FDCE 		i2c0/byte_controller/sr_2
+   optimized to 0
+FDCE 		i2c0/byte_controller/sr_3
+   optimized to 0
+FDCE 		i2c0/byte_controller/sr_4
+   optimized to 0
+FDCE 		i2c0/byte_controller/sr_5
+   optimized to 0
+FDCE 		i2c0/byte_controller/sr_6
+   optimized to 0
+FDCE 		i2c0/byte_controller/sr_7
+   optimized to 0
+LUT3 		i2c0/registers/Mmux_cr[5]_GND_29_o_MUX_372_o11
+   optimized to 0
+FDC 		i2c0/registers/al
+   optimized to 0
+FDCE 		i2c0/registers/cr_0
+   optimized to 0
+FDCE 		i2c0/registers/cr_1
+   optimized to 0
+FDCE 		i2c0/registers/cr_2
+   optimized to 0
+FDC 		i2c0/registers/cr_3
+   optimized to 0
+FDCE 		i2c0/registers/cr_4
+   optimized to 0
+FDCE 		i2c0/registers/cr_5
+   optimized to 0
+FDCE 		i2c0/registers/cr_6
+   optimized to 0
+FDCE 		i2c0/registers/cr_7
+   optimized to 0
+FDCE 		i2c0/registers/ctr_0
+   optimized to 0
+FDCE 		i2c0/registers/ctr_1
+   optimized to 0
+FDCE 		i2c0/registers/ctr_2
+   optimized to 0
+FDCE 		i2c0/registers/ctr_3
+   optimized to 0
+FDCE 		i2c0/registers/ctr_4
+   optimized to 0
+FDCE 		i2c0/registers/ctr_5
+   optimized to 0
+FDCE 		i2c0/registers/ctr_6
+   optimized to 0
+FDCE 		i2c0/registers/ctr_7
+   optimized to 0
+FDC 		i2c0/registers/irq_flag
+   optimized to 0
+FDPE 		i2c0/registers/prer_0
+   optimized to 1
+FDPE 		i2c0/registers/prer_1
+   optimized to 1
+FDPE 		i2c0/registers/prer_10
+   optimized to 1
+FDPE 		i2c0/registers/prer_11
+   optimized to 1
+FDPE 		i2c0/registers/prer_12
+   optimized to 1
+FDPE 		i2c0/registers/prer_13
+   optimized to 1
+FDPE 		i2c0/registers/prer_14
+   optimized to 1
+FDPE 		i2c0/registers/prer_15
+   optimized to 1
+FDPE 		i2c0/registers/prer_2
+   optimized to 1
+FDPE 		i2c0/registers/prer_3
+   optimized to 1
+FDPE 		i2c0/registers/prer_4
+   optimized to 1
+FDPE 		i2c0/registers/prer_5
+   optimized to 1
+FDPE 		i2c0/registers/prer_6
+   optimized to 1
+FDPE 		i2c0/registers/prer_7
+   optimized to 1
+FDPE 		i2c0/registers/prer_8
+   optimized to 1
+FDPE 		i2c0/registers/prer_9
+   optimized to 1
+FDC 		i2c0/registers/rxack
+   optimized to 0
+FDC 		i2c0/registers/tip
+   optimized to 0
+FDCE 		i2c0/registers/txr_0
+   optimized to 0
+FDCE 		i2c0/registers/txr_1
+   optimized to 0
+FDCE 		i2c0/registers/txr_2
+   optimized to 0
+FDCE 		i2c0/registers/txr_3
+   optimized to 0
+FDCE 		i2c0/registers/txr_4
+   optimized to 0
+FDCE 		i2c0/registers/txr_5
+   optimized to 0
+FDCE 		i2c0/registers/txr_6
+   optimized to 0
+FDCE 		i2c0/registers/txr_7
+   optimized to 0
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk                                | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| led                                | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| rst                                | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| spi_clk                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| spi_miso                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| spi_mosi                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| uart_rxd                           | IOB33            | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| uart_txd                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
