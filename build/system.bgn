@@ -1,12 +1,12 @@
-Release 14.7 - Bitgen P.20131013 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Release 14.4 - Bitgen P.49d (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Loading device for application Rf_Device from file '7a100t.nph' in environment
-/opt/Xilinx/14.7/ISE_DS/ISE/.
+/opt/Xilinx/14.4/ISE_DS/ISE/.
    "system" is an NCD, version 3.2, device xc7a100t, package csg324, speed -3
 
-Mon Sep 28 11:21:45 2015
+Fri Oct  6 09:10:36 2017
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -w system-routed.ncd system.bit 
+/opt/Xilinx/14.4/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -w system-routed.ncd system.bit 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+

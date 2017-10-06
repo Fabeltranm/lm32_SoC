@@ -104,7 +104,7 @@ char uart_getchar();
 
 typedef struct {
    volatile uint32_t rxtx;
-   volatile uint32_t nop1;
+   volatile uint32_t run;
    volatile uint32_t cs;
    volatile uint32_t nop2;
    volatile uint32_t divisor;
@@ -114,18 +114,32 @@ void spi_init();
 void spi_putchar(char c);
 char spi_getchar();
 
+
+/***************************************************************************
+
+
 /***************************************************************************
  * I2C0
  */
-
+#define I2C_TIP 0x02
 typedef struct {
-   volatile uint32_t rxtx;
-   volatile uint32_t divisor;
+   volatile uint8_t prerl;
+   volatile uint8_t prerh;
+   volatile uint8_t ctr;
+   volatile uint8_t TxRx;
+   volatile uint8_t crsr;
 } i2c_t;
 
+void i2c_init();
+void i2c_putchar(char c);
+char i2c_getchar();
 
 
 /***************************************************************************
+
+
+
+
  * Pointer to actual components
  */
 extern timer_t  *timer0;

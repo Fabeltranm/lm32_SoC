@@ -1,7 +1,7 @@
-Release 14.7 - par P.20131013 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Release 14.4 - par P.49d (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Mon Sep 28 11:20:44 2015
+Fri Oct  6 09:10:25 2017
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -296,7 +296,7 @@ T4||IOB33S|IO_L12N_T1_MRCC_34|UNUSED||34|||||||||
 T5||IOB33M|IO_L12P_T1_MRCC_34|UNUSED||34|||||||||
 T6||IOB33S|IO_L23N_T3_34|UNUSED||34|||||||||
 T7|||GND||||||||||||
-T8|led|IOB33|IO_L24N_T3_34|OUTPUT|LVCMOS33|34|12|SLOW||||LOCATED|YES|NONE|
+T8|led|IOB33|IO_L24N_T3_34|OUTPUT|LVCMOS33|34|12|SLOW||||LOCATED|NO|NONE|
 T9||IOB33M|IO_L24P_T3_A01_D17_14|UNUSED||14|||||||||
 T10||IOB33S|IO_L24N_T3_A00_D16_14|UNUSED||14|||||||||
 T11||IOB33M|IO_L19P_T3_A10_D26_14|UNUSED||14|||||||||

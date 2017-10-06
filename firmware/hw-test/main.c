@@ -18,7 +18,15 @@ inline void writeint(uint32_t val)
 	}
 }
 
+void test2() {
+    uart_putchar('b');   
+}
 
+void test() {
+    uart_putchar('a');
+    test2();
+    uart_putchar('c');
+} 
 
 char glob[] = "Global";
 
@@ -29,19 +37,32 @@ extern uint32_t tic_msec;
 
 int main()
 {
-	uint32_t aa,bb; 
-for(;;)
-	 uart_putchar('1');
-	 uart_putchar('2');
-	 uart_putchar('3');
-	 uart_putchar('1');
-	  aa=1;
-	   prueba();
-   uart_putchar('b');
+	uint32_t aa=1;
+   
+i2c_init();
 
+  for(;;)
+  {
+
+	i2c_write(1,30,40);
+	 uart_putchar(2*(aa));
+     uart_putchar((2+(aa++)));
+
+  }
+  uart_putchar('b');
+   uart_putchar(2+3);
+   uart_putchar(2*3);
+   uart_putchar(6/3);
    char test2[] = "Lokalerstr";
    char *str = test2;
    uint32_t i;
+    
+//    for (i = 0; i < 4; i++)
+ //       test2[i] = 'l';
+  //  glob[0]  = 'g';
+    
+ 	// Initialize stuff
+	uart_init();
 
 	// Say Hello!
 	uart_putstr( "** Spike Test Firmware **\n" );
@@ -105,7 +126,7 @@ for(;;)
 		val <<= 1;
 	}
 	uart_putstr("\r\n");
-/*
+	
 	uart_putstr( "GPIO Test..." );
 	gpio0->oe = 0x000000ff;
 	for(;;) {
@@ -118,6 +139,23 @@ for(;;)
 
 			msleep(100);
 		}
+	}
+
+
+/*
+	uart_putstr( "Memory Dump: " );
+	uint32_t *start = (uint32_t *)0x40000000;
+	uint32_t *end   = (uint32_t *)0x40000100;
+	uint32_t *p;
+	for (p=start; p<end; p++) {
+		if (((uint32_t)p & 12) == 0) {
+			uart_putstr("\r\n[");
+			writeint((uint32_t) p);
+			uart_putchar(']');    
+		}
+
+		uart_putchar(' ');    
+		writeint(*p);
 	}
 */
 

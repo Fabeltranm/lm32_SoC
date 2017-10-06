@@ -1,7 +1,7 @@
-INFILE=/home/ferney/FERNEY/NACHO/Digital2/laboratorios/lm32/lm32_soc_hdl/build/system-routed.ncd
-OUTFILE=/home/ferney/FERNEY/NACHO/Digital2/laboratorios/lm32/lm32_soc_hdl/build/system.bit
+INFILE=/home/sebastian/Documentos/UN/Digital/Digital II/lm32_soc_HDL/build/system-routed.ncd
+OUTFILE=/home/sebastian/Documentos/UN/Digital/Digital II/lm32_soc_HDL/build/system.bit
 FAMILY=Artix7
 PART=xc7a100t-3csg324
-WORKINGDIR=/home/ferney/FERNEY/NACHO/Digital2/laboratorios/lm32/lm32_soc_hdl/build
+WORKINGDIR=/home/sebastian/Documentos/UN/Digital/Digital II/lm32_soc_HDL/build
 LICENSE=WebPack
-USER_INFO=211008208_0_0_072
+USER_INFO=210656542_0_0_533

@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="lin64" product="ISE" version="14.7">
+<document OS="lin64" product="ISE" version="14.4">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Mon Sep 28 10:23:18 2015">
+  <application stringID="NgdBuild" timeStamp="Fri Oct  6 09:08:48 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/PlanAhead"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.4/ISE_DS/ISE//bin/lin64:/opt/rtems-4.11/bin:/opt/Xilinx/14.4/ISE_DS/ISE/bin/lin64:/home/sebastian/bin:/home/sebastian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/lib/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/lib/lin64:/opt/Xilinx/14.7/ISE_DS/common/lib/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/Xilinx/14.4/ISE_DS/ISE/"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/EDK"/>
-        </row>
-        <row stringID="row" value="3">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/"/>
-        </row>
-        <row stringID="row" value="4">
-          <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.7/ISE_DS/common/bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/Xilinx/14.7/ISE_DS/ISE/lib/lin64:/opt/rtems-4.11/bin"/>
-        </row>
-        <row stringID="row" value="5">
-          <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE"/>
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.4/ISE_DS/ISE//lib/lin64"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 14.04.3 LTS"/>
+        <item stringID="User_EnvOsname" value="LinuxMint"/>
+        <item stringID="User_EnvOsrelease" value="Linux Mint 18.2 Sonya"/>
       </item>
-      <item stringID="User_EnvHost" value="ferney-XPS"/>
+      <item stringID="User_EnvHost" value="sebastian"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz"/>
-          <item stringID="speed" value="2801.000 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz"/>
+          <item stringID="speed" value="2589.990 MHz"/>
         </row>
       </table>
     </section>
@@ -84,7 +72,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="210"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="217"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="300"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="605"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="606"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="276"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="10"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="4"/>
@@ -115,7 +103,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="210"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="217"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="300"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="605"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="606"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="276"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="10"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="4"/>

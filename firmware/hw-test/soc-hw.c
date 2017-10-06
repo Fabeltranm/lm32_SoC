@@ -3,26 +3,11 @@
 uart_t  *uart0  = (uart_t *)   0x20000000;
 timer_t *timer0 = (timer_t *)  0x30000000;
 gpio_t  *gpio0  = (gpio_t *)   0x40000000;
-//uart_t  *uart1  = (uart_t *)   0x20000000;
 spi_t   *spi0   = (spi_t *)    0x50000000;
 i2c_t   *i2c0   = (i2c_t *)    0x60000000;
 
 isr_ptr_t isr_table[32];
 
-void prueba()
-{
-	   uart0->rxtx=30;
-	   timer0->tcr0 = 0xAA;
-	   gpio0->ctrl=0x55;
-	   spi0->rxtx=1;
-	   spi0->nop1=2;
-	   spi0->cs=3;
-	   spi0->nop2=5;
-	   spi0->divisor=4;
-	   i2c0->rxtx=5;
-	   i2c0->divisor=5;
-
-}
 void tic_isr();
 /***************************************************************************
  * IRQ handling
@@ -147,3 +132,39 @@ void uart_putstr(char *str)
 	}
 }
 
+
+/***************************************************************************
+ * I2C Functions
+ */
+void i2c_init()
+{
+
+	i2c0->prerl =0x00;
+	i2c0->prerh =0x50;
+	i2c0->ctr =0x80;
+
+
+}
+
+void i2c_write(char addrDev, char addrReg, char dat)
+{
+
+   i2c0->TxRx=(addrDev<<1 +1);
+   i2c0->crsr =0x90;
+   while((i2c0->crsr)& I2C_TIP);
+   i2c0->TxRx=addrReg;
+   i2c0->crsr =0x10;
+   while((i2c0->crsr)& I2C_TIP);
+   
+   i2c0->TxRx=dat;
+   i2c0->crsr =0x10;
+   while((i2c0->crsr)& I2C_TIP);
+//........... todo byte 70 9
+
+   i2c0->TxRx=dat; // last byte
+   i2c0->crsr =0x50;
+   while((i2c0->crsr)& I2C_TIP);
+//7
+
+}
+char i2c_getchar();

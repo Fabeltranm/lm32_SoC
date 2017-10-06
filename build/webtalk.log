@@ -1,9 +1,9 @@
-Release 14.7 - WebTalk (P.20131013)
+Release 14.4 - WebTalk (P.49d)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
-ProjectID=251d374e229f40eabe79c63486dd48bd
+ProjectID=34cbbae904b84ec79eeba4de9fb4c8f0
 ProjectIteration=2
 
 WebTalk Summary
@@ -13,4 +13,4 @@ INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:5 - /home/ferney/FERNEY/NACHO/Digital2/laboratorios/lm32/lm32_soc_hdl/build/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:5 - /home/sebastian/Documentos/UN/Digital/Digital II/lm32_soc_HDL/build/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/14.4/ISE_DS/ISE/data/reports/webtalk_introduction.html
