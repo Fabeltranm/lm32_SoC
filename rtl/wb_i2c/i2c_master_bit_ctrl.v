@@ -1,60 +1,51 @@
-//   ==================================================================
-//   >>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<
-//   ------------------------------------------------------------------
-//   Copyright (c) 2013 by Lattice Semiconductor Corporation
-//   ALL RIGHTS RESERVED 
-//   ------------------------------------------------------------------
-//
-//   Permission:
-//
-//      Lattice SG Pte. Ltd. grants permission to use this code
-//      pursuant to the terms of the Lattice Reference Design License Agreement. 
-//
-//
-//   Disclaimer:
-//
-//      This VHDL or Verilog source code is intended as a design reference
-//      which illustrates how these types of functions can be implemented.
-//      It is the user's responsibility to verify their design for
-//      consistency and functionality through the use of formal
-//      verification methods.  Lattice provides no warranty
-//      regarding the use or functionality of this code.
-//
-//   --------------------------------------------------------------------
-//
-//                  Lattice SG Pte. Ltd.
-//                  101 Thomson Road, United Square #07-02 
-//                  Singapore 307591
-//
-//
-//                  TEL: 1-800-Lattice (USA and Canada)
-//                       +65-6631-2000 (Singapore)
-//                       +1-503-268-8001 (other locations)
-//
-//                  web: http://www.latticesemi.com/
-//                  email: techsupport@latticesemi.com
-//
-//   --------------------------------------------------------------------
-//  CVS Log
-//
-//  $Id: RD#RD1046#source#verilog#i2c_master_bit_ctrl.v,v 1.6 2013-10-10 07:45:10-07 vpatil Exp $
-//
-//  $Date: 2013-10-10 07:45:10-07 $
-//  $Revision: 1.6 $
-//  $Author: vpatil $
-//  $Locker:  $
-//  $State: Exp $
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+////  WISHBONE rev.B2 compliant I2C Master bit-controller        ////
+////                                                             ////
+////                                                             ////
+////  Author: Richard Herveille                                  ////
+////          richard@asics.ws                                   ////
+////          www.asics.ws                                       ////
+////                                                             ////
+////  Downloaded from: http://www.opencores.org/projects/i2c/    ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+//// Copyright (C) 2001 Richard Herveille                        ////
+////                    richard@asics.ws                         ////
+////                                                             ////
+//// This source file may be used and distributed without        ////
+//// restriction provided that this copyright statement is not   ////
+//// removed from the file and that any derivative work contains ////
+//// the original copyright notice and the associated disclaimer.////
+////                                                             ////
+////     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ////
+//// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   ////
+//// TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS   ////
+//// FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR      ////
+//// OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,         ////
+//// INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES    ////
+//// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE   ////
+//// GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        ////
+//// BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  ////
+//// LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR TORT  ////
+//// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  ////
+//// OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE         ////
+//// POSSIBILITY OF SUCH DAMAGE.                                 ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
 //
 // Change History:
-//               $Log: RD#RD1046#source#verilog#i2c_master_bit_ctrl.v,v $
-//               Revision 1.6  2013-10-10 07:45:10-07  vpatil
-//               Updated header.
 //
-//               Revision 1.5  2013-10-10 07:44:19-07  vpatil
-//               ...No comments entered during checkin...
+//               Revision 1.14  2009/01/20 10:25:29  rherveille
+//               Added clock synchronization logic
+//               Fixed slave_wait signal
 //
-//               Revision 1.4  2013-07-04 02:55:56-07  lsccad
-//               Automatically checked in.
+//               Revision 1.13  2009/01/19 20:29:26  rherveille
+//               Fixed synopsys miss spell (synopsis)
+//               Fixed cr[0] register width
+//               Fixed ! usage instead of ~
+//               Fixed bit controller parameter width to 18bits
 //
 //               Revision 1.12  2006/09/04 09:08:13  rherveille
 //               fixed short scl high pulse after clock stretch
@@ -93,12 +84,6 @@
 //               Fixed bug in the byte_controller statemachine.
 //               Added headers.
 //
-//-------------------------------------------------------------------------
-// Code Revision History (LSC) :
-//-------------------------------------------------------------------------
-// Ver: | Author	|Mod. Date	|Changes Made:
-// V2.0 | CM		|12/2008    |no change
-//-------------------------------------------------------------------------
 
 //
 /////////////////////////////////////
@@ -138,7 +123,6 @@
 // Tsu:sto     4.0us            0.6us   setup time for a stop conditon
 // Tbuf        4.7us            1.3us   Bus free time between a stop and start condition
 //
-
 // synopsys translate_off
 //`include "..\..\testbench\verilog\timescale.v"
 `include "timescale.v"

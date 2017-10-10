@@ -1,66 +1,39 @@
-//   ==================================================================
-//   >>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<
-//   ------------------------------------------------------------------
-//   Copyright (c) 2013 by Lattice Semiconductor Corporation
-//   ALL RIGHTS RESERVED 
-//   ------------------------------------------------------------------
-//
-//   Permission:
-//
-//      Lattice SG Pte. Ltd. grants permission to use this code
-//      pursuant to the terms of the Lattice Reference Design License Agreement. 
-//
-//
-//   Disclaimer:
-//
-//      This VHDL or Verilog source code is intended as a design reference
-//      which illustrates how these types of functions can be implemented.
-//      It is the user's responsibility to verify their design for
-//      consistency and functionality through the use of formal
-//      verification methods.  Lattice provides no warranty
-//      regarding the use or functionality of this code.
-//
-//   --------------------------------------------------------------------
-//
-//                  Lattice SG Pte. Ltd.
-//                  101 Thomson Road, United Square #07-02 
-//                  Singapore 307591
-//
-//
-//                  TEL: 1-800-Lattice (USA and Canada)
-//                       +65-6631-2000 (Singapore)
-//                       +1-503-268-8001 (other locations)
-//
-//                  web: http://www.latticesemi.com/
-//                  email: techsupport@latticesemi.com
-//
-//   --------------------------------------------------------------------
-//  CVS Log
-//
-//  $Id: RD#RD1046#source#verilog#i2c_master_defines.v,v 1.6 2013-10-10 07:45:03-07 vpatil Exp $
-//
-//  $Date: 2013-10-10 07:45:03-07 $
-//  $Revision: 1.6 $
-//  $Author: vpatil $
-//  $Locker:  $
-//  $State: Exp $
-//
-// Change History:
-//               $Log: RD#RD1046#source#verilog#i2c_master_defines.v,v $
-//               Revision 1.6  2013-10-10 07:45:03-07  vpatil
-//               Updated header.
-//
-//               Revision 1.5  2013-10-10 07:44:10-07  vpatil
-//               ...No comments entered during checkin...
-//
-//               Revision 1.4  2013-07-04 02:56:01-07  lsccad
-//               Automatically checked in.
-//
-//               Revision 1.3  2001/11/05 11:59:25  rherveille
-//               Fixed wb_ack_o generation bug.
-//               Fixed bug in the byte_controller statemachine.
-//               Added headers.
-//
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+////  WISHBONE rev.B2 compliant I2C Master controller defines    ////
+////                                                             ////
+////                                                             ////
+////  Author: Richard Herveille                                  ////
+////          richard@asics.ws                                   ////
+////          www.asics.ws                                       ////
+////                                                             ////
+////  Downloaded from: http://www.opencores.org/projects/i2c/    ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+//// Copyright (C) 2001 Richard Herveille                        ////
+////                    richard@asics.ws                         ////
+////                                                             ////
+//// This source file may be used and distributed without        ////
+//// restriction provided that this copyright statement is not   ////
+//// removed from the file and that any derivative work contains ////
+//// the original copyright notice and the associated disclaimer.////
+////                                                             ////
+////     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ////
+//// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   ////
+//// TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS   ////
+//// FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR      ////
+//// OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,         ////
+//// INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES    ////
+//// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE   ////
+//// GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        ////
+//// BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  ////
+//// LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR TORT  ////
+//// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  ////
+//// OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE         ////
+//// POSSIBILITY OF SUCH DAMAGE.                                 ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
 
 
 // I2C registers wishbone addresses
