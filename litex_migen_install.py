@@ -58,13 +58,13 @@ for name in repos.keys():
         os.system("python3 setup.py develop")
 
 print("........................................................................ ")
-print("             Sistemas instalado en " +dir_install+ " \n")
+print("             Sistemas instalados en " +dir_install+ " \n")
 for name in repos.keys():
     print("-> " + name)
  
 print("........................................................................ ")
 
-print("CUADO REQUIERA ACTUALIZAR EL SISTEMA DEBE EJECUTAR EL SIGUIENTE COMANDO: ")
+print("CUANDO REQUIERA ACTUALIZAR EL SISTEMA DEBE EJECUTAR EL SIGUIENTE COMANDO: ")
 print( "    <  sudo python3 " + dir_install+"/litex_setup.py update > \n")
 
 
