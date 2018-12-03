@@ -58,7 +58,7 @@ for name in repos.keys():
         os.system("python3 setup.py develop")
 
 print("........................................................................ ")
-print("             Sistemas instalado en " +dir_install+ " \n")
+print("             Sistemas instalados en " +dir_install+ " \n")
 for name in repos.keys():
     print("-> " + name)
  
