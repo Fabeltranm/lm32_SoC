@@ -1,0 +1,9 @@
+NET "serial_tx" LOC=P105 | IOSTANDARD=LVCMOS33; # serial:0.tx
+NET "serial_rx" LOC=P101 | IOSTANDARD=LVCMOS33; # serial:0.rx
+NET "clk32" LOC=P126 | IOSTANDARD=LVCMOS33; # clk32:0
+NET "cpu_reset" LOC=P87 | IOSTANDARD=LVCMOS33; # cpu_reset:0
+NET "pwm10" LOC=P24 | IOSTANDARD=LVCMOS33; # pwm1:0
+
+
+NET "clk32" TNM_NET = "PRDclk32";
+TIMESPEC "TSclk32" = PERIOD "PRDclk32" 31.25 ns HIGH 50%;

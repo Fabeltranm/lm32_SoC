@@ -1,0 +1,698 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : MIXED
+
+---- Target Parameters
+Output File Name                   : "top.ngc"
+Target Device                      : xc6slx9-TQG144-2
+
+---- Source Options
+Top Module Name                    : top
+Use New Parser                     : yes
+Automatic Register Balancing       : yes
+
+---- General Options
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+=========================================================================
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 20: Using initial value of basesoc_reset_reset_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 38: Using initial value of basesoc_sram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 57: Using initial value of basesoc_bus_wishbone_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 70: Using initial value of basesoc_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 92: Using initial value of uartwishbonebridge_storage since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 120: Using initial value of uartwishbonebridge_wishbone_cti since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 121: Using initial value of uartwishbonebridge_wishbone_bte since it is never assigned
+Reading initialization file \"mem_1.init\".
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 226: Assignment to basesoc_reset ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 247: Assignment to basesoc_irq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 253: Assignment to uartwishbonebridge_source_ready ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 254: Result of 32-bit expression is truncated to fit in 30-bit target.
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 275: Assignment to uartwishbonebridge_sink_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 388: Assignment to uartwishbonebridge_wishbone_err ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 389: Assignment to request ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 401: Assignment to basesoc_sram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 402: Assignment to basesoc_sram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 405: Assignment to basesoc_bus_wishbone_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 408: Assignment to basesoc_bus_wishbone_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 409: Assignment to basesoc_bus_wishbone_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 428: Assignment to basesoc_reset_reset_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 432: Assignment to csrbank0_bus_errors_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 433: Assignment to csrbank0_bus_errors_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 434: Assignment to basesoc_storage ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 457: Assignment to basesoc_update_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 459: Assignment to csrbank2_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 460: Assignment to csrbank2_value_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 461: Assignment to basesoc_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 462: Assignment to basesoc_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 483: Assignment to sram_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 487: Assignment to sram_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 571: Result of 30-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v" Line 559: Assignment to basesoc_re ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo02_wb/build/gateware/top.v".
+    Set property "register_balancing = no" for signal <regs0>.
+    Set property "shreg_extract = no" for signal <regs0>.
+    Set property "register_balancing = no" for signal <regs1>.
+    Set property "shreg_extract = no" for signal <regs1>.
+WARNING:Xst:2999 - Signal 'mem_1', unconnected in block 'top', is tied to its initial value.
+    Found 1024x32-bit dual-port RAM <Mram_mem> for signal <mem>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_1>, simulation mismatch.
+    Found 44x8-bit single-port Read Only RAM <Mram_mem_1> for signal <mem_1>.
+    Found 32-bit register for signal <basesoc_bus_errors>.
+    Found 1-bit register for signal <basesoc_sram_bus_ack>.
+    Found 1-bit register for signal <basesoc_interface_we>.
+    Found 32-bit register for signal <basesoc_interface_dat_w>.
+    Found 14-bit register for signal <basesoc_interface_adr>.
+    Found 32-bit register for signal <basesoc_bus_wishbone_dat_r>.
+    Found 1-bit register for signal <basesoc_bus_wishbone_ack>.
+    Found 2-bit register for signal <basesoc_counter>.
+    Found 32-bit register for signal <basesoc_value>.
+    Found 32-bit register for signal <basesoc_value_status>.
+    Found 1-bit register for signal <basesoc_zero_pending>.
+    Found 1-bit register for signal <basesoc_zero_old_trigger>.
+    Found 3-bit register for signal <uartwishbonebridge_byte_counter>.
+    Found 3-bit register for signal <uartwishbonebridge_word_counter>.
+    Found 8-bit register for signal <uartwishbonebridge_cmd>.
+    Found 8-bit register for signal <uartwishbonebridge_length>.
+    Found 32-bit register for signal <uartwishbonebridge_address>.
+    Found 32-bit register for signal <uartwishbonebridge_data>.
+    Found 1-bit register for signal <uartwishbonebridge_sink_ready>.
+    Found 8-bit register for signal <uartwishbonebridge_tx_reg>.
+    Found 4-bit register for signal <uartwishbonebridge_tx_bitcount>.
+    Found 1-bit register for signal <uartwishbonebridge_tx_busy>.
+    Found 1-bit register for signal <serial_tx>.
+    Found 32-bit register for signal <uartwishbonebridge_phase_accumulator_tx>.
+    Found 1-bit register for signal <uartwishbonebridge_uart_clk_txen>.
+    Found 1-bit register for signal <uartwishbonebridge_source_valid>.
+    Found 1-bit register for signal <uartwishbonebridge_rx_r>.
+    Found 1-bit register for signal <uartwishbonebridge_rx_busy>.
+    Found 4-bit register for signal <uartwishbonebridge_rx_bitcount>.
+    Found 8-bit register for signal <uartwishbonebridge_source_payload_data>.
+    Found 8-bit register for signal <uartwishbonebridge_rx_reg>.
+    Found 32-bit register for signal <uartwishbonebridge_phase_accumulator_rx>.
+    Found 1-bit register for signal <uartwishbonebridge_uart_clk_rxen>.
+    Found 3-bit register for signal <state>.
+    Found 22-bit register for signal <uartwishbonebridge_count>.
+    Found 2-bit register for signal <slave_sel_r>.
+    Found 20-bit register for signal <count>.
+    Found 32-bit register for signal <interface0_bank_bus_dat_r>.
+    Found 32-bit register for signal <basesoc_storage_full>.
+    Found 1-bit register for signal <sel_r>.
+    Found 32-bit register for signal <interface1_bank_bus_dat_r>.
+    Found 9-bit register for signal <leds_storage_full>.
+    Found 32-bit register for signal <interface2_bank_bus_dat_r>.
+    Found 32-bit register for signal <basesoc_load_storage_full>.
+    Found 32-bit register for signal <basesoc_reload_storage_full>.
+    Found 1-bit register for signal <basesoc_en_storage_full>.
+    Found 1-bit register for signal <basesoc_eventmanager_storage_full>.
+    Found 1-bit register for signal <regs0>.
+    Found 1-bit register for signal <regs1>.
+    Found 10-bit register for signal <memadr>.
+    Found 6-bit register for signal <memadr_1>.
+    Found 1-bit register for signal <int_rst>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 31                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 7                                              |
+    | Clock              | clk32 (rising_edge)                            |
+    | Reset              | int_rst (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit subtractor for signal <uartwishbonebridge_length[7]_GND_1_o_sub_34_OUT> created at line 354.
+    Found 32-bit subtractor for signal <basesoc_value[31]_GND_1_o_sub_149_OUT> created at line 593.
+    Found 22-bit subtractor for signal <uartwishbonebridge_count[21]_GND_1_o_sub_193_OUT> created at line 704.
+    Found 20-bit subtractor for signal <count[19]_GND_1_o_sub_196_OUT> created at line 712.
+    Found 32-bit adder for signal <n0437> created at line 254.
+    Found 32-bit adder for signal <basesoc_bus_errors[31]_GND_1_o_add_137_OUT> created at line 562.
+    Found 2-bit adder for signal <basesoc_counter[1]_GND_1_o_add_144_OUT> created at line 583.
+    Found 3-bit adder for signal <uartwishbonebridge_byte_counter[2]_GND_1_o_add_152_OUT> created at line 612.
+    Found 3-bit adder for signal <uartwishbonebridge_word_counter[2]_GND_1_o_add_155_OUT> created at line 619.
+    Found 4-bit adder for signal <uartwishbonebridge_tx_bitcount[3]_GND_1_o_add_163_OUT> created at line 646.
+    Found 33-bit adder for signal <n0646> created at line 662.
+    Found 4-bit adder for signal <uartwishbonebridge_rx_bitcount[3]_GND_1_o_add_175_OUT> created at line 675.
+    Found 33-bit adder for signal <n0650> created at line 694.
+    Found 32-bit 4-to-1 multiplexer for signal <interface0_bank_bus_adr[1]_GND_1_o_wide_mux_198_OUT> created at line 719.
+    Found 32-bit 8-to-1 multiplexer for signal <interface2_bank_bus_adr[2]_GND_1_o_wide_mux_204_OUT> created at line 750.
+    Found 8-bit 4-to-1 multiplexer for signal <_n0764> created at line 96.
+    Found 8-bit comparator equal for signal <GND_1_o_uartwishbonebridge_length[7]_equal_35_o> created at line 354
+    Summary:
+	inferred   2 RAM(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred 638 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  62 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x32-bit dual-port RAM                             : 1
+ 44x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 13
+ 2-bit adder                                           : 1
+ 20-bit subtractor                                     : 1
+ 22-bit subtractor                                     : 1
+ 3-bit adder                                           : 2
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 2
+ 4-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+# Registers                                            : 51
+ 1-bit register                                        : 19
+ 10-bit register                                       : 1
+ 14-bit register                                       : 1
+ 2-bit register                                        : 2
+ 20-bit register                                       : 1
+ 22-bit register                                       : 1
+ 3-bit register                                        : 2
+ 32-bit register                                       : 15
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 5
+ 9-bit register                                        : 1
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 62
+ 1-bit 2-to-1 multiplexer                              : 43
+ 2-bit 2-to-1 multiplexer                              : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 9
+ 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 8-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <basesoc_bus_errors>: 1 register on signal <basesoc_bus_errors>.
+The following registers are absorbed into counter <basesoc_counter>: 1 register on signal <basesoc_counter>.
+The following registers are absorbed into counter <uartwishbonebridge_byte_counter>: 1 register on signal <uartwishbonebridge_byte_counter>.
+The following registers are absorbed into counter <uartwishbonebridge_word_counter>: 1 register on signal <uartwishbonebridge_word_counter>.
+The following registers are absorbed into counter <uartwishbonebridge_tx_bitcount>: 1 register on signal <uartwishbonebridge_tx_bitcount>.
+The following registers are absorbed into counter <uartwishbonebridge_rx_bitcount>: 1 register on signal <uartwishbonebridge_rx_bitcount>.
+The following registers are absorbed into counter <uartwishbonebridge_count>: 1 register on signal <uartwishbonebridge_count>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+INFO:Xst:3231 - The small RAM <Mram_mem_1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 44-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <memadr_1>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <memadr>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk32>         | rise     |
+    |     weA            | connected to signal <basesoc_sram_we<2>> | high     |
+    |     addrA          | connected to signal <n0437<9:0>>    |          |
+    |     diA            | connected to signal <uartwishbonebridge_data> |          |
+    |     doA            | connected to signal <basesoc_sram_bus_dat_r> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <top> synthesized (advanced).
+WARNING:Xst:2677 - Node <uartwishbonebridge_address_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <uartwishbonebridge_address_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <uartwishbonebridge_address_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <basesoc_interface_adr_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <basesoc_interface_adr_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <basesoc_interface_adr_8> of sequential type is unconnected in block <top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x32-bit single-port block RAM                     : 1
+ 44x8-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 5
+ 29-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 2
+ 8-bit subtractor                                      : 1
+# Counters                                             : 8
+ 2-bit up counter                                      : 1
+ 20-bit down counter                                   : 1
+ 22-bit down counter                                   : 1
+ 3-bit up counter                                      : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 532
+ Flip-Flops                                            : 532
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 119
+ 1-bit 2-to-1 multiplexer                              : 107
+ 32-bit 2-to-1 multiplexer                             : 7
+ 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 8-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 101   | 100
+ 100   | 101
+ 110   | 110
+-------------------
+WARNING:Xst:1293 - FF/Latch <interface1_bank_bus_dat_r_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface1_bank_bus_dat_r_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <uartwishbonebridge_phase_accumulator_tx_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <uartwishbonebridge_phase_accumulator_rx_0> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 18.
+INFO:Xst:2261 - The FF/Latch <memadr_1_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <basesoc_en_storage_full_BRB3> <basesoc_zero_pending_BRB3> 
+INFO:Xst:2261 - The FF/Latch <memadr_1_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <basesoc_eventmanager_storage_full_BRB2> 
+INFO:Xst:2261 - The FF/Latch <memadr_1_0> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <interface0_bank_bus_dat_r_0_BRB2> <interface2_bank_bus_dat_r_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <memadr_1_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <interface0_bank_bus_dat_r_0_BRB1> 
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <top> :
+	Register(s) basesoc_interface_adr_13 basesoc_interface_adr_12 has(ve) been forward balanced into : basesoc_zero_clear1_SW0_FRB.
+	Register(s) count_1 count_0 count_2 count_3 count_4 count_5 has(ve) been forward balanced into : done<19>1_FRB.
+	Register(s) count_7 count_6 count_8 count_9 count_10 count_11 has(ve) been forward balanced into : done<19>2_FRB.
+	Register(s) uartwishbonebridge_cmd_4 uartwishbonebridge_cmd_5 uartwishbonebridge_cmd_0 uartwishbonebridge_cmd_2 uartwishbonebridge_cmd_3 has(ve) been forward balanced into : state_FSM_FFd2-In23_FRB.
+	Register(s) uartwishbonebridge_cmd_7 uartwishbonebridge_cmd_5 uartwishbonebridge_cmd_6 uartwishbonebridge_cmd_4 uartwishbonebridge_cmd_3 uartwishbonebridge_cmd_2 has(ve) been forward balanced into : state_FSM_FFd3-In3411_FRB.
+	Register(s) uartwishbonebridge_data_0_BRB6 uartwishbonebridge_data_0_BRB7 uartwishbonebridge_data_0_BRB8 uartwishbonebridge_data_0_BRB9 uartwishbonebridge_data_0_BRB10 uartwishbonebridge_data_0_BRB11 has(ve) been forward balanced into : _n0844_inv1_FRB.
+	Register(s) uartwishbonebridge_length_6 uartwishbonebridge_length_7 uartwishbonebridge_length_5 uartwishbonebridge_length_4 has(ve) been forward balanced into : GND_1_o_uartwishbonebridge_length[7]_equal_35_o81_FRB.
+	Register(s) basesoc_bus_wishbone_dat_r_0 has(ve) been backward balanced into : basesoc_bus_wishbone_dat_r_0_BRB0 basesoc_bus_wishbone_dat_r_0_BRB1 basesoc_bus_wishbone_dat_r_0_BRB2 basesoc_bus_wishbone_dat_r_0_BRB3 basesoc_bus_wishbone_dat_r_0_BRB4.
+	Register(s) basesoc_counter_0 has(ve) been backward balanced into : basesoc_counter_0_BRB0 basesoc_counter_0_BRB1 basesoc_counter_0_BRB5.
+	Register(s) basesoc_en_storage_full has(ve) been backward balanced into : basesoc_en_storage_full_BRB0 basesoc_en_storage_full_BRB1 basesoc_en_storage_full_BRB2 basesoc_en_storage_full_BRB4.
+	Register(s) basesoc_eventmanager_storage_full has(ve) been backward balanced into : basesoc_eventmanager_storage_full_BRB0 basesoc_eventmanager_storage_full_BRB1 .
+	Register(s) basesoc_zero_old_trigger has(ve) been backward balanced into : basesoc_zero_old_trigger_BRB0.
+	Register(s) basesoc_zero_pending has(ve) been backward balanced into : basesoc_zero_pending_BRB0 basesoc_zero_pending_BRB2 basesoc_zero_pending_BRB4 basesoc_zero_pending_BRB5.
+	Register(s) interface0_bank_bus_dat_r_0 has(ve) been backward balanced into : interface0_bank_bus_dat_r_0_BRB0 interface0_bank_bus_dat_r_0_BRB3 interface0_bank_bus_dat_r_0_BRB4.
+	Register(s) interface1_bank_bus_dat_r_0 has(ve) been backward balanced into : interface1_bank_bus_dat_r_0_BRB0 interface1_bank_bus_dat_r_0_BRB1.
+	Register(s) interface2_bank_bus_dat_r_0 has(ve) been backward balanced into : interface2_bank_bus_dat_r_0_BRB0 interface2_bank_bus_dat_r_0_BRB3 interface2_bank_bus_dat_r_0_BRB4 interface2_bank_bus_dat_r_0_BRB5.
+	Register(s) serial_tx has(ve) been backward balanced into : serial_tx_BRB0 serial_tx_BRB1 serial_tx_BRB2 serial_tx_BRB3 serial_tx_BRB4 serial_tx_BRB5.
+	Register(s) slave_sel_r_0 has(ve) been backward balanced into : slave_sel_r_0_BRB0 slave_sel_r_0_BRB1 slave_sel_r_0_BRB2.
+	Register(s) slave_sel_r_1 has(ve) been backward balanced into : slave_sel_r_1_BRB0 slave_sel_r_1_BRB2.
+	Register(s) uartwishbonebridge_data_0 has(ve) been backward balanced into : uartwishbonebridge_data_0_BRB1 uartwishbonebridge_data_0_BRB2 uartwishbonebridge_data_0_BRB3 uartwishbonebridge_data_0_BRB4 uartwishbonebridge_data_0_BRB5 .
+	Register(s) uartwishbonebridge_data_1 has(ve) been backward balanced into : uartwishbonebridge_data_1_BRB1 uartwishbonebridge_data_1_BRB2 uartwishbonebridge_data_1_BRB3 uartwishbonebridge_data_1_BRB4 .
+	Register(s) uartwishbonebridge_data_10 has(ve) been backward balanced into : uartwishbonebridge_data_10_BRB1 uartwishbonebridge_data_10_BRB2 uartwishbonebridge_data_10_BRB3 uartwishbonebridge_data_10_BRB4 .
+	Register(s) uartwishbonebridge_data_11 has(ve) been backward balanced into : uartwishbonebridge_data_11_BRB1 uartwishbonebridge_data_11_BRB2 uartwishbonebridge_data_11_BRB3 uartwishbonebridge_data_11_BRB4 .
+	Register(s) uartwishbonebridge_data_12 has(ve) been backward balanced into : uartwishbonebridge_data_12_BRB1 uartwishbonebridge_data_12_BRB2 uartwishbonebridge_data_12_BRB3 uartwishbonebridge_data_12_BRB4 .
+	Register(s) uartwishbonebridge_data_13 has(ve) been backward balanced into : uartwishbonebridge_data_13_BRB1 uartwishbonebridge_data_13_BRB2 uartwishbonebridge_data_13_BRB3 uartwishbonebridge_data_13_BRB4 .
+	Register(s) uartwishbonebridge_data_14 has(ve) been backward balanced into : uartwishbonebridge_data_14_BRB1 uartwishbonebridge_data_14_BRB2 uartwishbonebridge_data_14_BRB3 uartwishbonebridge_data_14_BRB4 .
+	Register(s) uartwishbonebridge_data_15 has(ve) been backward balanced into : uartwishbonebridge_data_15_BRB1 uartwishbonebridge_data_15_BRB2 uartwishbonebridge_data_15_BRB3 uartwishbonebridge_data_15_BRB4 .
+	Register(s) uartwishbonebridge_data_16 has(ve) been backward balanced into : uartwishbonebridge_data_16_BRB1 uartwishbonebridge_data_16_BRB2 uartwishbonebridge_data_16_BRB3 uartwishbonebridge_data_16_BRB4 .
+	Register(s) uartwishbonebridge_data_17 has(ve) been backward balanced into : uartwishbonebridge_data_17_BRB1 uartwishbonebridge_data_17_BRB2 uartwishbonebridge_data_17_BRB3 uartwishbonebridge_data_17_BRB4 .
+	Register(s) uartwishbonebridge_data_18 has(ve) been backward balanced into : uartwishbonebridge_data_18_BRB1 uartwishbonebridge_data_18_BRB2 uartwishbonebridge_data_18_BRB3 uartwishbonebridge_data_18_BRB4 .
+	Register(s) uartwishbonebridge_data_19 has(ve) been backward balanced into : uartwishbonebridge_data_19_BRB1 uartwishbonebridge_data_19_BRB2 uartwishbonebridge_data_19_BRB3 uartwishbonebridge_data_19_BRB4 .
+	Register(s) uartwishbonebridge_data_2 has(ve) been backward balanced into : uartwishbonebridge_data_2_BRB1 uartwishbonebridge_data_2_BRB2 uartwishbonebridge_data_2_BRB3 uartwishbonebridge_data_2_BRB4 .
+	Register(s) uartwishbonebridge_data_20 has(ve) been backward balanced into : uartwishbonebridge_data_20_BRB1 uartwishbonebridge_data_20_BRB2 uartwishbonebridge_data_20_BRB3 uartwishbonebridge_data_20_BRB4 .
+	Register(s) uartwishbonebridge_data_21 has(ve) been backward balanced into : uartwishbonebridge_data_21_BRB1 uartwishbonebridge_data_21_BRB2 uartwishbonebridge_data_21_BRB3 uartwishbonebridge_data_21_BRB4 .
+	Register(s) uartwishbonebridge_data_22 has(ve) been backward balanced into : uartwishbonebridge_data_22_BRB1 uartwishbonebridge_data_22_BRB2 uartwishbonebridge_data_22_BRB3 uartwishbonebridge_data_22_BRB4 .
+	Register(s) uartwishbonebridge_data_23 has(ve) been backward balanced into : uartwishbonebridge_data_23_BRB1 uartwishbonebridge_data_23_BRB2 uartwishbonebridge_data_23_BRB3 uartwishbonebridge_data_23_BRB4 .
+	Register(s) uartwishbonebridge_data_24 has(ve) been backward balanced into : uartwishbonebridge_data_24_BRB1 uartwishbonebridge_data_24_BRB2 uartwishbonebridge_data_24_BRB3 uartwishbonebridge_data_24_BRB4 .
+	Register(s) uartwishbonebridge_data_25 has(ve) been backward balanced into : uartwishbonebridge_data_25_BRB1 uartwishbonebridge_data_25_BRB2 uartwishbonebridge_data_25_BRB3 uartwishbonebridge_data_25_BRB4 .
+	Register(s) uartwishbonebridge_data_26 has(ve) been backward balanced into : uartwishbonebridge_data_26_BRB1 uartwishbonebridge_data_26_BRB2 uartwishbonebridge_data_26_BRB3 uartwishbonebridge_data_26_BRB4 .
+	Register(s) uartwishbonebridge_data_27 has(ve) been backward balanced into : uartwishbonebridge_data_27_BRB1 uartwishbonebridge_data_27_BRB2 uartwishbonebridge_data_27_BRB3 uartwishbonebridge_data_27_BRB4 .
+	Register(s) uartwishbonebridge_data_28 has(ve) been backward balanced into : uartwishbonebridge_data_28_BRB1 uartwishbonebridge_data_28_BRB2 uartwishbonebridge_data_28_BRB3 uartwishbonebridge_data_28_BRB4 .
+	Register(s) uartwishbonebridge_data_29 has(ve) been backward balanced into : uartwishbonebridge_data_29_BRB1 uartwishbonebridge_data_29_BRB2 uartwishbonebridge_data_29_BRB3 uartwishbonebridge_data_29_BRB4 .
+	Register(s) uartwishbonebridge_data_3 has(ve) been backward balanced into : uartwishbonebridge_data_3_BRB1 uartwishbonebridge_data_3_BRB2 uartwishbonebridge_data_3_BRB3 uartwishbonebridge_data_3_BRB4 .
+	Register(s) uartwishbonebridge_data_30 has(ve) been backward balanced into : uartwishbonebridge_data_30_BRB1 uartwishbonebridge_data_30_BRB2 uartwishbonebridge_data_30_BRB3 uartwishbonebridge_data_30_BRB4 .
+	Register(s) uartwishbonebridge_data_31 has(ve) been backward balanced into : uartwishbonebridge_data_31_BRB1 uartwishbonebridge_data_31_BRB2 uartwishbonebridge_data_31_BRB3 uartwishbonebridge_data_31_BRB4 .
+	Register(s) uartwishbonebridge_data_4 has(ve) been backward balanced into : uartwishbonebridge_data_4_BRB1 uartwishbonebridge_data_4_BRB2 uartwishbonebridge_data_4_BRB3 uartwishbonebridge_data_4_BRB4 .
+	Register(s) uartwishbonebridge_data_5 has(ve) been backward balanced into : uartwishbonebridge_data_5_BRB1 uartwishbonebridge_data_5_BRB2 uartwishbonebridge_data_5_BRB3 uartwishbonebridge_data_5_BRB4 .
+	Register(s) uartwishbonebridge_data_6 has(ve) been backward balanced into : uartwishbonebridge_data_6_BRB1 uartwishbonebridge_data_6_BRB2 uartwishbonebridge_data_6_BRB3 uartwishbonebridge_data_6_BRB4 .
+	Register(s) uartwishbonebridge_data_7 has(ve) been backward balanced into : uartwishbonebridge_data_7_BRB1 uartwishbonebridge_data_7_BRB2 uartwishbonebridge_data_7_BRB3 uartwishbonebridge_data_7_BRB4 .
+	Register(s) uartwishbonebridge_data_8 has(ve) been backward balanced into : uartwishbonebridge_data_8_BRB1 uartwishbonebridge_data_8_BRB2 uartwishbonebridge_data_8_BRB3 uartwishbonebridge_data_8_BRB4 .
+	Register(s) uartwishbonebridge_data_9 has(ve) been backward balanced into : uartwishbonebridge_data_9_BRB1 uartwishbonebridge_data_9_BRB2 uartwishbonebridge_data_9_BRB3 uartwishbonebridge_data_9_BRB4 .
+	Register(s) uartwishbonebridge_phase_accumulator_rx_18 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_18_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_20 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_20_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_23 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_23_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_24 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_24_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_25 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_25_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_26 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_26_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_27 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_27_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_28 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_28_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_29 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_29_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_30 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_30_BRB0 uartwishbonebridge_phase_accumulator_rx_30_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_rx_31 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_rx_31_BRB0 uartwishbonebridge_phase_accumulator_rx_31_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_18 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_18_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_20 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_20_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_23 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_23_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_24 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_24_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_25 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_25_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_26 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_26_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_27 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_27_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_28 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_28_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_29 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_29_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_30 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_30_BRB1.
+	Register(s) uartwishbonebridge_phase_accumulator_tx_31 has(ve) been backward balanced into : uartwishbonebridge_phase_accumulator_tx_31_BRB0 uartwishbonebridge_phase_accumulator_tx_31_BRB1.
+	Register(s) uartwishbonebridge_tx_reg_0 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_0_BRB2 uartwishbonebridge_tx_reg_0_BRB3 uartwishbonebridge_tx_reg_0_BRB4.
+	Register(s) uartwishbonebridge_tx_reg_1 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_1_BRB2 uartwishbonebridge_tx_reg_1_BRB4 uartwishbonebridge_tx_reg_1_BRB5 uartwishbonebridge_tx_reg_1_BRB7 uartwishbonebridge_tx_reg_1_BRB8.
+	Register(s) uartwishbonebridge_tx_reg_2 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_2_BRB2 uartwishbonebridge_tx_reg_2_BRB4 uartwishbonebridge_tx_reg_2_BRB5 uartwishbonebridge_tx_reg_2_BRB7 uartwishbonebridge_tx_reg_2_BRB8.
+	Register(s) uartwishbonebridge_tx_reg_3 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_3_BRB2 uartwishbonebridge_tx_reg_3_BRB4 uartwishbonebridge_tx_reg_3_BRB5 uartwishbonebridge_tx_reg_3_BRB7 uartwishbonebridge_tx_reg_3_BRB8.
+	Register(s) uartwishbonebridge_tx_reg_4 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_4_BRB2 uartwishbonebridge_tx_reg_4_BRB4 uartwishbonebridge_tx_reg_4_BRB5 uartwishbonebridge_tx_reg_4_BRB7 uartwishbonebridge_tx_reg_4_BRB8.
+	Register(s) uartwishbonebridge_tx_reg_5 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_5_BRB2 uartwishbonebridge_tx_reg_5_BRB4 uartwishbonebridge_tx_reg_5_BRB5 uartwishbonebridge_tx_reg_5_BRB7 uartwishbonebridge_tx_reg_5_BRB8.
+	Register(s) uartwishbonebridge_tx_reg_6 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_6_BRB2 uartwishbonebridge_tx_reg_6_BRB4 uartwishbonebridge_tx_reg_6_BRB5 uartwishbonebridge_tx_reg_6_BRB7 uartwishbonebridge_tx_reg_6_BRB8.
+	Register(s) uartwishbonebridge_tx_reg_7 has(ve) been backward balanced into : uartwishbonebridge_tx_reg_7_BRB0 uartwishbonebridge_tx_reg_7_BRB1 uartwishbonebridge_tx_reg_7_BRB3 uartwishbonebridge_tx_reg_7_BRB4 uartwishbonebridge_tx_reg_7_BRB5 uartwishbonebridge_tx_reg_7_BRB6 uartwishbonebridge_tx_reg_7_BRB8 uartwishbonebridge_tx_reg_7_BRB9.
+Unit <top> processed.
+FlipFlop basesoc_interface_adr_1 has been replicated 1 time(s)
+FlipFlop basesoc_interface_we has been replicated 1 time(s)
+FlipFlop state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop state_FSM_FFd3 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 765
+ Flip-Flops                                            : 765
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1165
+#      GND                         : 1
+#      INV                         : 68
+#      LUT1                        : 85
+#      LUT2                        : 108
+#      LUT3                        : 45
+#      LUT4                        : 75
+#      LUT5                        : 201
+#      LUT6                        : 202
+#      MUXCY                       : 194
+#      VCC                         : 1
+#      XORCY                       : 185
+# FlipFlops/Latches                : 765
+#      FD                          : 185
+#      FDE                         : 73
+#      FDR                         : 252
+#      FDRE                        : 220
+#      FDS                         : 7
+#      FDSE                        : 28
+# RAMS                             : 2
+#      RAMB16BWER                  : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 2
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             765  out of  11440     6%  
+ Number of Slice LUTs:                  784  out of   5720    13%  
+    Number used as Logic:               784  out of   5720    13%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    993
+   Number with an unused Flip Flop:     228  out of    993    22%  
+   Number with an unused LUT:           209  out of    993    21%  
+   Number of fully used LUT-FF pairs:   556  out of    993    55%  
+   Number of unique control sets:        20
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk32                              | BUFGP                  | 767   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.026ns (Maximum Frequency: 165.961MHz)
+   Minimum input arrival time before clock: 3.019ns
+   Maximum output required time after clock: 5.553ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk32'
+  Clock period: 6.026ns (frequency: 165.961MHz)
+  Total number of paths / destination ports: 19434 / 1629
+-------------------------------------------------------------------------
+Delay:               6.026ns (Levels of Logic = 10)
+  Source:            count_12 (FF)
+  Destination:       done<19>2_FRB (FF)
+  Source Clock:      clk32 rising
+  Destination Clock: clk32 rising
+
+  Data Path: count_12 to done<19>2_FRB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.525   1.196  count_12 (count_12)
+     LUT6:I1->O           19   0.254   1.261  done<19>3 (done<19>2)
+     LUT6:I5->O            1   0.254   0.681  wait_1_inv1 (wait_1_inv)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_cy<0> (Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_cy<1> (Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_cy<2> (Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_cy<3> (Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_cy<4> (Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_cy<5> (Mcount_count_cy<5>)
+     XORCY:CI->O           2   0.206   1.181  Mcount_count_xor<6> (Mcount_count6)
+     LUT6:I0->O            1   0.254   0.000  done<19>2 (N242)
+     FDRE:D                    0.074          done<19>2_FRB
+    ----------------------------------------
+    Total                      6.026ns (1.707ns logic, 4.319ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk32'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.019ns (Levels of Logic = 2)
+  Source:            cpu_reset (PAD)
+  Destination:       int_rst (FF)
+  Destination Clock: clk32 rising
+
+  Data Path: cpu_reset to int_rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  cpu_reset_IBUF (cpu_reset_IBUF)
+     INV:I->O              1   0.255   0.681  cpu_reset_INV_22_o1_INV_0 (cpu_reset_INV_22_o)
+     FD:D                      0.074          int_rst
+    ----------------------------------------
+    Total                      3.019ns (1.657ns logic, 1.362ns route)
+                                       (54.9% logic, 45.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk32'
+  Total number of paths / destination ports: 15 / 10
+-------------------------------------------------------------------------
+Offset:              5.553ns (Levels of Logic = 2)
+  Source:            serial_tx_BRB0 (FF)
+  Destination:       serial_tx (PAD)
+  Source Clock:      clk32 rising
+
+  Data Path: serial_tx_BRB0 to serial_tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.525   1.137  serial_tx_BRB0 (serial_tx_BRB0)
+     LUT6:I0->O            2   0.254   0.725  serial_tx_glue_rst (serial_tx_OBUF)
+     OBUF:I->O                 2.912          serial_tx_OBUF (serial_tx)
+    ----------------------------------------
+    Total                      5.553ns (3.691ns logic, 1.862ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk32
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk32          |    6.026|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.71 secs
+ 
+--> 
+
+
+Total memory usage is 390548 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   67 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

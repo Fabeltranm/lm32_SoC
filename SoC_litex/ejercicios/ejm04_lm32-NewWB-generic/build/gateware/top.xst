@@ -1,0 +1,10 @@
+run
+-ifn top.prj
+-top top
+-ifmt MIXED
+-use_new_parser yes
+-opt_mode SPEED
+-register_balancing yes
+-ofn top.ngc
+-p xc6slx9-TQG144-2
+-vlgincdir {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl }

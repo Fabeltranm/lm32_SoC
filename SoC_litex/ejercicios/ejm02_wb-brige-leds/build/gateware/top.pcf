@@ -1,0 +1,523 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Feb 20 16:27:48 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk32" LOCATE = SITE "P126" LEVEL 1;
+COMP "cpu_reset" LOCATE = SITE "P87" LEVEL 1;
+COMP "serial_rx" LOCATE = SITE "P101" LEVEL 1;
+COMP "serial_tx" LOCATE = SITE "P105" LEVEL 1;
+COMP "user_led0" LOCATE = SITE "P24" LEVEL 1;
+COMP "user_led1" LOCATE = SITE "P27" LEVEL 1;
+COMP "user_led2" LOCATE = SITE "P32" LEVEL 1;
+COMP "user_led3" LOCATE = SITE "P34" LEVEL 1;
+COMP "user_led4" LOCATE = SITE "P61" LEVEL 1;
+COMP "user_led5" LOCATE = SITE "P74" LEVEL 1;
+COMP "user_led6" LOCATE = SITE "P62" LEVEL 1;
+COMP "user_led7" LOCATE = SITE "P78" LEVEL 1;
+COMP "user_led8" LOCATE = SITE "P80" LEVEL 1;
+PIN Mram_mem2_pins<10> = BEL "Mram_mem2" PINNAME CLKA;
+PIN Mram_mem1_pins<10> = BEL "Mram_mem1" PINNAME CLKA;
+TIMEGRP PRDclk32 = BEL "regs0" BEL "int_rst" BEL "regs1" BEL
+        "basesoc_bus_wishbone_dat_r_1" BEL "basesoc_bus_wishbone_dat_r_2" BEL
+        "basesoc_bus_wishbone_dat_r_3" BEL "basesoc_bus_wishbone_dat_r_4" BEL
+        "basesoc_bus_wishbone_dat_r_5" BEL "basesoc_bus_wishbone_dat_r_6" BEL
+        "basesoc_bus_wishbone_dat_r_7" BEL "basesoc_bus_wishbone_dat_r_8" BEL
+        "basesoc_bus_wishbone_dat_r_9" BEL "basesoc_bus_wishbone_dat_r_10" BEL
+        "basesoc_bus_wishbone_dat_r_11" BEL "basesoc_bus_wishbone_dat_r_12"
+        BEL "basesoc_bus_wishbone_dat_r_13" BEL
+        "basesoc_bus_wishbone_dat_r_14" BEL "basesoc_bus_wishbone_dat_r_15"
+        BEL "basesoc_bus_wishbone_dat_r_16" BEL
+        "basesoc_bus_wishbone_dat_r_17" BEL "basesoc_bus_wishbone_dat_r_18"
+        BEL "basesoc_bus_wishbone_dat_r_19" BEL
+        "basesoc_bus_wishbone_dat_r_20" BEL "basesoc_bus_wishbone_dat_r_21"
+        BEL "basesoc_bus_wishbone_dat_r_22" BEL
+        "basesoc_bus_wishbone_dat_r_23" BEL "basesoc_bus_wishbone_dat_r_24"
+        BEL "basesoc_bus_wishbone_dat_r_25" BEL
+        "basesoc_bus_wishbone_dat_r_26" BEL "basesoc_bus_wishbone_dat_r_27"
+        BEL "basesoc_bus_wishbone_dat_r_28" BEL
+        "basesoc_bus_wishbone_dat_r_29" BEL "basesoc_bus_wishbone_dat_r_30"
+        BEL "basesoc_bus_wishbone_dat_r_31" BEL "sel_r" BEL
+        "uartwishbonebridge_rx_r" BEL "uartwishbonebridge_rx_reg_0" BEL
+        "uartwishbonebridge_rx_reg_1" BEL "uartwishbonebridge_rx_reg_2" BEL
+        "uartwishbonebridge_rx_reg_3" BEL "uartwishbonebridge_rx_reg_4" BEL
+        "uartwishbonebridge_rx_reg_5" BEL "uartwishbonebridge_rx_reg_6" BEL
+        "uartwishbonebridge_rx_reg_7" BEL "uartwishbonebridge_sink_ready" BEL
+        "uartwishbonebridge_phase_accumulator_tx_1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_2" BEL
+        "uartwishbonebridge_phase_accumulator_tx_3" BEL
+        "uartwishbonebridge_phase_accumulator_tx_4" BEL
+        "uartwishbonebridge_phase_accumulator_tx_5" BEL
+        "uartwishbonebridge_phase_accumulator_tx_6" BEL
+        "uartwishbonebridge_phase_accumulator_tx_7" BEL
+        "uartwishbonebridge_phase_accumulator_tx_8" BEL
+        "uartwishbonebridge_phase_accumulator_tx_9" BEL
+        "uartwishbonebridge_phase_accumulator_tx_10" BEL
+        "uartwishbonebridge_phase_accumulator_tx_11" BEL
+        "uartwishbonebridge_phase_accumulator_tx_12" BEL
+        "uartwishbonebridge_phase_accumulator_tx_13" BEL
+        "uartwishbonebridge_phase_accumulator_tx_14" BEL
+        "uartwishbonebridge_phase_accumulator_tx_15" BEL
+        "uartwishbonebridge_phase_accumulator_tx_16" BEL
+        "uartwishbonebridge_phase_accumulator_tx_17" BEL
+        "uartwishbonebridge_phase_accumulator_tx_19" BEL
+        "uartwishbonebridge_phase_accumulator_tx_21" BEL
+        "uartwishbonebridge_phase_accumulator_tx_22" BEL
+        "uartwishbonebridge_uart_clk_txen" BEL
+        "uartwishbonebridge_phase_accumulator_rx_1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_2" BEL
+        "uartwishbonebridge_phase_accumulator_rx_3" BEL
+        "uartwishbonebridge_phase_accumulator_rx_4" BEL
+        "uartwishbonebridge_phase_accumulator_rx_5" BEL
+        "uartwishbonebridge_phase_accumulator_rx_6" BEL
+        "uartwishbonebridge_phase_accumulator_rx_7" BEL
+        "uartwishbonebridge_phase_accumulator_rx_8" BEL
+        "uartwishbonebridge_phase_accumulator_rx_9" BEL
+        "uartwishbonebridge_phase_accumulator_rx_10" BEL
+        "uartwishbonebridge_phase_accumulator_rx_11" BEL
+        "uartwishbonebridge_phase_accumulator_rx_12" BEL
+        "uartwishbonebridge_phase_accumulator_rx_13" BEL
+        "uartwishbonebridge_phase_accumulator_rx_14" BEL
+        "uartwishbonebridge_phase_accumulator_rx_15" BEL
+        "uartwishbonebridge_phase_accumulator_rx_16" BEL
+        "uartwishbonebridge_phase_accumulator_rx_17" BEL
+        "uartwishbonebridge_phase_accumulator_rx_19" BEL
+        "uartwishbonebridge_phase_accumulator_rx_21" BEL
+        "uartwishbonebridge_phase_accumulator_rx_22" BEL
+        "uartwishbonebridge_source_payload_data_0" BEL
+        "uartwishbonebridge_source_payload_data_1" BEL
+        "uartwishbonebridge_source_payload_data_2" BEL
+        "uartwishbonebridge_source_payload_data_3" BEL
+        "uartwishbonebridge_source_payload_data_4" BEL
+        "uartwishbonebridge_source_payload_data_5" BEL
+        "uartwishbonebridge_source_payload_data_6" BEL
+        "uartwishbonebridge_source_payload_data_7" BEL
+        "uartwishbonebridge_uart_clk_rxen" BEL
+        "uartwishbonebridge_source_valid" BEL "uartwishbonebridge_cmd_0" BEL
+        "uartwishbonebridge_cmd_1" BEL "uartwishbonebridge_cmd_6" BEL
+        "uartwishbonebridge_cmd_7" BEL "uartwishbonebridge_length_0" BEL
+        "uartwishbonebridge_length_1" BEL "uartwishbonebridge_length_2" BEL
+        "uartwishbonebridge_length_3" BEL "uartwishbonebridge_address_0" BEL
+        "uartwishbonebridge_address_1" BEL "uartwishbonebridge_address_2" BEL
+        "uartwishbonebridge_address_3" BEL "uartwishbonebridge_address_4" BEL
+        "uartwishbonebridge_address_5" BEL "uartwishbonebridge_address_6" BEL
+        "uartwishbonebridge_address_7" BEL "uartwishbonebridge_address_8" BEL
+        "uartwishbonebridge_address_9" BEL "uartwishbonebridge_address_10" BEL
+        "uartwishbonebridge_address_11" BEL "uartwishbonebridge_address_12"
+        BEL "uartwishbonebridge_address_13" BEL
+        "uartwishbonebridge_address_14" BEL "uartwishbonebridge_address_15"
+        BEL "uartwishbonebridge_address_16" BEL
+        "uartwishbonebridge_address_17" BEL "uartwishbonebridge_address_18"
+        BEL "uartwishbonebridge_address_19" BEL
+        "uartwishbonebridge_address_20" BEL "uartwishbonebridge_address_21"
+        BEL "uartwishbonebridge_address_22" BEL
+        "uartwishbonebridge_address_23" BEL "uartwishbonebridge_address_24"
+        BEL "uartwishbonebridge_address_25" BEL
+        "uartwishbonebridge_address_26" BEL "uartwishbonebridge_address_27"
+        BEL "uartwishbonebridge_address_28" BEL "basesoc_interface_dat_w_0"
+        BEL "basesoc_interface_dat_w_1" BEL "basesoc_interface_dat_w_2" BEL
+        "basesoc_interface_dat_w_3" BEL "basesoc_interface_dat_w_4" BEL
+        "basesoc_interface_dat_w_5" BEL "basesoc_interface_dat_w_6" BEL
+        "basesoc_interface_dat_w_7" BEL "basesoc_interface_dat_w_8" BEL
+        "basesoc_interface_dat_w_9" BEL "basesoc_interface_dat_w_10" BEL
+        "basesoc_interface_dat_w_11" BEL "basesoc_interface_dat_w_12" BEL
+        "basesoc_interface_dat_w_13" BEL "basesoc_interface_dat_w_14" BEL
+        "basesoc_interface_dat_w_15" BEL "basesoc_interface_dat_w_16" BEL
+        "basesoc_interface_dat_w_17" BEL "basesoc_interface_dat_w_18" BEL
+        "basesoc_interface_dat_w_19" BEL "basesoc_interface_dat_w_20" BEL
+        "basesoc_interface_dat_w_21" BEL "basesoc_interface_dat_w_22" BEL
+        "basesoc_interface_dat_w_23" BEL "basesoc_interface_dat_w_24" BEL
+        "basesoc_interface_dat_w_25" BEL "basesoc_interface_dat_w_26" BEL
+        "basesoc_interface_dat_w_27" BEL "basesoc_interface_dat_w_28" BEL
+        "basesoc_interface_dat_w_29" BEL "basesoc_interface_dat_w_30" BEL
+        "basesoc_interface_dat_w_31" BEL "leds_storage_full_0" BEL
+        "leds_storage_full_1" BEL "leds_storage_full_2" BEL
+        "leds_storage_full_3" BEL "leds_storage_full_4" BEL
+        "leds_storage_full_5" BEL "leds_storage_full_6" BEL
+        "leds_storage_full_7" BEL "leds_storage_full_8" BEL
+        "basesoc_load_storage_full_0" BEL "basesoc_load_storage_full_1" BEL
+        "basesoc_load_storage_full_2" BEL "basesoc_load_storage_full_3" BEL
+        "basesoc_load_storage_full_4" BEL "basesoc_load_storage_full_5" BEL
+        "basesoc_load_storage_full_6" BEL "basesoc_load_storage_full_7" BEL
+        "basesoc_load_storage_full_8" BEL "basesoc_load_storage_full_9" BEL
+        "basesoc_load_storage_full_10" BEL "basesoc_load_storage_full_11" BEL
+        "basesoc_load_storage_full_12" BEL "basesoc_load_storage_full_13" BEL
+        "basesoc_load_storage_full_14" BEL "basesoc_load_storage_full_15" BEL
+        "basesoc_load_storage_full_16" BEL "basesoc_load_storage_full_17" BEL
+        "basesoc_load_storage_full_18" BEL "basesoc_load_storage_full_19" BEL
+        "basesoc_load_storage_full_20" BEL "basesoc_load_storage_full_21" BEL
+        "basesoc_load_storage_full_22" BEL "basesoc_load_storage_full_23" BEL
+        "basesoc_load_storage_full_24" BEL "basesoc_load_storage_full_25" BEL
+        "basesoc_load_storage_full_26" BEL "basesoc_load_storage_full_27" BEL
+        "basesoc_load_storage_full_28" BEL "basesoc_load_storage_full_29" BEL
+        "basesoc_load_storage_full_30" BEL "basesoc_load_storage_full_31" BEL
+        "basesoc_reload_storage_full_0" BEL "basesoc_reload_storage_full_1"
+        BEL "basesoc_reload_storage_full_2" BEL
+        "basesoc_reload_storage_full_3" BEL "basesoc_reload_storage_full_4"
+        BEL "basesoc_reload_storage_full_5" BEL
+        "basesoc_reload_storage_full_6" BEL "basesoc_reload_storage_full_7"
+        BEL "basesoc_reload_storage_full_8" BEL
+        "basesoc_reload_storage_full_9" BEL "basesoc_reload_storage_full_10"
+        BEL "basesoc_reload_storage_full_11" BEL
+        "basesoc_reload_storage_full_12" BEL "basesoc_reload_storage_full_13"
+        BEL "basesoc_reload_storage_full_14" BEL
+        "basesoc_reload_storage_full_15" BEL "basesoc_reload_storage_full_16"
+        BEL "basesoc_reload_storage_full_17" BEL
+        "basesoc_reload_storage_full_18" BEL "basesoc_reload_storage_full_19"
+        BEL "basesoc_reload_storage_full_20" BEL
+        "basesoc_reload_storage_full_21" BEL "basesoc_reload_storage_full_22"
+        BEL "basesoc_reload_storage_full_23" BEL
+        "basesoc_reload_storage_full_24" BEL "basesoc_reload_storage_full_25"
+        BEL "basesoc_reload_storage_full_26" BEL
+        "basesoc_reload_storage_full_27" BEL "basesoc_reload_storage_full_28"
+        BEL "basesoc_reload_storage_full_29" BEL
+        "basesoc_reload_storage_full_30" BEL "basesoc_reload_storage_full_31"
+        BEL "basesoc_storage_full_0" BEL "basesoc_storage_full_1" BEL
+        "basesoc_storage_full_2" BEL "basesoc_storage_full_3" BEL
+        "basesoc_storage_full_4" BEL "basesoc_storage_full_5" BEL
+        "basesoc_storage_full_6" BEL "basesoc_storage_full_7" BEL
+        "basesoc_storage_full_8" BEL "basesoc_storage_full_9" BEL
+        "basesoc_storage_full_10" BEL "basesoc_storage_full_11" BEL
+        "basesoc_storage_full_12" BEL "basesoc_storage_full_13" BEL
+        "basesoc_storage_full_14" BEL "basesoc_storage_full_15" BEL
+        "basesoc_storage_full_16" BEL "basesoc_storage_full_17" BEL
+        "basesoc_storage_full_18" BEL "basesoc_storage_full_19" BEL
+        "basesoc_storage_full_20" BEL "basesoc_storage_full_21" BEL
+        "basesoc_storage_full_22" BEL "basesoc_storage_full_23" BEL
+        "basesoc_storage_full_24" BEL "basesoc_storage_full_25" BEL
+        "basesoc_storage_full_26" BEL "basesoc_storage_full_27" BEL
+        "basesoc_storage_full_28" BEL "basesoc_storage_full_29" BEL
+        "basesoc_storage_full_30" BEL "basesoc_storage_full_31" BEL
+        "basesoc_value_0" BEL "basesoc_value_1" BEL "basesoc_value_2" BEL
+        "basesoc_value_3" BEL "basesoc_value_4" BEL "basesoc_value_5" BEL
+        "basesoc_value_6" BEL "basesoc_value_7" BEL "basesoc_value_8" BEL
+        "basesoc_value_9" BEL "basesoc_value_10" BEL "basesoc_value_11" BEL
+        "basesoc_value_12" BEL "basesoc_value_13" BEL "basesoc_value_14" BEL
+        "basesoc_value_15" BEL "basesoc_value_16" BEL "basesoc_value_17" BEL
+        "basesoc_value_18" BEL "basesoc_value_19" BEL "basesoc_value_20" BEL
+        "basesoc_value_21" BEL "basesoc_value_22" BEL "basesoc_value_23" BEL
+        "basesoc_value_24" BEL "basesoc_value_25" BEL "basesoc_value_26" BEL
+        "basesoc_value_27" BEL "basesoc_value_28" BEL "basesoc_value_29" BEL
+        "basesoc_value_30" BEL "basesoc_value_31" BEL
+        "interface1_bank_bus_dat_r_1" BEL "interface1_bank_bus_dat_r_2" BEL
+        "interface1_bank_bus_dat_r_3" BEL "interface1_bank_bus_dat_r_4" BEL
+        "interface1_bank_bus_dat_r_5" BEL "interface1_bank_bus_dat_r_6" BEL
+        "interface1_bank_bus_dat_r_7" BEL "interface1_bank_bus_dat_r_8" BEL
+        "basesoc_value_status_0" BEL "basesoc_value_status_1" BEL
+        "basesoc_value_status_2" BEL "basesoc_value_status_3" BEL
+        "basesoc_value_status_4" BEL "basesoc_value_status_5" BEL
+        "basesoc_value_status_6" BEL "basesoc_value_status_7" BEL
+        "basesoc_value_status_8" BEL "basesoc_value_status_9" BEL
+        "basesoc_value_status_10" BEL "basesoc_value_status_11" BEL
+        "basesoc_value_status_12" BEL "basesoc_value_status_13" BEL
+        "basesoc_value_status_14" BEL "basesoc_value_status_15" BEL
+        "basesoc_value_status_16" BEL "basesoc_value_status_17" BEL
+        "basesoc_value_status_18" BEL "basesoc_value_status_19" BEL
+        "basesoc_value_status_20" BEL "basesoc_value_status_21" BEL
+        "basesoc_value_status_22" BEL "basesoc_value_status_23" BEL
+        "basesoc_value_status_24" BEL "basesoc_value_status_25" BEL
+        "basesoc_value_status_26" BEL "basesoc_value_status_27" BEL
+        "basesoc_value_status_28" BEL "basesoc_value_status_29" BEL
+        "basesoc_value_status_30" BEL "basesoc_value_status_31" BEL
+        "basesoc_interface_adr_0" BEL "basesoc_interface_adr_1" BEL
+        "basesoc_interface_adr_2" BEL "basesoc_interface_adr_3" BEL
+        "basesoc_interface_adr_4" BEL "basesoc_interface_adr_5" BEL
+        "basesoc_interface_adr_9" BEL "basesoc_interface_adr_10" BEL
+        "basesoc_interface_adr_11" BEL "basesoc_interface_adr_12" BEL
+        "basesoc_interface_adr_13" BEL "memadr_1_0" BEL "memadr_1_1" BEL
+        "memadr_1_2" BEL "memadr_1_3" BEL "memadr_1_4" BEL "memadr_1_5" BEL
+        "interface0_bank_bus_dat_r_1" BEL "interface0_bank_bus_dat_r_2" BEL
+        "interface0_bank_bus_dat_r_3" BEL "interface0_bank_bus_dat_r_4" BEL
+        "interface0_bank_bus_dat_r_5" BEL "interface0_bank_bus_dat_r_6" BEL
+        "interface0_bank_bus_dat_r_7" BEL "interface0_bank_bus_dat_r_8" BEL
+        "interface0_bank_bus_dat_r_9" BEL "interface0_bank_bus_dat_r_10" BEL
+        "interface0_bank_bus_dat_r_11" BEL "interface0_bank_bus_dat_r_12" BEL
+        "interface0_bank_bus_dat_r_13" BEL "interface0_bank_bus_dat_r_14" BEL
+        "interface0_bank_bus_dat_r_15" BEL "interface0_bank_bus_dat_r_16" BEL
+        "interface0_bank_bus_dat_r_17" BEL "interface0_bank_bus_dat_r_18" BEL
+        "interface0_bank_bus_dat_r_19" BEL "interface0_bank_bus_dat_r_20" BEL
+        "interface0_bank_bus_dat_r_21" BEL "interface0_bank_bus_dat_r_22" BEL
+        "interface0_bank_bus_dat_r_23" BEL "interface0_bank_bus_dat_r_24" BEL
+        "interface0_bank_bus_dat_r_25" BEL "interface0_bank_bus_dat_r_26" BEL
+        "interface0_bank_bus_dat_r_27" BEL "interface0_bank_bus_dat_r_28" BEL
+        "interface0_bank_bus_dat_r_29" BEL "interface0_bank_bus_dat_r_30" BEL
+        "interface0_bank_bus_dat_r_31" BEL "interface2_bank_bus_dat_r_1" BEL
+        "interface2_bank_bus_dat_r_2" BEL "interface2_bank_bus_dat_r_3" BEL
+        "interface2_bank_bus_dat_r_4" BEL "interface2_bank_bus_dat_r_5" BEL
+        "interface2_bank_bus_dat_r_6" BEL "interface2_bank_bus_dat_r_7" BEL
+        "interface2_bank_bus_dat_r_8" BEL "interface2_bank_bus_dat_r_9" BEL
+        "interface2_bank_bus_dat_r_10" BEL "interface2_bank_bus_dat_r_11" BEL
+        "interface2_bank_bus_dat_r_12" BEL "interface2_bank_bus_dat_r_13" BEL
+        "interface2_bank_bus_dat_r_14" BEL "interface2_bank_bus_dat_r_15" BEL
+        "interface2_bank_bus_dat_r_16" BEL "interface2_bank_bus_dat_r_17" BEL
+        "interface2_bank_bus_dat_r_18" BEL "interface2_bank_bus_dat_r_19" BEL
+        "interface2_bank_bus_dat_r_20" BEL "interface2_bank_bus_dat_r_21" BEL
+        "interface2_bank_bus_dat_r_22" BEL "interface2_bank_bus_dat_r_23" BEL
+        "interface2_bank_bus_dat_r_24" BEL "interface2_bank_bus_dat_r_25" BEL
+        "interface2_bank_bus_dat_r_26" BEL "interface2_bank_bus_dat_r_27" BEL
+        "interface2_bank_bus_dat_r_28" BEL "interface2_bank_bus_dat_r_29" BEL
+        "interface2_bank_bus_dat_r_30" BEL "interface2_bank_bus_dat_r_31" BEL
+        "count_0" BEL "uartwishbonebridge_tx_bitcount_0" BEL
+        "uartwishbonebridge_tx_bitcount_1" BEL
+        "uartwishbonebridge_tx_bitcount_2" BEL
+        "uartwishbonebridge_tx_bitcount_3" BEL "count_3" BEL "count_1" BEL
+        "count_2" BEL "count_4" BEL "count_5" BEL "count_8" BEL "count_6" BEL
+        "count_7" BEL "count_11" BEL "count_9" BEL "count_10" BEL "count_14"
+        BEL "count_12" BEL "count_13" BEL "count_15" BEL "count_16" BEL
+        "count_19" BEL "count_17" BEL "count_18" BEL
+        "uartwishbonebridge_count_1" BEL "uartwishbonebridge_rx_bitcount_0"
+        BEL "uartwishbonebridge_rx_bitcount_1" BEL
+        "uartwishbonebridge_rx_bitcount_2" BEL
+        "uartwishbonebridge_rx_bitcount_3" BEL "uartwishbonebridge_count_0"
+        BEL "uartwishbonebridge_count_4" BEL "uartwishbonebridge_count_2" BEL
+        "uartwishbonebridge_count_3" BEL "uartwishbonebridge_count_5" BEL
+        "uartwishbonebridge_count_6" BEL "uartwishbonebridge_count_9" BEL
+        "uartwishbonebridge_count_7" BEL "uartwishbonebridge_count_8" BEL
+        "uartwishbonebridge_count_12" BEL "uartwishbonebridge_count_10" BEL
+        "uartwishbonebridge_count_11" BEL "uartwishbonebridge_count_15" BEL
+        "uartwishbonebridge_count_13" BEL "uartwishbonebridge_count_14" BEL
+        "uartwishbonebridge_count_16" BEL "uartwishbonebridge_count_17" BEL
+        "uartwishbonebridge_count_20" BEL "uartwishbonebridge_count_18" BEL
+        "uartwishbonebridge_count_19" BEL "uartwishbonebridge_count_21" BEL
+        "state_FSM_FFd1" BEL "state_FSM_FFd3" BEL "state_FSM_FFd2" BEL
+        "basesoc_bus_errors_0" BEL "basesoc_bus_errors_1" BEL
+        "basesoc_bus_errors_2" BEL "basesoc_bus_errors_3" BEL
+        "basesoc_bus_errors_4" BEL "basesoc_bus_errors_5" BEL
+        "basesoc_bus_errors_6" BEL "basesoc_bus_errors_7" BEL
+        "basesoc_bus_errors_8" BEL "basesoc_bus_errors_9" BEL
+        "basesoc_bus_errors_10" BEL "basesoc_bus_errors_11" BEL
+        "basesoc_bus_errors_12" BEL "basesoc_bus_errors_13" BEL
+        "basesoc_bus_errors_14" BEL "basesoc_bus_errors_15" BEL
+        "basesoc_bus_errors_16" BEL "basesoc_bus_errors_17" BEL
+        "basesoc_bus_errors_18" BEL "basesoc_bus_errors_19" BEL
+        "basesoc_bus_errors_20" BEL "basesoc_bus_errors_21" BEL
+        "basesoc_bus_errors_22" BEL "basesoc_bus_errors_23" BEL
+        "basesoc_bus_errors_24" BEL "basesoc_bus_errors_25" BEL
+        "basesoc_bus_errors_26" BEL "basesoc_bus_errors_27" BEL
+        "basesoc_bus_errors_28" BEL "basesoc_bus_errors_29" BEL
+        "basesoc_bus_errors_30" BEL "basesoc_bus_errors_31" BEL
+        "uartwishbonebridge_word_counter_0" BEL
+        "uartwishbonebridge_word_counter_1" BEL
+        "uartwishbonebridge_word_counter_2" BEL "uartwishbonebridge_tx_busy"
+        BEL "uartwishbonebridge_rx_busy" BEL "basesoc_bus_wishbone_ack" BEL
+        "basesoc_sram_bus_ack" BEL "basesoc_interface_we" BEL
+        "basesoc_counter_1" BEL "uartwishbonebridge_byte_counter_0" BEL
+        "uartwishbonebridge_byte_counter_1" BEL
+        "uartwishbonebridge_byte_counter_2" BEL "done<19>1_FRB" BEL
+        "done<19>2_FRB" BEL "uartwishbonebridge_data_0_BRB1" BEL
+        "uartwishbonebridge_data_0_BRB2" BEL "uartwishbonebridge_data_0_BRB3"
+        BEL "uartwishbonebridge_data_0_BRB4" BEL
+        "uartwishbonebridge_data_0_BRB5" BEL "uartwishbonebridge_data_1_BRB1"
+        BEL "uartwishbonebridge_data_1_BRB2" BEL
+        "uartwishbonebridge_data_1_BRB3" BEL "uartwishbonebridge_data_1_BRB4"
+        BEL "uartwishbonebridge_data_2_BRB1" BEL
+        "uartwishbonebridge_data_2_BRB2" BEL "uartwishbonebridge_data_2_BRB3"
+        BEL "uartwishbonebridge_data_2_BRB4" BEL
+        "uartwishbonebridge_data_3_BRB1" BEL "uartwishbonebridge_data_3_BRB2"
+        BEL "uartwishbonebridge_data_3_BRB3" BEL
+        "uartwishbonebridge_data_3_BRB4" BEL "uartwishbonebridge_data_4_BRB1"
+        BEL "uartwishbonebridge_data_4_BRB2" BEL
+        "uartwishbonebridge_data_4_BRB3" BEL "uartwishbonebridge_data_4_BRB4"
+        BEL "uartwishbonebridge_data_5_BRB1" BEL
+        "uartwishbonebridge_data_5_BRB2" BEL "uartwishbonebridge_data_5_BRB3"
+        BEL "uartwishbonebridge_data_5_BRB4" BEL
+        "uartwishbonebridge_data_6_BRB1" BEL "uartwishbonebridge_data_6_BRB2"
+        BEL "uartwishbonebridge_data_6_BRB3" BEL
+        "uartwishbonebridge_data_6_BRB4" BEL "uartwishbonebridge_data_7_BRB1"
+        BEL "uartwishbonebridge_data_7_BRB2" BEL
+        "uartwishbonebridge_data_7_BRB3" BEL "uartwishbonebridge_data_7_BRB4"
+        BEL "uartwishbonebridge_data_8_BRB1" BEL
+        "uartwishbonebridge_data_8_BRB2" BEL "uartwishbonebridge_data_8_BRB3"
+        BEL "uartwishbonebridge_data_8_BRB4" BEL
+        "uartwishbonebridge_data_9_BRB1" BEL "uartwishbonebridge_data_9_BRB2"
+        BEL "uartwishbonebridge_data_9_BRB3" BEL
+        "uartwishbonebridge_data_9_BRB4" BEL "uartwishbonebridge_data_10_BRB1"
+        BEL "uartwishbonebridge_data_10_BRB2" BEL
+        "uartwishbonebridge_data_10_BRB3" BEL
+        "uartwishbonebridge_data_10_BRB4" BEL
+        "uartwishbonebridge_data_11_BRB1" BEL
+        "uartwishbonebridge_data_11_BRB2" BEL
+        "uartwishbonebridge_data_11_BRB3" BEL
+        "uartwishbonebridge_data_11_BRB4" BEL
+        "uartwishbonebridge_data_12_BRB1" BEL
+        "uartwishbonebridge_data_12_BRB2" BEL
+        "uartwishbonebridge_data_12_BRB3" BEL
+        "uartwishbonebridge_data_12_BRB4" BEL
+        "uartwishbonebridge_data_13_BRB1" BEL
+        "uartwishbonebridge_data_13_BRB2" BEL
+        "uartwishbonebridge_data_13_BRB3" BEL
+        "uartwishbonebridge_data_13_BRB4" BEL
+        "uartwishbonebridge_data_14_BRB1" BEL
+        "uartwishbonebridge_data_14_BRB2" BEL
+        "uartwishbonebridge_data_14_BRB3" BEL
+        "uartwishbonebridge_data_14_BRB4" BEL
+        "uartwishbonebridge_data_15_BRB1" BEL
+        "uartwishbonebridge_data_15_BRB2" BEL
+        "uartwishbonebridge_data_15_BRB3" BEL
+        "uartwishbonebridge_data_15_BRB4" BEL
+        "uartwishbonebridge_data_16_BRB1" BEL
+        "uartwishbonebridge_data_16_BRB2" BEL
+        "uartwishbonebridge_data_16_BRB3" BEL
+        "uartwishbonebridge_data_16_BRB4" BEL
+        "uartwishbonebridge_data_17_BRB1" BEL
+        "uartwishbonebridge_data_17_BRB2" BEL
+        "uartwishbonebridge_data_17_BRB3" BEL
+        "uartwishbonebridge_data_17_BRB4" BEL
+        "uartwishbonebridge_data_18_BRB1" BEL
+        "uartwishbonebridge_data_18_BRB2" BEL
+        "uartwishbonebridge_data_18_BRB3" BEL
+        "uartwishbonebridge_data_18_BRB4" BEL
+        "uartwishbonebridge_data_19_BRB1" BEL
+        "uartwishbonebridge_data_19_BRB2" BEL
+        "uartwishbonebridge_data_19_BRB3" BEL
+        "uartwishbonebridge_data_19_BRB4" BEL
+        "uartwishbonebridge_data_20_BRB1" BEL
+        "uartwishbonebridge_data_20_BRB2" BEL
+        "uartwishbonebridge_data_20_BRB3" BEL
+        "uartwishbonebridge_data_20_BRB4" BEL
+        "uartwishbonebridge_data_21_BRB1" BEL
+        "uartwishbonebridge_data_21_BRB2" BEL
+        "uartwishbonebridge_data_21_BRB3" BEL
+        "uartwishbonebridge_data_21_BRB4" BEL
+        "uartwishbonebridge_data_22_BRB1" BEL
+        "uartwishbonebridge_data_22_BRB2" BEL
+        "uartwishbonebridge_data_22_BRB3" BEL
+        "uartwishbonebridge_data_22_BRB4" BEL
+        "uartwishbonebridge_data_23_BRB1" BEL
+        "uartwishbonebridge_data_23_BRB2" BEL
+        "uartwishbonebridge_data_23_BRB3" BEL
+        "uartwishbonebridge_data_23_BRB4" BEL
+        "uartwishbonebridge_data_24_BRB1" BEL
+        "uartwishbonebridge_data_24_BRB2" BEL
+        "uartwishbonebridge_data_24_BRB3" BEL
+        "uartwishbonebridge_data_24_BRB4" BEL
+        "uartwishbonebridge_data_25_BRB1" BEL
+        "uartwishbonebridge_data_25_BRB2" BEL
+        "uartwishbonebridge_data_25_BRB3" BEL
+        "uartwishbonebridge_data_25_BRB4" BEL
+        "uartwishbonebridge_data_26_BRB1" BEL
+        "uartwishbonebridge_data_26_BRB2" BEL
+        "uartwishbonebridge_data_26_BRB3" BEL
+        "uartwishbonebridge_data_26_BRB4" BEL
+        "uartwishbonebridge_data_27_BRB1" BEL
+        "uartwishbonebridge_data_27_BRB2" BEL
+        "uartwishbonebridge_data_27_BRB3" BEL
+        "uartwishbonebridge_data_27_BRB4" BEL
+        "uartwishbonebridge_data_28_BRB1" BEL
+        "uartwishbonebridge_data_28_BRB2" BEL
+        "uartwishbonebridge_data_28_BRB3" BEL
+        "uartwishbonebridge_data_28_BRB4" BEL
+        "uartwishbonebridge_data_29_BRB1" BEL
+        "uartwishbonebridge_data_29_BRB2" BEL
+        "uartwishbonebridge_data_29_BRB3" BEL
+        "uartwishbonebridge_data_29_BRB4" BEL
+        "uartwishbonebridge_data_30_BRB1" BEL
+        "uartwishbonebridge_data_30_BRB2" BEL
+        "uartwishbonebridge_data_30_BRB3" BEL
+        "uartwishbonebridge_data_30_BRB4" BEL
+        "uartwishbonebridge_data_31_BRB1" BEL
+        "uartwishbonebridge_data_31_BRB2" BEL
+        "uartwishbonebridge_data_31_BRB3" BEL
+        "uartwishbonebridge_data_31_BRB4" BEL
+        "uartwishbonebridge_phase_accumulator_tx_31_BRB0" BEL
+        "uartwishbonebridge_phase_accumulator_tx_31_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_31_BRB0" BEL
+        "uartwishbonebridge_phase_accumulator_rx_31_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_30_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_30_BRB0" BEL
+        "uartwishbonebridge_phase_accumulator_rx_30_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_29_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_29_BRB1" BEL
+        "slave_sel_r_0_BRB0" BEL "slave_sel_r_0_BRB1" BEL "slave_sel_r_0_BRB2"
+        BEL "slave_sel_r_1_BRB0" BEL "slave_sel_r_1_BRB2" BEL
+        "basesoc_counter_0_BRB0" BEL "basesoc_counter_0_BRB1" BEL
+        "basesoc_counter_0_BRB5" BEL
+        "uartwishbonebridge_phase_accumulator_tx_28_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_28_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_27_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_27_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_26_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_26_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_25_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_25_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_24_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_24_BRB1" BEL
+        "uartwishbonebridge_tx_reg_7_BRB0" BEL
+        "uartwishbonebridge_tx_reg_7_BRB1" BEL
+        "uartwishbonebridge_tx_reg_7_BRB3" BEL
+        "uartwishbonebridge_tx_reg_1_BRB2" BEL
+        "uartwishbonebridge_tx_reg_1_BRB4" BEL
+        "uartwishbonebridge_tx_reg_2_BRB2" BEL
+        "uartwishbonebridge_tx_reg_2_BRB4" BEL
+        "uartwishbonebridge_tx_reg_3_BRB2" BEL
+        "uartwishbonebridge_tx_reg_3_BRB4" BEL
+        "uartwishbonebridge_tx_reg_4_BRB2" BEL
+        "uartwishbonebridge_tx_reg_4_BRB4" BEL
+        "uartwishbonebridge_tx_reg_5_BRB2" BEL
+        "uartwishbonebridge_tx_reg_5_BRB4" BEL
+        "uartwishbonebridge_tx_reg_6_BRB2" BEL
+        "uartwishbonebridge_tx_reg_6_BRB4" BEL "basesoc_en_storage_full_BRB0"
+        BEL "basesoc_en_storage_full_BRB1" BEL "basesoc_en_storage_full_BRB2"
+        BEL "basesoc_en_storage_full_BRB4" BEL
+        "basesoc_eventmanager_storage_full_BRB0" BEL
+        "basesoc_eventmanager_storage_full_BRB1" BEL
+        "basesoc_zero_pending_BRB0" BEL "basesoc_zero_pending_BRB2" BEL
+        "basesoc_zero_pending_BRB4" BEL "basesoc_zero_pending_BRB5" BEL
+        "basesoc_zero_old_trigger_BRB0" BEL
+        "uartwishbonebridge_phase_accumulator_tx_20_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_20_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_23_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_23_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_tx_18_BRB1" BEL
+        "uartwishbonebridge_phase_accumulator_rx_18_BRB1" BEL
+        "basesoc_bus_wishbone_dat_r_0_BRB0" BEL
+        "basesoc_bus_wishbone_dat_r_0_BRB1" BEL
+        "basesoc_bus_wishbone_dat_r_0_BRB2" BEL
+        "basesoc_bus_wishbone_dat_r_0_BRB3" BEL
+        "basesoc_bus_wishbone_dat_r_0_BRB4" BEL
+        "uartwishbonebridge_tx_reg_7_BRB4" BEL
+        "uartwishbonebridge_tx_reg_7_BRB5" BEL
+        "uartwishbonebridge_tx_reg_7_BRB6" BEL
+        "uartwishbonebridge_tx_reg_7_BRB8" BEL
+        "uartwishbonebridge_tx_reg_7_BRB9" BEL
+        "uartwishbonebridge_tx_reg_2_BRB5" BEL
+        "uartwishbonebridge_tx_reg_2_BRB7" BEL
+        "uartwishbonebridge_tx_reg_2_BRB8" BEL
+        "uartwishbonebridge_tx_reg_3_BRB5" BEL
+        "uartwishbonebridge_tx_reg_3_BRB7" BEL
+        "uartwishbonebridge_tx_reg_3_BRB8" BEL
+        "uartwishbonebridge_tx_reg_4_BRB5" BEL
+        "uartwishbonebridge_tx_reg_4_BRB7" BEL
+        "uartwishbonebridge_tx_reg_4_BRB8" BEL
+        "uartwishbonebridge_tx_reg_5_BRB5" BEL
+        "uartwishbonebridge_tx_reg_5_BRB7" BEL
+        "uartwishbonebridge_tx_reg_5_BRB8" BEL
+        "uartwishbonebridge_tx_reg_6_BRB5" BEL
+        "uartwishbonebridge_tx_reg_6_BRB7" BEL
+        "uartwishbonebridge_tx_reg_6_BRB8" BEL
+        "interface1_bank_bus_dat_r_0_BRB0" BEL
+        "interface1_bank_bus_dat_r_0_BRB1" BEL
+        "interface0_bank_bus_dat_r_0_BRB0" BEL
+        "interface0_bank_bus_dat_r_0_BRB3" BEL
+        "interface0_bank_bus_dat_r_0_BRB4" BEL
+        "interface2_bank_bus_dat_r_0_BRB0" BEL
+        "interface2_bank_bus_dat_r_0_BRB3" BEL
+        "interface2_bank_bus_dat_r_0_BRB4" BEL
+        "interface2_bank_bus_dat_r_0_BRB5" BEL
+        "GND_1_o_uartwishbonebridge_length[7]_equal_35_o81_FRB" BEL
+        "state_FSM_FFd3-In3411_FRB" BEL "state_FSM_FFd2-In23_FRB" BEL
+        "basesoc_zero_clear1_SW0_FRB" BEL "uartwishbonebridge_tx_reg_0_BRB2"
+        BEL "uartwishbonebridge_tx_reg_0_BRB3" BEL
+        "uartwishbonebridge_tx_reg_0_BRB4" BEL "serial_tx_BRB0" BEL
+        "serial_tx_BRB1" BEL "serial_tx_BRB2" BEL "serial_tx_BRB3" BEL
+        "serial_tx_BRB4" BEL "serial_tx_BRB5" BEL
+        "uartwishbonebridge_tx_reg_1_BRB5" BEL
+        "uartwishbonebridge_tx_reg_1_BRB7" BEL
+        "uartwishbonebridge_tx_reg_1_BRB8" BEL "_n0844_inv1_FRB" BEL
+        "state_FSM_FFd3_1" BEL "state_FSM_FFd1_1" BEL "state_FSM_FFd2_1" BEL
+        "state_FSM_FFd3_2" BEL "basesoc_interface_adr_1_1" BEL
+        "basesoc_interface_we_1" BEL "clk32_BUFGP/BUFG" PIN
+        "Mram_mem2_pins<10>" PIN "Mram_mem1_pins<10>";
+TSclk32 = PERIOD TIMEGRP "PRDclk32" 31.25 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,13 @@
+NET "user_led1" LOC=P24 | IOSTANDARD=LVCMOS33; # user_led1:0
+NET "user_led2" LOC=P27 | IOSTANDARD=LVCMOS33; # user_led2:0
+NET "user_led3" LOC=P32 | IOSTANDARD=LVCMOS33; # user_led3:0
+NET "user_led4" LOC=P34 | IOSTANDARD=LVCMOS33; # user_led4:0
+NET "user_led5" LOC=P61 | IOSTANDARD=LVCMOS33; # user_led5:0
+NET "user_led6" LOC=P74 | IOSTANDARD=LVCMOS33; # user_led6:0
+NET "user_led7" LOC=P62 | IOSTANDARD=LVCMOS33; # user_led7:0
+NET "user_led8" LOC=P78 | IOSTANDARD=LVCMOS33; # user_led8:0
+NET "clk32" LOC=P126 | IOSTANDARD=LVCMOS33; # clk32:0
+
+
+NET "clk32" TNM_NET = "PRDclk32";
+TIMESPEC "TSclk32" = PERIOD "PRDclk32" 31.25 ns HIGH 50%;
