@@ -1,5 +1,11 @@
 # Interrupts
 
+TODO: introducción a interrupciones
+
+
+RECUERDE: las interrupciones son señales generadas por los periféricos con comunicación directa al procesador, y no están conectadas por medio del bus Wishbone. Las interrupciones son eventos generados por periféricos que requieres atención inmediata del del procesador
+
+
 ## Configuración en hardware
 
 Las interrupciones del periférico, desde litex, se administran con el módulo `EventManager()`. Por lo tanto, cada modulo, periférico, que interrumpe la unidad de control, debe contar con el submódulo:
@@ -30,8 +36,6 @@ class Timer(Module, AutoCSR):
         self.submodules.ev = EventManager()
         self.ev.zero = EventSourceProcess()
         self.ev.finalize()
-
-        ###
 
         value = Signal(width)
         self.sync += [
@@ -70,21 +74,53 @@ En la descripción de hardware, se observa que la interrupción generada por los
 
 bit IRQ |31 to 5 | 4 | 3 | 2 | 1 | 0
 --- |--- |--- |--- | --- |--- | ---
-Módulo | x | buttons | x | uart | timer0 | x
+Módulo | X | buttons | X | uart | timer0 | X
 
-RECUERDE QUE LAS INTERRUPCIONES SON SEÑALES  QUE NO VAN CONECTADOS POR EL BUS WISHBONE. SON SEÑALES QUE INDICAN UN EVENTO DE ATENCIÓN INMEDIATA
+Un periférico, se puede configurar  con varias interrupciones. Sin embargo, al gestionar la conexión de las interrupciones, por medio de litex, cada perifericos tiene solo un bit de activación en el registro de interrpciones del procesados. por lo tanto, si un periférico cuentas con mas de una interrupción, en el momento de procesar cada interrupción se debe leer el registro pending del periférico. Para el caso de `buttons.py`, se cuenta con una interrupción por cada botón  y el código generado es
+
+
+```python
+
+### TODO: insertar el código
+```
+
 
 # Configuración en software
 
-Ahora bien, una vez realizada la conexión fisica entre el procesado y los eventos del periférico se debe administrar el cómo el procesador atiende esta IRQ.
-en el caso del procesador LM32, se cuenta con tres registro :
+
+Una vez realizada la conexión física entre el procesado y los eventos del periférico, se debe administrar cómo el procesador atiende esta IRQ.
+
+En el caso del procesador LM32, se cuenta con tres registro:
 
 IE  0x00 (R/W) Interrupt enable
 IM  0x01 (R/W) Interrupt mask
 IP  0x02 (R)   Interrupt pending
 
-IE, indica si se  habilitan o no las interrupciones globales. Siempre debe estar activo, de lo contrario, el procesador no se interrunpe, así un periférico genere un evento. Por lo tanto, para activar desde el software las interrupciones generales  se debe usar la siguiente función.
+IE, indica si se  habilitan o no las interrupciones globales. Siempre debe estar activo, de lo contrario, el procesador no se interrunpe, así un periférico genere un evento. Por lo tanto, para activar desde el software las interrupciones generales se debe usar la siguiente función.
 
-```python
+```c++
 	irq_setie(1);
 ```
+IM, máscara de interrupción, es el registro que activa las interrupciones de cada periférico. cada bit de IM habilita o deshabilita la interrupción generada en el respectivo periférico. Por ejemplo, para activar solamente la interrupción de módulo Timer0, que se encuentra en el bit 1 del registro de interrupciones se debe activar :
+
+```c++
+	irq_setmask(2);
+```
+
+Por último, el registro IP almacenen los bits pending de cada periférico asociado a este registro. Por ejemplo, cuando el bit 1 de IP esta activo, significa que hay una interrupción pendiente para atender del bloque Timer0.
+
+en este punto si `IE = 1`, el bit 1 de IM es 1 y el registro de IP, el procesador LM32 salta a la posición 0x48, donde se encuentra la función  `_interrupt_handler`, declarada en el archivo `ctr0.S`
+
+```asm
+
+_interrupt_handler:
+	sw      (sp+0), ra
+	calli   .save_all
+	calli   isr
+	bi      .restore_all_and_eret
+	nop
+	nop
+	nop
+	nop
+```
+'_interrupt_handler' realiza una 'foto' del estado de los registro del procesaordor , para luego llamar la función `isr`, la cual, se encuentra en el archivo `isr.c`
