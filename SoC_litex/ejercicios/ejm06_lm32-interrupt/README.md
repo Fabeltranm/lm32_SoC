@@ -76,6 +76,13 @@ bit IRQ |31 to 5 | 4 | 3 | 2 | 1 | 0
 --- |--- |--- |--- | --- |--- | ---
 Módulo | X | buttons | X | uart | timer0 | X
 
+Adicionalmente, el periférico uart cuenta con dos interrupciones `ÙART_EV_TX  UART_EV_RX`, defindas en el bit 0 y 1, respectivamente, de registro pending del periférico uart
+
+uart IRQ | 31 to 2 | 1 | 0
+--- |--- |--- | ---
+Módulo | X   | UART_EV_RX | ÙART_EV_TX
+
+
 Un periférico, se puede configurar  con varias interrupciones. Sin embargo, al gestionar la conexión de las interrupciones, por medio de litex, cada perifericos tiene solo un bit de activación en el registro de interrpciones del procesados. por lo tanto, si un periférico cuentas con mas de una interrupción, en el momento de procesar cada interrupción se debe leer el registro pending del periférico. En otras palabras, la clasificación y atención de las interrupciones es realizada en software por la función `_interrupt_handler`, la cual llama la función `isr()`, y esta a su vez, revisa el registro IP, para procesar cada IRQ de cada periférico.
 
 Para el caso de `buttons.py`, se cuenta con una interrupción por cada botón  y el código generado es
