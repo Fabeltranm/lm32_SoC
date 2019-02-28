@@ -12,15 +12,6 @@ extern uint32_t csr_readl(uint32_t addr);
 #include <hw/common.h>
 #endif /* ! CSR_ACCESSORS_DEFINED */
 
-/* button */
-#define CSR_BUTTON_BASE 0xe0004000
-#define CSR_BUTTON_IN_ADDR 0xe0004000
-#define CSR_BUTTON_IN_SIZE 1
-static inline unsigned int button_in_read(void) {
-	unsigned int r = csr_readl(0xe0004000);
-	return r;
-}
-
 /* ctrl */
 #define CSR_CTRL_BASE 0xe0000000
 #define CSR_CTRL_RESET_ADDR 0xe0000000
@@ -46,6 +37,54 @@ static inline void ctrl_scratch_write(unsigned int value) {
 static inline unsigned int ctrl_bus_errors_read(void) {
 	unsigned int r = csr_readl(0xe0000008);
 	return r;
+}
+
+/* generic */
+#define CSR_GENERIC_BASE 0xe0004800
+#define CSR_GENERIC_REGRW_ADDR 0xe0004800
+#define CSR_GENERIC_REGRW_SIZE 1
+static inline unsigned int generic_RegRW_read(void) {
+	unsigned int r = csr_readl(0xe0004800);
+	return r;
+}
+static inline void generic_RegRW_write(unsigned int value) {
+	csr_writel(value, 0xe0004800);
+}
+#define CSR_GENERIC_REGR_ADDR 0xe0004804
+#define CSR_GENERIC_REGR_SIZE 1
+static inline unsigned int generic_RegR_read(void) {
+	unsigned int r = csr_readl(0xe0004804);
+	return r;
+}
+
+/* pwm */
+#define CSR_PWM_BASE 0xe0004000
+#define CSR_PWM_ENABLE_ADDR 0xe0004000
+#define CSR_PWM_ENABLE_SIZE 1
+static inline unsigned int pwm_enable_read(void) {
+	unsigned int r = csr_readl(0xe0004000);
+	return r;
+}
+static inline void pwm_enable_write(unsigned int value) {
+	csr_writel(value, 0xe0004000);
+}
+#define CSR_PWM_WIDTH_ADDR 0xe0004004
+#define CSR_PWM_WIDTH_SIZE 1
+static inline unsigned int pwm_width_read(void) {
+	unsigned int r = csr_readl(0xe0004004);
+	return r;
+}
+static inline void pwm_width_write(unsigned int value) {
+	csr_writel(value, 0xe0004004);
+}
+#define CSR_PWM_PERIOD_ADDR 0xe0004008
+#define CSR_PWM_PERIOD_SIZE 1
+static inline unsigned int pwm_period_read(void) {
+	unsigned int r = csr_readl(0xe0004008);
+	return r;
+}
+static inline void pwm_period_write(unsigned int value) {
+	csr_writel(value, 0xe0004008);
 }
 
 /* timer0 */

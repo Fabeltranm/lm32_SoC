@@ -84,11 +84,11 @@ class BaseSoC(SC.SoCCore):
         self.submodules.button = Button(platform.request("button1",  0))
 
         # interrupts declaration
-#        interrupt_map = {
-#            "button" : 4,
-#        }
-#        SC.SoCCore.interrupt_map.update(interrupt_map)
-#        print (SC.SoCCore.interrupt_map)
+        interrupt_map = {
+            "button" : 4,
+        }
+        SC.SoCCore.interrupt_map.update(interrupt_map)
+        print (SC.SoCCore.interrupt_map)
 
 
 soc = BaseSoC(platform)

@@ -31,7 +31,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input File Name                    : "top.prj"
 Input Format                       : MIXED
-Verilog Include Directory          : {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config }
+Verilog Include Directory          : {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl }
 
 ---- Target Parameters
 Output File Name                   : "top.ngc"
@@ -53,130 +53,133 @@ WARNING:Xst:29 - Optimization Effort not specified
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
-WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
-Parsing module <lm32_decoder>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_multiplier>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
+WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
 Parsing module <lm32_interrupt>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
+Parsing module <lm32_decoder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_adder>.
+Parsing module <lm32_mc_arithmetic>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
+Parsing module <lm32_instruction_unit>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_shifter>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_multiplier>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Parsing module <lm32_dcache>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_logic_op>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
 Parsing module <lm32_addsub>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
-Parsing module <lm32_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
-Parsing module <lm32_instruction_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_mc_arithmetic>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
-Parsing module <lm32_load_store_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
-Parsing module <lm32_dp_ram>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
 Parsing module <lm32_icache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
+Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
 Parsing module <lm32_cpu>.
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
+Parsing module <lm32_dp_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_adder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
+Parsing module <lm32_load_store_unit>.
+Analyzing Verilog file "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" into library work
+Parsing module <top>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
-Parsing module <lm32_dcache>.
-Analyzing Verilog file "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" into library work
-Parsing module <top>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 1164: Port I_LOCK_O is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1278: Port I_LOCK_O is not connected to this instance
 
 Elaborating module <top>.
 
 Elaborating module <$unit_1>.
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 12: Using initial value of ctrl_reset_reset_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 56: Using initial value of rom_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 69: Using initial value of sram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 84: Using initial value of main_ram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 103: Using initial value of bus_wishbone_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 120: Using initial value of uart_phy_source_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 121: Using initial value of uart_phy_source_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 157: Using initial value of uart_tx_fifo_sink_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 158: Using initial value of uart_tx_fifo_sink_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 174: Using initial value of uart_tx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 211: Using initial value of uart_rx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 229: Using initial value of uart_reset since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 241: Using initial value of timer0_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 12: Using initial value of __main___ctrl_reset_reset_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 56: Using initial value of __main___rom_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 69: Using initial value of __main___sram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 84: Using initial value of __main___main_ram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 103: Using initial value of __main___bus_wishbone_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 120: Using initial value of __main___uart_phy_source_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 121: Using initial value of __main___uart_phy_source_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 157: Using initial value of __main___uart_tx_fifo_sink_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 158: Using initial value of __main___uart_tx_fifo_sink_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 174: Using initial value of __main___uart_tx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 211: Using initial value of __main___uart_rx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 229: Using initial value of __main___uart_reset since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 241: Using initial value of __main___timer0_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 279: Using initial value of __main___status since it is never assigned
 Reading initialization file \"mem.init\".
-WARNING:HDLCompiler:1670 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 1205: Signal <mem> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1319: Signal <mem> in initial block is partially initialized.
 Reading initialization file \"mem_2.init\".
-WARNING:HDLCompiler:1670 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 1241: Signal <mem_2> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1355: Signal <mem_2> in initial block is partially initialized.
 Reading initialization file \"mem_3.init\".
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 403: Assignment to uart_phy_sink_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 404: Assignment to uart_phy_sink_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 408: Assignment to uart_phy_source_ready ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 454: Assignment to uart_tx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 479: Assignment to uart_rx_fifo_source_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 480: Assignment to uart_rx_fifo_source_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 484: Assignment to uart_rx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 538: Assignment to rom_bus_dat_w ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 539: Assignment to rom_bus_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 541: Assignment to rom_bus_we ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 542: Assignment to rom_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 543: Assignment to rom_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 549: Assignment to sram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 550: Assignment to sram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 556: Assignment to main_ram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 557: Assignment to main_ram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 560: Assignment to bus_wishbone_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 563: Assignment to bus_wishbone_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 564: Assignment to bus_wishbone_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 585: Assignment to csrbank0_in_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 586: Assignment to csrbank0_in_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 589: Assignment to ctrl_reset_reset_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 593: Assignment to csrbank1_bus_errors_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 594: Assignment to csrbank1_bus_errors_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 595: Assignment to ctrl_storage ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 613: Assignment to timer0_update_value_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 615: Assignment to csrbank2_value_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 616: Assignment to csrbank2_value_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 617: Assignment to timer0_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 618: Assignment to timer0_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 635: Assignment to csrbank3_txfull_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 636: Assignment to csrbank3_txfull_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 637: Assignment to csrbank3_rxempty_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 638: Assignment to csrbank3_rxempty_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 639: Assignment to uart_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 640: Assignment to uart_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 665: Assignment to sram_bus_we1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 671: Assignment to sram_bus_dat_w1 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 788: Result of 30-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 768: Assignment to ctrl_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 436: Assignment to __main___uart_phy_sink_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 437: Assignment to __main___uart_phy_sink_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 441: Assignment to __main___uart_phy_source_ready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 487: Assignment to __main___uart_tx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 512: Assignment to __main___uart_rx_fifo_source_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 513: Assignment to __main___uart_rx_fifo_source_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 517: Assignment to __main___uart_rx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 551: Assignment to __main___RegRW ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 552: Assignment to __main___RegR ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 576: Assignment to __main___rom_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 577: Assignment to __main___rom_bus_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 579: Assignment to __main___rom_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 580: Assignment to __main___rom_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 581: Assignment to __main___rom_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 587: Assignment to __main___sram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 588: Assignment to __main___sram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 594: Assignment to __main___main_ram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 595: Assignment to __main___main_ram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 598: Assignment to __main___bus_wishbone_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 601: Assignment to __main___bus_wishbone_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 602: Assignment to __main___bus_wishbone_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 623: Assignment to __main___ctrl_reset_reset_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 627: Assignment to builder_csrbank0_bus_errors_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 628: Assignment to builder_csrbank0_bus_errors_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 629: Assignment to __main___ctrl_storage ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 635: Assignment to builder_csrbank1_RegR_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 636: Assignment to builder_csrbank1_RegR_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 668: Assignment to __main___timer0_update_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 670: Assignment to builder_csrbank3_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 671: Assignment to builder_csrbank3_value_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 672: Assignment to __main___timer0_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 673: Assignment to __main___timer0_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 690: Assignment to builder_csrbank4_txfull_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 691: Assignment to builder_csrbank4_txfull_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 692: Assignment to builder_csrbank4_rxempty_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 693: Assignment to builder_csrbank4_rxempty_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 694: Assignment to __main___uart_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 695: Assignment to __main___uart_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 722: Assignment to builder_sram_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 729: Assignment to builder_sram_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 845: Result of 30-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 825: Assignment to __main___ctrl_re ignored, since the identifier is never used
 
 Elaborating module <lm32_cpu(eba_reset=32'b0)>.
 
@@ -221,29 +224,25 @@ WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/su
 WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Assignment to im_csr_read_data ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 2678: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 1258: Assignment to uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" Line 1275: Assignment to uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1372: Assignment to __main___uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1389: Assignment to __main___uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v".
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl0_regs0>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs0>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl0_regs1>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs1>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl1_regs0>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl1_regs0>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl1_regs1>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl1_regs1>.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" line 1166: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" line 1166: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" line 1166: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" line 1166: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" line 1166: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/gateware/top.v" line 1166: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+    Related source file is "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v".
+    Set property "register_balancing = no" for signal <builder_regs0>.
+    Set property "shreg_extract = no" for signal <builder_regs0>.
+    Set property "register_balancing = no" for signal <builder_regs1>.
+    Set property "shreg_extract = no" for signal <builder_regs1>.
+INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1280: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1280: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1280: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1280: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1280: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1280: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
 WARNING:Xst:2999 - Signal 'mem', unconnected in block 'top', is tied to its initial value.
 WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its initial value.
     Found 8192x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
@@ -253,98 +252,109 @@ WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its in
     Found 16x10-bit dual-port RAM <Mram_storage_1> for signal <storage_1>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>, simulation mismatch.
     Found 33x8-bit single-port Read Only RAM <Mram_mem_3> for signal <mem_3>.
-    Found 32-bit register for signal <ctrl_bus_errors>.
-    Found 1-bit register for signal <rom_bus_ack>.
-    Found 1-bit register for signal <sram_bus_ack>.
-    Found 1-bit register for signal <main_ram_bus_ack>.
-    Found 1-bit register for signal <interface_we>.
-    Found 32-bit register for signal <interface_dat_w>.
-    Found 14-bit register for signal <interface_adr>.
-    Found 32-bit register for signal <bus_wishbone_dat_r>.
-    Found 1-bit register for signal <bus_wishbone_ack>.
-    Found 2-bit register for signal <counter>.
-    Found 1-bit register for signal <uart_phy_sink_ready>.
-    Found 8-bit register for signal <uart_phy_tx_reg>.
-    Found 4-bit register for signal <uart_phy_tx_bitcount>.
-    Found 1-bit register for signal <uart_phy_tx_busy>.
+    Found 32-bit register for signal <__main___ctrl_bus_errors>.
+    Found 1-bit register for signal <__main___rom_bus_ack>.
+    Found 1-bit register for signal <__main___sram_bus_ack>.
+    Found 1-bit register for signal <__main___main_ram_bus_ack>.
+    Found 1-bit register for signal <__main___interface_we>.
+    Found 32-bit register for signal <__main___interface_dat_w>.
+    Found 14-bit register for signal <__main___interface_adr>.
+    Found 32-bit register for signal <__main___bus_wishbone_dat_r>.
+    Found 1-bit register for signal <__main___bus_wishbone_ack>.
+    Found 2-bit register for signal <__main___counter>.
+    Found 1-bit register for signal <__main___uart_phy_sink_ready>.
+    Found 8-bit register for signal <__main___uart_phy_tx_reg>.
+    Found 4-bit register for signal <__main___uart_phy_tx_bitcount>.
+    Found 1-bit register for signal <__main___uart_phy_tx_busy>.
     Found 1-bit register for signal <serial_tx>.
-    Found 32-bit register for signal <uart_phy_phase_accumulator_tx>.
-    Found 1-bit register for signal <uart_phy_uart_clk_txen>.
-    Found 1-bit register for signal <uart_phy_source_valid>.
-    Found 1-bit register for signal <uart_phy_rx_r>.
-    Found 1-bit register for signal <uart_phy_rx_busy>.
-    Found 4-bit register for signal <uart_phy_rx_bitcount>.
-    Found 8-bit register for signal <uart_phy_source_payload_data>.
-    Found 8-bit register for signal <uart_phy_rx_reg>.
-    Found 32-bit register for signal <uart_phy_phase_accumulator_rx>.
-    Found 1-bit register for signal <uart_phy_uart_clk_rxen>.
-    Found 1-bit register for signal <uart_tx_pending>.
-    Found 1-bit register for signal <uart_tx_old_trigger>.
-    Found 1-bit register for signal <uart_rx_pending>.
-    Found 1-bit register for signal <uart_rx_old_trigger>.
-    Found 1-bit register for signal <uart_tx_fifo_readable>.
-    Found 4-bit register for signal <uart_tx_fifo_produce>.
-    Found 4-bit register for signal <uart_tx_fifo_consume>.
-    Found 5-bit register for signal <uart_tx_fifo_level0>.
-    Found 1-bit register for signal <uart_rx_fifo_readable>.
-    Found 4-bit register for signal <uart_rx_fifo_produce>.
-    Found 4-bit register for signal <uart_rx_fifo_consume>.
-    Found 5-bit register for signal <uart_rx_fifo_level0>.
-    Found 32-bit register for signal <timer0_value>.
-    Found 32-bit register for signal <timer0_value_status>.
-    Found 1-bit register for signal <timer0_zero_pending>.
-    Found 1-bit register for signal <timer0_zero_old_trigger>.
-    Found 1-bit register for signal <grant>.
-    Found 4-bit register for signal <slave_sel_r>.
-    Found 20-bit register for signal <count>.
-    Found 32-bit register for signal <interface0_bank_bus_dat_r>.
-    Found 32-bit register for signal <interface1_bank_bus_dat_r>.
-    Found 32-bit register for signal <ctrl_storage_full>.
-    Found 1-bit register for signal <sel_r>.
-    Found 32-bit register for signal <interface2_bank_bus_dat_r>.
-    Found 32-bit register for signal <timer0_load_storage_full>.
-    Found 32-bit register for signal <timer0_reload_storage_full>.
-    Found 1-bit register for signal <timer0_en_storage_full>.
-    Found 1-bit register for signal <timer0_eventmanager_storage_full>.
-    Found 32-bit register for signal <interface3_bank_bus_dat_r>.
-    Found 2-bit register for signal <uart_eventmanager_storage_full>.
-    Found 32-bit register for signal <interface4_bank_bus_dat_r>.
-    Found 32-bit register for signal <uart_phy_storage_full>.
-    Found 1-bit register for signal <xilinxmultiregimpl0_regs0>.
-    Found 1-bit register for signal <xilinxmultiregimpl0_regs1>.
-    Found 1-bit register for signal <xilinxmultiregimpl1_regs0>.
-    Found 1-bit register for signal <xilinxmultiregimpl1_regs1>.
+    Found 32-bit register for signal <__main___uart_phy_phase_accumulator_tx>.
+    Found 1-bit register for signal <__main___uart_phy_uart_clk_txen>.
+    Found 1-bit register for signal <__main___uart_phy_source_valid>.
+    Found 1-bit register for signal <__main___uart_phy_rx_r>.
+    Found 1-bit register for signal <__main___uart_phy_rx_busy>.
+    Found 4-bit register for signal <__main___uart_phy_rx_bitcount>.
+    Found 8-bit register for signal <__main___uart_phy_source_payload_data>.
+    Found 8-bit register for signal <__main___uart_phy_rx_reg>.
+    Found 32-bit register for signal <__main___uart_phy_phase_accumulator_rx>.
+    Found 1-bit register for signal <__main___uart_phy_uart_clk_rxen>.
+    Found 1-bit register for signal <__main___uart_tx_pending>.
+    Found 1-bit register for signal <__main___uart_tx_old_trigger>.
+    Found 1-bit register for signal <__main___uart_rx_pending>.
+    Found 1-bit register for signal <__main___uart_rx_old_trigger>.
+    Found 1-bit register for signal <__main___uart_tx_fifo_readable>.
+    Found 4-bit register for signal <__main___uart_tx_fifo_produce>.
+    Found 4-bit register for signal <__main___uart_tx_fifo_consume>.
+    Found 5-bit register for signal <__main___uart_tx_fifo_level0>.
+    Found 1-bit register for signal <__main___uart_rx_fifo_readable>.
+    Found 4-bit register for signal <__main___uart_rx_fifo_produce>.
+    Found 4-bit register for signal <__main___uart_rx_fifo_consume>.
+    Found 5-bit register for signal <__main___uart_rx_fifo_level0>.
+    Found 32-bit register for signal <__main___timer0_value>.
+    Found 32-bit register for signal <__main___timer0_value_status>.
+    Found 1-bit register for signal <__main___timer0_zero_pending>.
+    Found 1-bit register for signal <__main___timer0_zero_old_trigger>.
+    Found 1-bit register for signal <pwm10>.
+    Found 32-bit register for signal <__main___count>.
+    Found 1-bit register for signal <builder_grant>.
+    Found 4-bit register for signal <builder_slave_sel_r>.
+    Found 20-bit register for signal <builder_count>.
+    Found 32-bit register for signal <builder_interface0_bank_bus_dat_r>.
+    Found 32-bit register for signal <__main___ctrl_storage_full>.
+    Found 32-bit register for signal <builder_interface1_bank_bus_dat_r>.
+    Found 32-bit register for signal <__main___storage_full>.
+    Found 1-bit register for signal <builder_sel_r>.
+    Found 32-bit register for signal <builder_interface2_bank_bus_dat_r>.
+    Found 1-bit register for signal <__main___enable_storage_full>.
+    Found 32-bit register for signal <__main___width_storage_full>.
+    Found 32-bit register for signal <__main___period_storage_full>.
+    Found 32-bit register for signal <builder_interface3_bank_bus_dat_r>.
+    Found 32-bit register for signal <__main___timer0_load_storage_full>.
+    Found 32-bit register for signal <__main___timer0_reload_storage_full>.
+    Found 1-bit register for signal <__main___timer0_en_storage_full>.
+    Found 1-bit register for signal <__main___timer0_eventmanager_storage_full>.
+    Found 32-bit register for signal <builder_interface4_bank_bus_dat_r>.
+    Found 2-bit register for signal <__main___uart_eventmanager_storage_full>.
+    Found 32-bit register for signal <builder_interface5_bank_bus_dat_r>.
+    Found 32-bit register for signal <__main___uart_phy_storage_full>.
+    Found 1-bit register for signal <builder_regs0>.
+    Found 1-bit register for signal <builder_regs1>.
     Found 13-bit register for signal <memadr>.
     Found 10-bit register for signal <memadr_1>.
     Found 12-bit register for signal <memadr_2>.
     Found 10-bit register for signal <memdat_1>.
     Found 10-bit register for signal <memdat_3>.
     Found 6-bit register for signal <memadr_3>.
-    Found 1-bit register for signal <int_rst>.
-    Found 5-bit subtractor for signal <uart_tx_fifo_level0[4]_GND_1_o_sub_213_OUT> created at line 899.
-    Found 5-bit subtractor for signal <uart_rx_fifo_level0[4]_GND_1_o_sub_222_OUT> created at line 921.
-    Found 32-bit subtractor for signal <timer0_value[31]_GND_1_o_sub_226_OUT> created at line 942.
-    Found 20-bit subtractor for signal <count[19]_GND_1_o_sub_230_OUT> created at line 976.
-    Found 32-bit adder for signal <ctrl_bus_errors[31]_GND_1_o_add_168_OUT> created at line 771.
-    Found 2-bit adder for signal <counter[1]_GND_1_o_add_175_OUT> created at line 800.
-    Found 4-bit adder for signal <uart_phy_tx_bitcount[3]_GND_1_o_add_178_OUT> created at line 814.
-    Found 33-bit adder for signal <n0896> created at line 830.
-    Found 4-bit adder for signal <uart_phy_rx_bitcount[3]_GND_1_o_add_190_OUT> created at line 843.
-    Found 33-bit adder for signal <n0901> created at line 862.
-    Found 4-bit adder for signal <uart_tx_fifo_produce[3]_GND_1_o_add_206_OUT> created at line 888.
-    Found 4-bit adder for signal <uart_tx_fifo_consume[3]_GND_1_o_add_208_OUT> created at line 891.
-    Found 5-bit adder for signal <uart_tx_fifo_level0[4]_GND_1_o_add_210_OUT> created at line 895.
-    Found 4-bit adder for signal <uart_rx_fifo_produce[3]_GND_1_o_add_215_OUT> created at line 910.
-    Found 4-bit adder for signal <uart_rx_fifo_consume[3]_GND_1_o_add_217_OUT> created at line 913.
-    Found 5-bit adder for signal <uart_rx_fifo_level0[4]_GND_1_o_add_219_OUT> created at line 917.
-    Found 32-bit 4-to-1 multiplexer for signal <interface1_bank_bus_adr[1]_GND_1_o_wide_mux_234_OUT> created at line 991.
-    Found 32-bit 8-to-1 multiplexer for signal <interface2_bank_bus_adr[2]_GND_1_o_wide_mux_237_OUT> created at line 1010.
-    Found 32-bit 7-to-1 multiplexer for signal <interface3_bank_bus_adr[2]_GND_1_o_wide_mux_241_OUT> created at line 1055.
+    Found 1-bit register for signal <__main___int_rst>.
+    Found 5-bit subtractor for signal <_main___uart_tx_fifo_level0[4]_GND_1_o_sub_236_OUT> created at line 956.
+    Found 5-bit subtractor for signal <_main___uart_rx_fifo_level0[4]_GND_1_o_sub_245_OUT> created at line 978.
+    Found 32-bit subtractor for signal <_main___timer0_value[31]_GND_1_o_sub_249_OUT> created at line 999.
+    Found 32-bit subtractor for signal <_main___period[31]_GND_1_o_sub_254_OUT> created at line 1020.
+    Found 20-bit subtractor for signal <builder_count[19]_GND_1_o_sub_259_OUT> created at line 1048.
+    Found 32-bit adder for signal <_main___ctrl_bus_errors[31]_GND_1_o_add_191_OUT> created at line 828.
+    Found 2-bit adder for signal <_main___counter[1]_GND_1_o_add_198_OUT> created at line 857.
+    Found 4-bit adder for signal <_main___uart_phy_tx_bitcount[3]_GND_1_o_add_201_OUT> created at line 871.
+    Found 33-bit adder for signal <n0963> created at line 887.
+    Found 4-bit adder for signal <_main___uart_phy_rx_bitcount[3]_GND_1_o_add_213_OUT> created at line 900.
+    Found 33-bit adder for signal <n0968> created at line 919.
+    Found 4-bit adder for signal <_main___uart_tx_fifo_produce[3]_GND_1_o_add_229_OUT> created at line 945.
+    Found 4-bit adder for signal <_main___uart_tx_fifo_consume[3]_GND_1_o_add_231_OUT> created at line 948.
+    Found 5-bit adder for signal <_main___uart_tx_fifo_level0[4]_GND_1_o_add_233_OUT> created at line 952.
+    Found 4-bit adder for signal <_main___uart_rx_fifo_produce[3]_GND_1_o_add_238_OUT> created at line 967.
+    Found 4-bit adder for signal <_main___uart_rx_fifo_consume[3]_GND_1_o_add_240_OUT> created at line 970.
+    Found 5-bit adder for signal <_main___uart_rx_fifo_level0[4]_GND_1_o_add_242_OUT> created at line 974.
+    Found 32-bit adder for signal <_main___count[31]_GND_1_o_add_255_OUT> created at line 1023.
+    Found 32-bit 4-to-1 multiplexer for signal <builder_interface0_bank_bus_adr[1]_GND_1_o_wide_mux_261_OUT> created at line 1055.
+    Found 32-bit 4-to-1 multiplexer for signal <builder_interface2_bank_bus_adr[1]_GND_1_o_wide_mux_267_OUT> created at line 1089.
+    Found 32-bit 8-to-1 multiplexer for signal <builder_interface3_bank_bus_adr[2]_GND_1_o_wide_mux_271_OUT> created at line 1115.
+    Found 32-bit 7-to-1 multiplexer for signal <builder_interface4_bank_bus_adr[2]_GND_1_o_wide_mux_275_OUT> created at line 1160.
+    Found 32-bit comparator greater for signal <_main___count[31]___main___width[31]_LessThan_253_o> created at line 1015
+    Found 32-bit comparator equal for signal <_main___count[31]___main___period[31]_equal_255_o> created at line 1020
     Summary:
 	inferred   6 RAM(s).
-	inferred  14 Adder/Subtractor(s).
-	inferred 703 D-type flip-flop(s).
-	inferred  48 Multiplexer(s).
+	inferred  16 Adder/Subtractor(s).
+	inferred 863 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  53 Multiplexer(s).
 Unit <top> synthesized.
 
 Synthesizing Unit <lm32_cpu>.
@@ -774,19 +784,19 @@ Macro Statistics
  8192x32-bit single-port Read Only RAM                 : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 29
+# Adders/Subtractors                                   : 31
  2-bit adder                                           : 5
  20-bit subtractor                                     : 1
  30-bit adder                                          : 2
- 32-bit adder                                          : 2
- 32-bit subtractor                                     : 1
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 2
  33-bit adder                                          : 4
  33-bit subtractor                                     : 3
  4-bit adder                                           : 6
  5-bit addsub                                          : 2
  6-bit subtractor                                      : 1
  8-bit subtractor                                      : 2
-# Registers                                            : 199
+# Registers                                            : 204
  1-bit register                                        : 103
  10-bit register                                       : 5
  12-bit register                                       : 1
@@ -797,19 +807,19 @@ Macro Statistics
  23-bit register                                       : 1
  3-bit register                                        : 4
  30-bit register                                       : 10
- 32-bit register                                       : 41
+ 32-bit register                                       : 46
  4-bit register                                        : 10
  5-bit register                                        : 5
  6-bit register                                        : 2
  8-bit register                                        : 7
-# Comparators                                          : 11
+# Comparators                                          : 13
  1-bit comparator equal                                : 1
  21-bit comparator equal                               : 2
- 32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 2
  5-bit comparator equal                                : 6
-# Multiplexers                                         : 196
- 1-bit 2-to-1 multiplexer                              : 61
+# Multiplexers                                         : 201
+ 1-bit 2-to-1 multiplexer                              : 62
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 1
@@ -817,9 +827,9 @@ Macro Statistics
  20-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 2
  30-bit 2-to-1 multiplexer                             : 10
- 32-bit 2-to-1 multiplexer                             : 50
+ 32-bit 2-to-1 multiplexer                             : 53
  32-bit 3-to-1 multiplexer                             : 3
- 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 2
  32-bit 7-to-1 multiplexer                             : 1
  32-bit 8-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 6
@@ -945,17 +955,17 @@ INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing
 Unit <lm32_ram_2> synthesized (advanced).
 
 Synthesizing (advanced) Unit <top>.
-The following registers are absorbed into counter <ctrl_bus_errors>: 1 register on signal <ctrl_bus_errors>.
-The following registers are absorbed into counter <uart_phy_tx_bitcount>: 1 register on signal <uart_phy_tx_bitcount>.
-The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
-The following registers are absorbed into counter <uart_phy_rx_bitcount>: 1 register on signal <uart_phy_rx_bitcount>.
-The following registers are absorbed into counter <uart_tx_fifo_produce>: 1 register on signal <uart_tx_fifo_produce>.
-The following registers are absorbed into counter <uart_tx_fifo_consume>: 1 register on signal <uart_tx_fifo_consume>.
-The following registers are absorbed into counter <uart_tx_fifo_level0>: 1 register on signal <uart_tx_fifo_level0>.
-The following registers are absorbed into counter <uart_rx_fifo_produce>: 1 register on signal <uart_rx_fifo_produce>.
-The following registers are absorbed into counter <uart_rx_fifo_consume>: 1 register on signal <uart_rx_fifo_consume>.
-The following registers are absorbed into counter <uart_rx_fifo_level0>: 1 register on signal <uart_rx_fifo_level0>.
-The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <__main___ctrl_bus_errors>: 1 register on signal <__main___ctrl_bus_errors>.
+The following registers are absorbed into counter <__main___counter>: 1 register on signal <__main___counter>.
+The following registers are absorbed into counter <__main___uart_phy_rx_bitcount>: 1 register on signal <__main___uart_phy_rx_bitcount>.
+The following registers are absorbed into counter <__main___uart_phy_tx_bitcount>: 1 register on signal <__main___uart_phy_tx_bitcount>.
+The following registers are absorbed into counter <__main___uart_tx_fifo_produce>: 1 register on signal <__main___uart_tx_fifo_produce>.
+The following registers are absorbed into counter <__main___uart_tx_fifo_consume>: 1 register on signal <__main___uart_tx_fifo_consume>.
+The following registers are absorbed into counter <__main___uart_tx_fifo_level0>: 1 register on signal <__main___uart_tx_fifo_level0>.
+The following registers are absorbed into counter <__main___uart_rx_fifo_consume>: 1 register on signal <__main___uart_rx_fifo_consume>.
+The following registers are absorbed into counter <__main___uart_rx_fifo_produce>: 1 register on signal <__main___uart_rx_fifo_produce>.
+The following registers are absorbed into counter <__main___uart_rx_fifo_level0>: 1 register on signal <__main___uart_rx_fifo_level0>.
+The following registers are absorbed into counter <builder_count>: 1 register on signal <builder_count>.
 INFO:Xst:3231 - The small RAM <Mram_mem_3> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
@@ -975,13 +985,13 @@ INFO:Xst:3226 - The RAM <Mram_mem_1> will be implemented as a BLOCK RAM, absorbi
     |     aspect ratio   | 1024-word x 32-bit                  |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk32>         | rise     |
-    |     weA<3>         | connected to signal <sram_we<3>>    | high     |
-    |     weA<2>         | connected to signal <sram_we<2>>    | high     |
-    |     weA<1>         | connected to signal <sram_we<1>>    | high     |
-    |     weA<0>         | connected to signal <sram_we<0>>    | high     |
-    |     addrA          | connected to signal <array_muxed0<9:0>> |          |
-    |     diA            | connected to signal <array_muxed1>  |          |
-    |     doA            | connected to signal <sram_bus_dat_r0> |          |
+    |     weA<3>         | connected to signal <__main___sram_we<3>> | high     |
+    |     weA<2>         | connected to signal <__main___sram_we<2>> | high     |
+    |     weA<1>         | connected to signal <__main___sram_we<1>> | high     |
+    |     weA<0>         | connected to signal <__main___sram_we<0>> | high     |
+    |     addrA          | connected to signal <builder_array_muxed0<9:0>> |          |
+    |     diA            | connected to signal <builder_array_muxed1> |          |
+    |     doA            | connected to signal <__main___sram_bus_dat_r> |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
@@ -993,13 +1003,13 @@ INFO:Xst:3226 - The RAM <Mram_mem_2> will be implemented as a BLOCK RAM, absorbi
     |     aspect ratio   | 4096-word x 32-bit                  |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk32>         | rise     |
-    |     weA<3>         | connected to signal <main_ram_we<3>> | high     |
-    |     weA<2>         | connected to signal <main_ram_we<2>> | high     |
-    |     weA<1>         | connected to signal <main_ram_we<1>> | high     |
-    |     weA<0>         | connected to signal <main_ram_we<0>> | high     |
-    |     addrA          | connected to signal <array_muxed0<11:0>> |          |
-    |     diA            | connected to signal <array_muxed1>  |          |
-    |     doA            | connected to signal <main_ram_bus_dat_r> |          |
+    |     weA<3>         | connected to signal <__main___main_ram_we<3>> | high     |
+    |     weA<2>         | connected to signal <__main___main_ram_we<2>> | high     |
+    |     weA<1>         | connected to signal <__main___main_ram_we<1>> | high     |
+    |     weA<0>         | connected to signal <__main___main_ram_we<0>> | high     |
+    |     addrA          | connected to signal <builder_array_muxed0<11:0>> |          |
+    |     diA            | connected to signal <builder_array_muxed1> |          |
+    |     doA            | connected to signal <__main___main_ram_bus_dat_r> |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
@@ -1010,13 +1020,13 @@ INFO:Xst:3231 - The small RAM <Mram_storage> will be implemented on LUTs in orde
     | Port A                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
     |     clkA           | connected to signal <clk32>         | rise     |
-    |     weA            | connected to signal <uart_tx_fifo_wrport_we> | high     |
-    |     addrA          | connected to signal <uart_tx_fifo_produce> |          |
-    |     diA            | connected to signal <("00",interface_dat_w<7:0>)> |          |
+    |     weA            | connected to signal <__main___uart_tx_fifo_wrport_we> | high     |
+    |     addrA          | connected to signal <__main___uart_tx_fifo_produce> |          |
+    |     diA            | connected to signal <("00",__main___interface_dat_w<7:0>)> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
-    |     addrB          | connected to signal <uart_tx_fifo_consume> |          |
+    |     addrB          | connected to signal <__main___uart_tx_fifo_consume> |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
 INFO:Xst:3231 - The small RAM <Mram_storage_1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
@@ -1026,13 +1036,13 @@ INFO:Xst:3231 - The small RAM <Mram_storage_1> will be implemented on LUTs in or
     | Port A                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
     |     clkA           | connected to signal <clk32>         | rise     |
-    |     weA            | connected to signal <uart_rx_fifo_wrport_we> | high     |
-    |     addrA          | connected to signal <uart_rx_fifo_produce> |          |
-    |     diA            | connected to signal <("00",uart_phy_source_payload_data)> |          |
+    |     weA            | connected to signal <__main___uart_rx_fifo_wrport_we> | high     |
+    |     addrA          | connected to signal <__main___uart_rx_fifo_produce> |          |
+    |     diA            | connected to signal <("00",__main___uart_phy_source_payload_data)> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 16-word x 10-bit                    |          |
-    |     addrB          | connected to signal <uart_rx_fifo_consume> |          |
+    |     addrB          | connected to signal <__main___uart_rx_fifo_consume> |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <memadr>
@@ -1044,16 +1054,16 @@ INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk32>         | rise     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <array_muxed0<12:0>> |          |
+    |     addrA          | connected to signal <builder_array_muxed0<12:0>> |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <rom_bus_dat_r> |          |
+    |     doA            | connected to signal <__main___rom_bus_dat_r> |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 Unit <top> synthesized (advanced).
-WARNING:Xst:2677 - Node <interface_adr_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <interface_adr_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <interface_adr_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <__main___interface_adr_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <__main___interface_adr_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <__main___interface_adr_8> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memdat_1_8> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memdat_1_9> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memdat_3_8> of sequential type is unconnected in block <top>.
@@ -1074,10 +1084,11 @@ Macro Statistics
  8192x32-bit single-port block Read Only RAM           : 1
 # Multipliers                                          : 1
  32x32-bit registered multiplier                       : 1
-# Adders/Subtractors                                   : 12
+# Adders/Subtractors                                   : 14
  2-bit adder                                           : 4
  30-bit adder                                          : 2
- 32-bit subtractor                                     : 1
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 2
  33-bit adder                                          : 2
  33-bit adder carry in                                 : 1
  33-bit subtractor                                     : 1
@@ -1090,25 +1101,25 @@ Macro Statistics
  5-bit updown counter                                  : 2
  6-bit down counter                                    : 1
  8-bit down counter                                    : 2
-# Registers                                            : 1790
- Flip-Flops                                            : 1790
-# Comparators                                          : 11
+# Registers                                            : 1950
+ Flip-Flops                                            : 1950
+# Comparators                                          : 13
  1-bit comparator equal                                : 1
  21-bit comparator equal                               : 2
- 32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 2
  5-bit comparator equal                                : 6
-# Multiplexers                                         : 518
- 1-bit 2-to-1 multiplexer                              : 407
+# Multiplexers                                         : 523
+ 1-bit 2-to-1 multiplexer                              : 408
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 6
  3-bit 2-to-1 multiplexer                              : 2
  30-bit 2-to-1 multiplexer                             : 7
- 32-bit 2-to-1 multiplexer                             : 42
+ 32-bit 2-to-1 multiplexer                             : 45
  32-bit 3-to-1 multiplexer                             : 3
- 32-bit 4-to-1 multiplexer                             : 1
+ 32-bit 4-to-1 multiplexer                             : 2
  32-bit 7-to-1 multiplexer                             : 1
  32-bit 8-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 4
@@ -1157,8 +1168,8 @@ Optimizing FSM <lm32_cpu/mc_arithmetic/FSM_2> on signal <state[1:2]> with sequen
  010   | 10
 -------------------
 WARNING:Xst:2677 - Node <Mmult_n00233> of sequential type is unconnected in block <lm32_multiplier>.
-WARNING:Xst:2677 - Node <Mram_storage10> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Mram_storage9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Mram_storage10> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Mram_storage_19> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Mram_storage_110> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memop_pc_w_2> of sequential type is unconnected in block <lm32_cpu>.
@@ -1195,61 +1206,30 @@ WARNING:Xst:1710 - FF/Latch <i_adr_o_0> (without init value) has a constant valu
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_adr_o_1> (without init value) has a constant value of 0 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_cti_o_1> (without init value) has a constant value of 1 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <d_cti_o_1> (without init value) has a constant value of 1 in block <lm32_load_store_unit>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <interface0_bank_bus_dat_r_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface3_bank_bus_dat_r_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <builder_interface4_bank_bus_dat_r_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <builder_interface4_bank_bus_dat_r_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <inst_LPM_FF> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <inst_LPM_FF1_2> 
 INFO:Xst:2261 - The FF/Latch <i_cti_o_0> in Unit <lm32_instruction_unit> is equivalent to the following FF/Latch, which will be removed : <i_cti_o_2> 
 INFO:Xst:2261 - The FF/Latch <d_cti_o_0> in Unit <lm32_load_store_unit> is equivalent to the following FF/Latch, which will be removed : <d_cti_o_2> 
@@ -1339,10 +1319,11 @@ INFO:Xst:2261 - The FF/Latch <lm32_cpu/load_x> in Unit <top> is equivalent to th
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 59.
+Found area constraint ratio of 100 (+ 0) on block top, actual ratio is 65.
+Forward register balancing over carry chain Msub__main___period[31]_GND_1_o_sub_254_OUT_cy<0>
 Forward register balancing over carry chain lm32_cpu/Mcount_cc_cy<0>
-INFO:Xst:2261 - The FF/Latch <lm32_cpu/direction_x> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <lm32_cpu/m_result_sel_compare_x_BRB0> <lm32_cpu/m_bypass_enable_x_BRB5> 
 INFO:Xst:2261 - The FF/Latch <lm32_cpu/load_m> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <lm32_cpu/w_result_sel_load_m_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm32_cpu/direction_x> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <lm32_cpu/m_result_sel_compare_x_BRB0> <lm32_cpu/m_bypass_enable_x_BRB5> 
 
 Pipelining and Register Balancing Report ...
 
@@ -1353,7 +1334,7 @@ Processing Unit <top> :
 	Register(s) lm32_cpu/m_result_sel_compare_x has(ve) been backward balanced into : lm32_cpu/m_result_sel_compare_x_BRB1 .
 	Register(s) lm32_cpu/m_result_sel_shift_x has(ve) been backward balanced into : lm32_cpu/m_result_sel_shift_x_BRB0 lm32_cpu/m_result_sel_shift_x_BRB1 lm32_cpu/m_result_sel_shift_x_BRB2 lm32_cpu/m_result_sel_shift_x_BRB3 lm32_cpu/m_result_sel_shift_x_BRB4.
 	Register(s) lm32_cpu/w_result_sel_mul_m has(ve) been backward balanced into : lm32_cpu/w_result_sel_mul_m_BRB0 lm32_cpu/w_result_sel_mul_m_BRB1.
-	Register(s) lm32_cpu/w_result_sel_mul_x has(ve) been backward balanced into : lm32_cpu/w_result_sel_mul_x_BRB0 lm32_cpu/w_result_sel_mul_x_BRB2.
+	Register(s) lm32_cpu/w_result_sel_mul_x has(ve) been backward balanced into : lm32_cpu/w_result_sel_mul_x_BRB0 .
 Unit <top> processed.
 FlipFlop lm32_cpu/exception_m has been replicated 1 time(s)
 FlipFlop lm32_cpu/instruction_unit/i_cyc_o has been replicated 1 time(s)
@@ -1366,8 +1347,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1781
- Flip-Flops                                            : 1781
+# Registers                                            : 2003
+ Flip-Flops                                            : 2003
 
 =========================================================================
 
@@ -1390,26 +1371,26 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3129
+# BELS                             : 3492
 #      GND                         : 1
-#      INV                         : 59
-#      LUT1                        : 94
-#      LUT2                        : 346
-#      LUT3                        : 464
-#      LUT4                        : 137
-#      LUT5                        : 405
-#      LUT6                        : 861
-#      MUXCY                       : 369
+#      INV                         : 91
+#      LUT1                        : 126
+#      LUT2                        : 345
+#      LUT3                        : 511
+#      LUT4                        : 169
+#      LUT5                        : 461
+#      LUT6                        : 874
+#      MUXCY                       : 457
 #      MUXF7                       : 38
 #      VCC                         : 1
-#      XORCY                       : 354
-# FlipFlops/Latches                : 1781
-#      FD                          : 19
-#      FDE                         : 101
-#      FDR                         : 540
-#      FDRE                        : 1033
+#      XORCY                       : 418
+# FlipFlops/Latches                : 2003
+#      FD                          : 17
+#      FDE                         : 100
+#      FDR                         : 637
+#      FDRE                        : 1130
 #      FDS                         : 2
-#      FDSE                        : 86
+#      FDSE                        : 117
 # RAMS                             : 112
 #      RAM16X1D                    : 16
 #      RAM32X1D                    : 64
@@ -1418,8 +1399,8 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 4
-#      IBUF                        : 3
-#      OBUF                        : 1
+#      IBUF                        : 2
+#      OBUF                        : 2
 # DSPs                             : 3
 #      DSP48A1                     : 3
 
@@ -1430,18 +1411,18 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1781  out of  11440    15%  
- Number of Slice LUTs:                 2526  out of   5720    44%  
-    Number used as Logic:              2366  out of   5720    41%  
+ Number of Slice Registers:            2003  out of  11440    17%  
+ Number of Slice LUTs:                 2737  out of   5720    47%  
+    Number used as Logic:              2577  out of   5720    45%  
     Number used as Memory:              160  out of   1440    11%  
        Number used as RAM:              160
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3040
-   Number with an unused Flip Flop:    1259  out of   3040    41%  
-   Number with an unused LUT:           514  out of   3040    16%  
-   Number of fully used LUT-FF pairs:  1267  out of   3040    41%  
-   Number of unique control sets:        45
+ Number of LUT Flip Flop pairs used:   3345
+   Number with an unused Flip Flop:    1342  out of   3345    40%  
+   Number with an unused LUT:           608  out of   3345    18%  
+   Number of fully used LUT-FF pairs:  1395  out of   3345    41%  
+   Number of unique control sets:        48
 
 IO Utilization: 
  Number of IOs:                           5
@@ -1474,7 +1455,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk32                              | BUFGP                  | 1896  |
+clk32                              | BUFGP                  | 2118  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1497,7 +1478,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk32'
   Clock period: 13.917ns (frequency: 71.855MHz)
-  Total number of paths / destination ports: 271565 / 6608
+  Total number of paths / destination ports: 276680 / 7183
 -------------------------------------------------------------------------
 Delay:               13.917ns (Levels of Logic = 1)
   Source:            lm32_cpu/multiplier/Mmult_n0023 (DSP)
@@ -1518,27 +1499,27 @@ Delay:               13.917ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk32'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              3.019ns (Levels of Logic = 2)
   Source:            cpu_reset (PAD)
-  Destination:       int_rst (FF)
+  Destination:       __main___int_rst (FF)
   Destination Clock: clk32 rising
 
-  Data Path: cpu_reset to int_rst
+  Data Path: cpu_reset to __main___int_rst
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.328   0.681  cpu_reset_IBUF (cpu_reset_IBUF)
      INV:I->O              1   0.255   0.681  cpu_reset_INV_25_o1_INV_0 (cpu_reset_INV_25_o)
-     FD:D                      0.074          int_rst
+     FD:D                      0.074          __main___int_rst
     ----------------------------------------
     Total                      3.019ns (1.657ns logic, 1.362ns route)
                                        (54.9% logic, 45.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk32'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              4.162ns (Levels of Logic = 1)
   Source:            serial_tx (FF)
@@ -1571,15 +1552,15 @@ clk32          |   13.917|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 15.69 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.75 secs
  
 --> 
 
 
-Total memory usage is 434328 kilobytes
+Total memory usage is 437544 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  230 (   0 filtered)
+Number of warnings :  202 (   0 filtered)
 Number of infos    :   48 (   0 filtered)
 

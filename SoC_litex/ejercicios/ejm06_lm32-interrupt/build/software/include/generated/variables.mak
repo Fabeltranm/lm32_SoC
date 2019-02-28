@@ -8,7 +8,7 @@ COPY_TO_MAIN_RAM=1
 EXECUTE_IN_PLACE=0
 SOC_DIRECTORY=/opt/liteX/litex/litex/soc
 export BUILDINC_DIRECTORY
-BUILDINC_DIRECTORY=/home/labproto/Documentos/lab_digital2/pruebasQUACHOBASIC_AT/ejm06_lm32-interrupt/build/software/include
+BUILDINC_DIRECTORY=/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/software/include
 LIBCOMPILER_RT_DIRECTORY=/opt/liteX/litex/litex/soc/software/libcompiler_rt
 LIBBASE_DIRECTORY=/opt/liteX/litex/litex/soc/software/libbase
 LIBNET_DIRECTORY=/opt/liteX/litex/litex/soc/software/libnet

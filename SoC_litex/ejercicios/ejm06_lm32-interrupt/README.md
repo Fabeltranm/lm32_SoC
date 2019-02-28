@@ -76,7 +76,9 @@ bit IRQ |31 to 5 | 4 | 3 | 2 | 1 | 0
 --- |--- |--- |--- | --- |--- | ---
 Módulo | X | buttons | X | uart | timer0 | X
 
-Un periférico, se puede configurar  con varias interrupciones. Sin embargo, al gestionar la conexión de las interrupciones, por medio de litex, cada perifericos tiene solo un bit de activación en el registro de interrpciones del procesados. por lo tanto, si un periférico cuentas con mas de una interrupción, en el momento de procesar cada interrupción se debe leer el registro pending del periférico. Para el caso de `buttons.py`, se cuenta con una interrupción por cada botón  y el código generado es
+Un periférico, se puede configurar  con varias interrupciones. Sin embargo, al gestionar la conexión de las interrupciones, por medio de litex, cada perifericos tiene solo un bit de activación en el registro de interrpciones del procesados. por lo tanto, si un periférico cuentas con mas de una interrupción, en el momento de procesar cada interrupción se debe leer el registro pending del periférico. En otras palabras, la clasificación y atención de las interrupciones es realizada en software por la función `_interrupt_handler`, la cual llama la función `isr()`, y esta a su vez, revisa el registro IP, para procesar cada IRQ de cada periférico.
+
+Para el caso de `buttons.py`, se cuenta con una interrupción por cada botón  y el código generado es
 
 
 ```python
@@ -88,13 +90,13 @@ Un periférico, se puede configurar  con varias interrupciones. Sin embargo, al 
 # Configuración en software
 
 
-Una vez realizada la conexión física entre el procesado y los eventos del periférico, se debe administrar cómo el procesador atiende esta IRQ.
+Una vez realizada la conexión física entre el procesado y los eventos de los periféricos, se debe administrar cómo el procesador atiende las IRQ.
 
-En el caso del procesador LM32, se cuenta con tres registro:
+el procesador LM32, se cuenta con tres registro:
 
-IE  0x00 (R/W) Interrupt enable
-IM  0x01 (R/W) Interrupt mask
-IP  0x02 (R)   Interrupt pending
+* IE  0x00 (R/W) Interrupt enable
+* IM  0x01 (R/W) Interrupt mask
+* IP  0x02 (R)   Interrupt pending
 
 IE, indica si se  habilitan o no las interrupciones globales. Siempre debe estar activo, de lo contrario, el procesador no se interrunpe, así un periférico genere un evento. Por lo tanto, para activar desde el software las interrupciones generales se debe usar la siguiente función.
 
@@ -123,4 +125,4 @@ _interrupt_handler:
 	nop
 	nop
 ```
-`_interrupt_handler` realiza una 'foto' del estado de los registro del procesaordor , para luego llamar la función `isr`, la cual, se encuentra en el archivo `isr.c`.
+`_interrupt_handler` realiza una 'foto' del estado de los registro del procesador y luego llamar la función `isr()`, la cual, se encuentra en el archivo `isr.c`. Por último, restaura el estado del procesador  al instante previo de atender las interrupciones.

@@ -8,12 +8,12 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">Mram_storage1/SPO</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">79</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">79</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">Mram_storage2/SPO,
 Mram_storage3/SPO,
+Mram_storage6/SPO,
 Mram_storage4/SPO,
-Mram_storage5/SPO,
-Mram_storage6/SPO</arg>
+Mram_storage5/SPO</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
