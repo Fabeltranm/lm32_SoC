@@ -14,9 +14,9 @@ def __init__(self):
 
 ```
 
-Adicionalmente, se debe especificar que tipo de interrupción es: si se interrumpe cuando hay flanco de subida , flanco de bajada o por nivel, para ello se debe adicionar los submódulos  EventSourcePulse (), EventSourceProcess () o EventSourceLevel (), respectivamente.
+Adicionalmente, se debe especificar que tipo de interrupción es: si se interrumpe cuando hay flanco de subida , flanco de bajada o por nivel, para ello se debe adicionar los submódulos  `EventSourcePulse ()`, `EventSourceProcess ()` o `EventSourceLevel ()`, respectivamente.
 
-En los tres tipos de interrupción, al llegar el evento se activa la señal IRQ, activando el bit respectivo de pending. Para ser atendida esta interrupción se debe agregar el bit pending al Vector de interrupciones del procesador. A continuación, se presenta un fragmento del la descripción del modulo Timer, que se encuentra en el archivo Timer.py.
+En los tres tipos de interrupción, al llegar el evento se activa la señal IRQ, activando el bit respectivo de pending. Para ser atendida esta interrupción se debe agregar el bit pending al Vector de interrupciones del procesador. A continuación, se presenta un fragmento del la descripción del modulo Timer, que se encuentra en el archivo `Timer.py`.
 
 ```python
 class Timer(Module, AutoCSR):
@@ -42,7 +42,7 @@ class Timer(Module, AutoCSR):
 ```
 
 La descripción del hardware del timer, incluye la señal de interrupción zero, que se activa cuando el valor del contador value llega a cero, y es genenerada con el evento
-EventSourceProcess(). lo que indica que el bit 1 del regsitro IP se activa con un flanco de bajada.
+`EventSourceProcess()`. lo que indica que el bit 1 del regsitro IP se activa con un flanco de bajada.
 
 El procesador LM32, tiene solo un registro de interrupciones, el registro IP. LiteX se encarga de conectar las señales de interrupción de cada módulo  con el registro IP. En el archivo soc_core.py, se encuentra el directorio de interrupciones, interrupt_map{}, y por defecto se ubican en los bit 1 y 2 del vector de interrupciones, los eventos generados por el modulo timer y la uart, respectivamente.
 
