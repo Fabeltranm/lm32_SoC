@@ -68,6 +68,9 @@ Para actualizar el mapa de interrupciones,  en el momento de instancia em SoC, s
 
 En la descripción de hardware, se observa que la interrupción generada por los botones se ubica en el bit 4 del registro de interrupciones.
 
+bit IRQ |31 to 5 | 4 | 3 | 2 | 1 | 0
+--- |--- |--- |--- | --- |--- | ---
+Módulo | x | buttons | x | uart | timer0 | x
 
 RECUERDE QUE LAS INTERRUPCIONES SON SEÑALES  QUE NO VAN CONECTADOS POR EL BUS WISHBONE. SON SEÑALES QUE INDICAN UN EVENTO DE ATENCIÓN INMEDIATA
 
