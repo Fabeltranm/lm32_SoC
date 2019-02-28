@@ -7,4 +7,4 @@ run
 -register_balancing yes
 -ofn top.ngc
 -p xc6slx9-TQG144-2
--vlgincdir {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl }
+-vlgincdir {/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl /opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config }

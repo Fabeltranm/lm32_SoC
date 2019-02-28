@@ -9,7 +9,7 @@ import litex.soc.integration.soc_core as SC
 from litex.soc.integration.builder import *
 
 from litex.soc.cores import gpio
-from ios import Button
+from ios import Button,Led
 
 
 #
@@ -22,7 +22,8 @@ _io = [
 
     ("cpu_reset", 0, Pins("P87"), IOStandard("LVCMOS33")),
 
-    ("button1", 0, Pins("P24"), IOStandard("LVCMOS33")),
+    ("led01", 0, Pins("P24"), IOStandard("LVCMOS33")),
+    ("button01", 0, Pins("P27"), IOStandard("LVCMOS33")),
 
     ("serial", 0,
         Subsignal("tx", Pins("P105")),
@@ -62,6 +63,7 @@ class BaseSoC(SC.SoCCore):
     # Peripherals CSR declaration
     csr_peripherals = [
       "button",
+      "led",
     ]
     csr_map_update(SC.SoCCore.csr_map, csr_peripherals)
 
@@ -81,7 +83,8 @@ class BaseSoC(SC.SoCCore):
         self.submodules.crg = CRG(platform.request("clk32"), ~platform.request("cpu_reset"))
 
 
-        self.submodules.button = Button(platform.request("button1",  0))
+        self.submodules.led = Led(platform.request("led01",  0))
+        self.submodules.button = Button(platform.request("button01",  0))
 
         # interrupts declaration
         interrupt_map = {

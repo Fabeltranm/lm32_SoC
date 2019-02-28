@@ -18,15 +18,19 @@ static void wait_ms(unsigned int ms)
 	while(timer0_value_read()) timer0_update_value_write(1);
 }
 
-static void init_timerIRQ(unsigned int ms)
+void config_timerIRQ(unsigned int ms)
 {
-	uint8_t t;
+	uint32_t t;
 
 	timer0_en_write(0);
-	t = ms*SYSTEM_CLOCK_FREQUENCY/1000;
+	t = (SYSTEM_CLOCK_FREQUENCY/1000)*ms;
 	timer0_reload_write(t);
 	timer0_load_write(t);
 	timer0_en_write(1);
+
+	timer0_ev_pending_write(1);
+	timer0_ev_enable_write(1);
+  irq_setmask(irq_getmask() | (1 << TIMER0_INTERRUPT));
 
 }
 
@@ -35,18 +39,14 @@ int main(void)
 {
 	irq_setmask(0);
 	irq_setie(1);
-	uart_init();
-  init_timerIRQ(1000);
 
+	uart_init();
+	config_timerIRQ(500);
 
 	puts("\nExample 06  lm32-CONFIG interrupciones "__DATE__" "__TIME__"\n");
+  printf("get mask %d",irq_getmask());
 
-//	irq_setmask(TIMER0_INTERRUPT);
-//	uint32_t mask &= ~(1 << TIMER0_INTERRUPT);
-//  irq_setmask(mask)
 
-  timer0_ev_enable_write(1);
 	while(1);
-
 	return 0;
 }
