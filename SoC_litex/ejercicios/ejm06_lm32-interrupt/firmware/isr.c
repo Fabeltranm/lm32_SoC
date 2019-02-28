@@ -11,24 +11,25 @@
 
 extern void periodic_isr(void);
 
-#define TIMER_INTERRUPT 1
-
-void timer_isr1(void);
+void timer_isr(void);
 void isr(void);
+
 void isr(void)
 {
 	unsigned int irqs;
 
 	irqs = irq_pending() & irq_getmask();
 
-	if(irqs & (1 << TIMER_INTERRUPT))
-		timer_isr1();
+	if(irqs & (1 << TIMER0_INTERRUPT))
+	timer_isr();
 
 }
 
 
-void timer_isr1(void){
+void timer_isr(void){
 
+	// borra la interrupción para que no siga disparando
+  timer0_ev_pending_write (1);
 	puts("\ntimer interrupciones \n");
-
+  timer0_ev_enable_write(1);
 }

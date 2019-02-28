@@ -10,7 +10,7 @@
 
 
 
-static void config_timerIRQ(unsigned int ms)
+static void init_timerIRQ(unsigned int ms)
 {
 	uint8_t t;
 
@@ -19,14 +19,14 @@ static void config_timerIRQ(unsigned int ms)
 	timer0_reload_write(t);
 	timer0_load_write(t);
 	timer0_en_write(1);
-
+  timer0_ev_enable_write(1);
 }
 
 
 int main(void)
 {
-	irq_setmask(1);
-	config_timerIRQ(1000);
+	init_timerIRQ(1000);
+	irq_setmask(2);
 	irq_setie(1);
 
 	uart_init();

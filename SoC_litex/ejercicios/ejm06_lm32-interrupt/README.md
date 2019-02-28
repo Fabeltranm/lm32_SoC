@@ -123,4 +123,4 @@ _interrupt_handler:
 	nop
 	nop
 ```
-'_interrupt_handler' realiza una 'foto' del estado de los registro del procesaordor , para luego llamar la función `isr`, la cual, se encuentra en el archivo `isr.c`
+`_interrupt_handler` realiza una 'foto' del estado de los registro del procesaordor , para luego llamar la función `isr`, la cual, se encuentra en el archivo `isr.c`.
