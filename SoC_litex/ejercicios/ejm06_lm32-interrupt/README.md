@@ -16,7 +16,7 @@ Adicionalmente, se debe especificar que tipo de interrupción es: si se interrum
 
 En los tres tipos de interrupción, al llegar el evento se activa la señal IRQ, activando el bit respectivo de pending. Para ser atendida esta interrupción se debe agregar el bit pending al Vector de interrupciones del procesador. A continuación, se presenta un fragmento del la descripción del modulo Timer, que se encuentra en el archivo Timer.py.
 
-`
+'''python
 class Timer(Module, AutoCSR):
     def __init__(self, width=32):
         self._load = CSRStorage(width)
@@ -37,7 +37,7 @@ class Timer(Module, AutoCSR):
         ]
         self.comb += self.ev.zero.trigger.eq(value != 0)
 
-`
+'''
 
 La descripción del hardware del timer, incluye la señal de interrupción zero, que se activa cuando el valor del contador value llega a cero, y es genenerada con el evento
 EventSourceProcess(). lo que indica que el bit 1 del regsitro IP se activa con un flanco de bajada.
@@ -64,8 +64,6 @@ Para actualizar el mapa de interrupciones,  en el momento de instancia em SoC, s
 
 '
 En la descripción de hardware, se observa que la interrupción generada por los botones se ubica en el bit 4 del registro de interrupciones.
-
-
 
 
 RECUERDE QUE LAS INTERRUPCIONES SON SEÑALES  QUE NO VAN CONECTADOS POR EL BUS WISHBONE. SON SEÑALES QUE INDICAN UN EVENTO DE ATENCIÓN INMEDIATA
