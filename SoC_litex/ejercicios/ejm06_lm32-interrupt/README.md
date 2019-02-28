@@ -1,16 +1,19 @@
-#Interrupts
+# Interrupts
 
 ## Configuración en hardware
 
 Las interrupciones del periférico, desde litex, se administran con el módulo EventManager(). Por lo tanto, cada modulo, periférico, que interrumpe la unidad de control, debe contar con el submódulo:
 
-`
-  from litex.soc.interconnect.csr_eventmanager import *
+``` [python]
+
+
+from litex.soc.interconnect.csr_eventmanager import *
 
 
   def __init__(self):
         self.submodules.ev = EventManager()
-`
+
+```
 
 Adicionalmente, se debe especificar que tipo de interrupción es: si se interrumpe cuando hay flanco de subida , flanco de bajada o por nivel, para ello se debe adicionar los submódulos  EventSourcePulse (), EventSourceProcess () o EventSourceLevel (), respectivamente.
 
