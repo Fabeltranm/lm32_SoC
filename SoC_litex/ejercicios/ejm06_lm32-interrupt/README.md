@@ -16,7 +16,7 @@ Adicionalmente, se debe especificar que tipo de interrupción es: si se interrum
 
 En los tres tipos de interrupción, al llegar el evento se activa la señal IRQ, activando el bit respectivo de pending. Para ser atendida esta interrupción se debe agregar el bit pending al Vector de interrupciones del procesador. A continuación, se presenta un fragmento del la descripción del modulo Timer, que se encuentra en el archivo Timer.py.
 
-'''python
+´´´python
 class Timer(Module, AutoCSR):
     def __init__(self, width=32):
         self._load = CSRStorage(width)
