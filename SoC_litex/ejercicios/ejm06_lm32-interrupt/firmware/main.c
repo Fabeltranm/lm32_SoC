@@ -41,7 +41,7 @@ int main(void)
 	irq_setie(1);
 
 	uart_init();
-	config_timerIRQ(500);
+	config_timerIRQ(200);
 
 	puts("\nExample 06  lm32-CONFIG interrupciones "__DATE__" "__TIME__"\n");
   printf("get mask %d",irq_getmask());
