@@ -133,3 +133,10 @@ _interrupt_handler:
 	nop
 ```
 `_interrupt_handler` realiza una 'foto' del estado de los registro del procesador y luego llamar la función `isr()`, la cual, se encuentra en el archivo `isr.c`. Por último, restaura el estado del procesador  al instante previo de atender las interrupciones.
+
+
+# descargar el bitstream
+## openoced 
+## xc3sprog
+
+# programas el firmware
