@@ -1,5 +1,5 @@
-#ifndef __HW_VARIABLES_H
-#define __HW_VARIABLES_H
+#ifndef _VARIABLES_H
+#define _VARIABLES_H
 
  char dir_global;
 
