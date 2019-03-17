@@ -6,7 +6,7 @@
 #include <uart.h>
 #include <console.h>
 #include <generated/csr.h>
-
+#include "variables.h"
 
 static void wait_ms(unsigned int ms)
 {
@@ -41,12 +41,17 @@ int main(void)
 	irq_setie(1);
 
 	uart_init();
-	config_timerIRQ(200);
+	config_timerIRQ(1000);
 
 	puts("\nExample 06  lm32-CONFIG interrupciones "__DATE__" "__TIME__"\n");
   printf("get mask %d",irq_getmask());
 
-
-	while(1);
+  char old_dir=dir_global;
+	while(1){
+  if (old_dir !=dir_global){
+		printf("cambio dir %x \n",dir_global);
+	  old_dir=dir_global;
+ }
+}
 	return 0;
 }

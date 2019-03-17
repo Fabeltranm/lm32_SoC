@@ -1,0 +1,7 @@
+INFILE=/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.ncd
+OUTFILE=/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware
+LICENSE=WebPack
+USER_INFO=211095409_0_0_571
