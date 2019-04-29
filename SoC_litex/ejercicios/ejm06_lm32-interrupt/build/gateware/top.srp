@@ -53,63 +53,63 @@ WARNING:Xst:29 - Optimization Effort not specified
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
 WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
-Parsing module <lm32_dcache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
-Parsing module <lm32_addsub>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
+Parsing module <lm32_multiplier>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_interrupt>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_shifter>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" into library work
+Parsing module <top>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_logic_op>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
+Parsing module <lm32_dp_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
+Parsing module <lm32_cpu>.
+WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
+WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_adder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
+Parsing module <lm32_instruction_unit>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
 Parsing module <lm32_mc_arithmetic>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
 Parsing module <lm32_decoder>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
-Parsing module <lm32_instruction_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_multiplier.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_multiplier>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
-Parsing module <lm32_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Parsing module <lm32_dcache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
-Parsing module <lm32_dp_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
-Parsing module <lm32_cpu>.
-WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
-WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
-Parsing module <lm32_icache>.
-Analyzing Verilog file "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" into library work
-Parsing module <top>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_logic_op>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_shifter>.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
 Parsing module <lm32_load_store_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_interrupt>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
+Parsing module <lm32_icache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
+Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
+Parsing module <lm32_addsub>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -246,9 +246,10 @@ INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/e
 INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1202: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
 WARNING:Xst:2999 - Signal 'mem', unconnected in block 'top', is tied to its initial value.
 WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its initial value.
-    Found 8192x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
-    Found 1024x32-bit dual-port RAM <Mram_mem_1> for signal <mem_1>.
-    Found 4096x32-bit dual-port RAM <Mram_mem_2> for signal <mem_2>.
+    Found 4096x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
+    Found 512x32-bit dual-port RAM <Mram_mem_1> for signal <mem_1>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_2>, simulation mismatch.
+    Found 4608x32-bit dual-port RAM <Mram_mem_2> for signal <mem_2>.
     Found 16x10-bit dual-port RAM <Mram_storage_1> for signal <storage_1>.
     Found 16x10-bit dual-port RAM <Mram_storage_2> for signal <storage_2>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>, simulation mismatch.
@@ -316,9 +317,9 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>,
     Found 1-bit register for signal <xilinxmultiregimpl0_regs1>.
     Found 1-bit register for signal <xilinxmultiregimpl1_regs0>.
     Found 1-bit register for signal <xilinxmultiregimpl1_regs1>.
-    Found 13-bit register for signal <memadr>.
-    Found 10-bit register for signal <memadr_1>.
-    Found 12-bit register for signal <memadr_2>.
+    Found 12-bit register for signal <memadr>.
+    Found 9-bit register for signal <memadr_1>.
+    Found 13-bit register for signal <memadr_2>.
     Found 10-bit register for signal <memdat_1>.
     Found 10-bit register for signal <memdat_3>.
     Found 6-bit register for signal <memadr_3>.
@@ -345,7 +346,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>,
     Summary:
 	inferred   6 RAM(s).
 	inferred  14 Adder/Subtractor(s).
-	inferred 736 D-type flip-flop(s).
+	inferred 735 D-type flip-flop(s).
 	inferred  50 Multiplexer(s).
 Unit <top> synthesized.
 
@@ -767,13 +768,14 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 12
- 1024x32-bit dual-port RAM                             : 3
+ 1024x32-bit dual-port RAM                             : 2
  16x10-bit dual-port RAM                               : 2
  256x21-bit dual-port RAM                              : 2
  32x32-bit dual-port RAM                               : 2
  33x8-bit single-port Read Only RAM                    : 1
- 4096x32-bit dual-port RAM                             : 1
- 8192x32-bit single-port Read Only RAM                 : 1
+ 4096x32-bit single-port Read Only RAM                 : 1
+ 4608x32-bit dual-port RAM                             : 1
+ 512x32-bit dual-port RAM                              : 1
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
 # Adders/Subtractors                                   : 29
@@ -790,7 +792,7 @@ Macro Statistics
  8-bit subtractor                                      : 2
 # Registers                                            : 201
  1-bit register                                        : 104
- 10-bit register                                       : 5
+ 10-bit register                                       : 4
  12-bit register                                       : 1
  13-bit register                                       : 1
  14-bit register                                       : 1
@@ -804,6 +806,7 @@ Macro Statistics
  5-bit register                                        : 5
  6-bit register                                        : 2
  8-bit register                                        : 7
+ 9-bit register                                        : 1
 # Comparators                                          : 11
  1-bit comparator equal                                : 1
  21-bit comparator equal                               : 2
@@ -974,14 +977,14 @@ INFO:Xst:3226 - The RAM <Mram_mem_1> will be implemented as a BLOCK RAM, absorbi
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     aspect ratio   | 512-word x 32-bit                   |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk32>         | rise     |
     |     weA<3>         | connected to signal <sram_we<3>>    | high     |
     |     weA<2>         | connected to signal <sram_we<2>>    | high     |
     |     weA<1>         | connected to signal <sram_we<1>>    | high     |
     |     weA<0>         | connected to signal <sram_we<0>>    | high     |
-    |     addrA          | connected to signal <array_muxed0<9:0>> |          |
+    |     addrA          | connected to signal <array_muxed0<8:0>> |          |
     |     diA            | connected to signal <array_muxed1>  |          |
     |     doA            | connected to signal <sram_bus_dat_r0> |          |
     -----------------------------------------------------------------------
@@ -992,14 +995,14 @@ INFO:Xst:3226 - The RAM <Mram_mem_2> will be implemented as a BLOCK RAM, absorbi
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 4096-word x 32-bit                  |          |
+    |     aspect ratio   | 4608-word x 32-bit                  |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk32>         | rise     |
     |     weA<3>         | connected to signal <main_ram_we<3>> | high     |
     |     weA<2>         | connected to signal <main_ram_we<2>> | high     |
     |     weA<1>         | connected to signal <main_ram_we<1>> | high     |
     |     weA<0>         | connected to signal <main_ram_we<0>> | high     |
-    |     addrA          | connected to signal <array_muxed0<11:0>> |          |
+    |     addrA          | connected to signal <array_muxed0<12:0>> |          |
     |     diA            | connected to signal <array_muxed1>  |          |
     |     doA            | connected to signal <main_ram_bus_dat_r> |          |
     -----------------------------------------------------------------------
@@ -1042,11 +1045,11 @@ INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 8192-word x 32-bit                  |          |
+    |     aspect ratio   | 4096-word x 32-bit                  |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk32>         | rise     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <array_muxed0<12:0>> |          |
+    |     addrA          | connected to signal <array_muxed0<11:0>> |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <rom_bus_dat_r> |          |
     -----------------------------------------------------------------------
@@ -1067,13 +1070,13 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 12
  1024x32-bit dual-port block RAM                       : 2
- 1024x32-bit single-port block RAM                     : 1
  16x10-bit dual-port distributed RAM                   : 2
  256x21-bit dual-port block RAM                        : 2
  32x32-bit dual-port distributed RAM                   : 2
  33x8-bit single-port distributed Read Only RAM        : 1
- 4096x32-bit single-port block RAM                     : 1
- 8192x32-bit single-port block Read Only RAM           : 1
+ 4096x32-bit single-port block Read Only RAM           : 1
+ 4608x32-bit single-port block RAM                     : 1
+ 512x32-bit single-port block RAM                      : 1
 # Multipliers                                          : 1
  32x32-bit registered multiplier                       : 1
 # Adders/Subtractors                                   : 12
@@ -1283,7 +1286,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <interface0_bank_bus_dat_r_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <inst_LPM_FF> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <inst_LPM_FF1_2> 
 INFO:Xst:2261 - The FF/Latch <i_cti_o_0> in Unit <lm32_instruction_unit> is equivalent to the following FF/Latch, which will be removed : <i_cti_o_2> 
 INFO:Xst:2261 - The FF/Latch <d_cti_o_0> in Unit <lm32_load_store_unit> is equivalent to the following FF/Latch, which will be removed : <d_cti_o_2> 
 
@@ -1399,8 +1401,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1784
- Flip-Flops                                            : 1784
+# Registers                                            : 1785
+ Flip-Flops                                            : 1785
 
 =========================================================================
 
@@ -1423,30 +1425,30 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3129
+# BELS                             : 3157
 #      GND                         : 1
 #      INV                         : 59
 #      LUT1                        : 94
-#      LUT2                        : 345
+#      LUT2                        : 409
 #      LUT3                        : 463
-#      LUT4                        : 139
-#      LUT5                        : 436
-#      LUT6                        : 830
+#      LUT4                        : 131
+#      LUT5                        : 472
+#      LUT6                        : 798
 #      MUXCY                       : 369
-#      MUXF7                       : 38
+#      MUXF7                       : 6
 #      VCC                         : 1
 #      XORCY                       : 354
-# FlipFlops/Latches                : 1784
-#      FD                          : 18
+# FlipFlops/Latches                : 1785
+#      FD                          : 19
 #      FDE                         : 103
 #      FDR                         : 542
 #      FDRE                        : 1032
 #      FDS                         : 2
 #      FDSE                        : 87
-# RAMS                             : 112
+# RAMS                             : 104
 #      RAM16X1D                    : 16
 #      RAM32X1D                    : 64
-#      RAMB16BWER                  : 30
+#      RAMB16BWER                  : 22
 #      RAMB8BWER                   : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -1463,17 +1465,17 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1784  out of  11440    15%  
- Number of Slice LUTs:                 2526  out of   5720    44%  
-    Number used as Logic:              2366  out of   5720    41%  
+ Number of Slice Registers:            1785  out of  11440    15%  
+ Number of Slice LUTs:                 2586  out of   5720    45%  
+    Number used as Logic:              2426  out of   5720    42%  
     Number used as Memory:              160  out of   1440    11%  
        Number used as RAM:              160
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3041
-   Number with an unused Flip Flop:    1257  out of   3041    41%  
-   Number with an unused LUT:           515  out of   3041    16%  
-   Number of fully used LUT-FF pairs:  1269  out of   3041    41%  
+ Number of LUT Flip Flop pairs used:   3118
+   Number with an unused Flip Flop:    1333  out of   3118    42%  
+   Number with an unused LUT:           532  out of   3118    17%  
+   Number of fully used LUT-FF pairs:  1253  out of   3118    40%  
    Number of unique control sets:        46
 
 IO Utilization: 
@@ -1481,8 +1483,8 @@ IO Utilization:
  Number of bonded IOBs:                   6  out of    102     5%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               31  out of     32    96%  
-    Number using Block RAM only:         31
+ Number of Block RAM/FIFO:               23  out of     32    71%  
+    Number using Block RAM only:         23
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
  Number of DSP48A1s:                      3  out of     16    18%  
 
@@ -1507,7 +1509,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk32                              | BUFGP                  | 1899  |
+clk32                              | BUFGP                  | 1892  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1530,7 +1532,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk32'
   Clock period: 13.917ns (frequency: 71.855MHz)
-  Total number of paths / destination ports: 271611 / 6615
+  Total number of paths / destination ports: 271398 / 6504
 -------------------------------------------------------------------------
 Delay:               13.917ns (Levels of Logic = 1)
   Source:            lm32_cpu/multiplier/Mmult_n0023 (DSP)
@@ -1604,15 +1606,15 @@ clk32          |   13.917|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 15.29 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.82 secs
  
 --> 
 
 
-Total memory usage is 433288 kilobytes
+Total memory usage is 425536 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  261 (   0 filtered)
-Number of infos    :   47 (   0 filtered)
+Number of warnings :  262 (   0 filtered)
+Number of infos    :   46 (   0 filtered)
 

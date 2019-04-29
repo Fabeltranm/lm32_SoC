@@ -55,7 +55,7 @@ wire rom_bus_we;
 wire [2:0] rom_bus_cti;
 wire [1:0] rom_bus_bte;
 reg rom_bus_err = 1'd0;
-wire [12:0] rom_adr;
+wire [11:0] rom_adr;
 wire [31:0] rom_dat_r;
 wire [29:0] sram_bus_adr0;
 wire [31:0] sram_bus_dat_w0;
@@ -68,7 +68,7 @@ wire sram_bus_we0;
 wire [2:0] sram_bus_cti;
 wire [1:0] sram_bus_bte;
 reg sram_bus_err = 1'd0;
-wire [9:0] sram_adr;
+wire [8:0] sram_adr;
 wire [31:0] sram_dat_r;
 reg [3:0] sram_we = 4'd0;
 wire [31:0] sram_dat_w;
@@ -83,7 +83,7 @@ wire main_ram_bus_we;
 wire [2:0] main_ram_bus_cti;
 wire [1:0] main_ram_bus_bte;
 reg main_ram_bus_err = 1'd0;
-wire [11:0] main_ram_adr;
+wire [12:0] main_ram_adr;
 wire [31:0] main_ram_dat_r;
 reg [3:0] main_ram_we = 4'd0;
 wire [31:0] main_ram_dat_w;
@@ -385,7 +385,7 @@ assign ctrl_reset = ctrl_reset_reset_re;
 assign ctrl_bus_errors_status = ctrl_bus_errors;
 assign lm32_ibus_adr = lm32_i_adr_o[31:2];
 assign lm32_dbus_adr = lm32_d_adr_o[31:2];
-assign rom_adr = rom_bus_adr[12:0];
+assign rom_adr = rom_bus_adr[11:0];
 assign rom_bus_dat_r = rom_dat_r;
 always @(*) begin
 	sram_we <= 4'd0;
@@ -394,7 +394,7 @@ always @(*) begin
 	sram_we[2] <= (((sram_bus_cyc & sram_bus_stb) & sram_bus_we0) & sram_bus_sel[2]);
 	sram_we[3] <= (((sram_bus_cyc & sram_bus_stb) & sram_bus_we0) & sram_bus_sel[3]);
 end
-assign sram_adr = sram_bus_adr0[9:0];
+assign sram_adr = sram_bus_adr0[8:0];
 assign sram_bus_dat_r0 = sram_dat_r;
 assign sram_dat_w = sram_bus_dat_w0;
 always @(*) begin
@@ -404,7 +404,7 @@ always @(*) begin
 	main_ram_we[2] <= (((main_ram_bus_cyc & main_ram_bus_stb) & main_ram_bus_we) & main_ram_bus_sel[2]);
 	main_ram_we[3] <= (((main_ram_bus_cyc & main_ram_bus_stb) & main_ram_bus_we) & main_ram_bus_sel[3]);
 end
-assign main_ram_adr = main_ram_bus_adr[11:0];
+assign main_ram_adr = main_ram_bus_adr[12:0];
 assign main_ram_bus_dat_r = main_ram_dat_r;
 assign main_ram_dat_w = main_ram_bus_dat_w;
 assign uart_tx_fifo_sink_valid = uart_rxtx_re;
@@ -1229,8 +1229,8 @@ lm32_cpu #(
 	.I_WE_O(lm32_ibus_we)
 );
 
-reg [31:0] mem[0:8191];
-reg [12:0] memadr;
+reg [31:0] mem[0:4095];
+reg [11:0] memadr;
 always @(posedge sys_clk) begin
 	memadr <= rom_adr;
 end
@@ -1241,8 +1241,8 @@ initial begin
 	$readmemh("mem.init", mem);
 end
 
-reg [31:0] mem_1[0:1023];
-reg [9:0] memadr_1;
+reg [31:0] mem_1[0:511];
+reg [8:0] memadr_1;
 always @(posedge sys_clk) begin
 	if (sram_we[0])
 		mem_1[sram_adr][7:0] <= sram_dat_w[7:0];
@@ -1257,8 +1257,8 @@ end
 
 assign sram_dat_r = mem_1[memadr_1];
 
-reg [31:0] mem_2[0:4095];
-reg [11:0] memadr_2;
+reg [31:0] mem_2[0:4607];
+reg [12:0] memadr_2;
 always @(posedge sys_clk) begin
 	if (main_ram_we[0])
 		mem_2[main_ram_adr][7:0] <= main_ram_dat_w[7:0];

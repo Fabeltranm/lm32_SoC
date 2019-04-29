@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Feb 28 10:15:29 2019
+// Written by: Map P.20131013 on Sat Mar 16 22:24:21 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -13,16 +13,16 @@ PIN lm32_cpu/multiplier/Mmult_n00232_pins<92> = BEL
         "lm32_cpu/multiplier/Mmult_n00232" PINNAME CLK;
 PIN lm32_cpu/multiplier/Mmult_n0023_pins<110> = BEL
         "lm32_cpu/multiplier/Mmult_n0023" PINNAME CLK;
-PIN Mram_mem_11_pins<9> = BEL "Mram_mem_11" PINNAME CLKA;
-PIN Mram_mem_12_pins<9> = BEL "Mram_mem_12" PINNAME CLKA;
+PIN Mram_mem_1_pins<9> = BEL "Mram_mem_1" PINNAME CLKA;
 PIN Mram_mem_21_pins<9> = BEL "Mram_mem_21" PINNAME CLKA;
+PIN Mram_mem_24_pins<9> = BEL "Mram_mem_24" PINNAME CLKA;
 PIN Mram_mem_22_pins<9> = BEL "Mram_mem_22" PINNAME CLKA;
 PIN Mram_mem_23_pins<9> = BEL "Mram_mem_23" PINNAME CLKA;
-PIN Mram_mem_24_pins<9> = BEL "Mram_mem_24" PINNAME CLKA;
 PIN Mram_mem_25_pins<9> = BEL "Mram_mem_25" PINNAME CLKA;
 PIN Mram_mem_26_pins<9> = BEL "Mram_mem_26" PINNAME CLKA;
 PIN Mram_mem_27_pins<9> = BEL "Mram_mem_27" PINNAME CLKA;
 PIN Mram_mem_28_pins<9> = BEL "Mram_mem_28" PINNAME CLKA;
+PIN Mram_mem_29_pins<9> = BEL "Mram_mem_29" PINNAME CLKA;
 PIN
         lm32_cpu/instruction_unit/icache/memories[0].way_0_data_ram/Mram_mem2_pins<20>
         = BEL
@@ -83,22 +83,14 @@ PIN
         = BEL
         "lm32_cpu/load_store_unit/dcache/memories[0].data_memories.way_0_data_ram/Mram_mem2"
         PINNAME CLKB;
-PIN Mram_mem16_pins<13> = BEL "Mram_mem16" PINNAME CLKA;
-PIN Mram_mem15_pins<13> = BEL "Mram_mem15" PINNAME CLKA;
-PIN Mram_mem14_pins<13> = BEL "Mram_mem14" PINNAME CLKA;
-PIN Mram_mem13_pins<13> = BEL "Mram_mem13" PINNAME CLKA;
-PIN Mram_mem12_pins<13> = BEL "Mram_mem12" PINNAME CLKA;
-PIN Mram_mem11_pins<13> = BEL "Mram_mem11" PINNAME CLKA;
-PIN Mram_mem10_pins<13> = BEL "Mram_mem10" PINNAME CLKA;
-PIN Mram_mem9_pins<13> = BEL "Mram_mem9" PINNAME CLKA;
-PIN Mram_mem8_pins<13> = BEL "Mram_mem8" PINNAME CLKA;
-PIN Mram_mem7_pins<13> = BEL "Mram_mem7" PINNAME CLKA;
-PIN Mram_mem6_pins<13> = BEL "Mram_mem6" PINNAME CLKA;
-PIN Mram_mem5_pins<13> = BEL "Mram_mem5" PINNAME CLKA;
-PIN Mram_mem4_pins<13> = BEL "Mram_mem4" PINNAME CLKA;
-PIN Mram_mem3_pins<13> = BEL "Mram_mem3" PINNAME CLKA;
-PIN Mram_mem2_pins<13> = BEL "Mram_mem2" PINNAME CLKA;
-PIN Mram_mem1_pins<13> = BEL "Mram_mem1" PINNAME CLKA;
+PIN Mram_mem8_pins<12> = BEL "Mram_mem8" PINNAME CLKA;
+PIN Mram_mem7_pins<12> = BEL "Mram_mem7" PINNAME CLKA;
+PIN Mram_mem6_pins<12> = BEL "Mram_mem6" PINNAME CLKA;
+PIN Mram_mem5_pins<12> = BEL "Mram_mem5" PINNAME CLKA;
+PIN Mram_mem4_pins<12> = BEL "Mram_mem4" PINNAME CLKA;
+PIN Mram_mem3_pins<12> = BEL "Mram_mem3" PINNAME CLKA;
+PIN Mram_mem2_pins<12> = BEL "Mram_mem2" PINNAME CLKA;
+PIN Mram_mem1_pins<12> = BEL "Mram_mem1" PINNAME CLKA;
 PIN lm32_cpu/multiplier/Mmult_n00231_pins<110> = BEL
         "lm32_cpu/multiplier/Mmult_n00231" PINNAME CLK;
 TIMEGRP PRDclk32 = BEL "xilinxmultiregimpl0_regs0" BEL
@@ -374,22 +366,22 @@ TIMEGRP PRDclk32 = BEL "xilinxmultiregimpl0_regs0" BEL
         "uart_phy_rx_bitcount_2" BEL "uart_phy_rx_bitcount_3" BEL
         "uart_phy_tx_bitcount_0" BEL "uart_phy_tx_bitcount_1" BEL
         "uart_phy_tx_bitcount_2" BEL "uart_phy_tx_bitcount_3" BEL
+        "uart_tx_fifo_consume_0" BEL "uart_tx_fifo_consume_1" BEL
+        "uart_tx_fifo_consume_2" BEL "uart_tx_fifo_consume_3" BEL
         "uart_tx_fifo_produce_0" BEL "uart_tx_fifo_produce_1" BEL
         "uart_tx_fifo_produce_2" BEL "uart_tx_fifo_produce_3" BEL
         "uart_tx_fifo_level0_0" BEL "uart_tx_fifo_level0_1" BEL
         "uart_tx_fifo_level0_2" BEL "uart_tx_fifo_level0_3" BEL
-        "uart_tx_fifo_level0_4" BEL "uart_tx_fifo_consume_0" BEL
-        "uart_tx_fifo_consume_1" BEL "uart_tx_fifo_consume_2" BEL
-        "uart_tx_fifo_consume_3" BEL "uart_rx_fifo_produce_0" BEL
-        "uart_rx_fifo_produce_1" BEL "uart_rx_fifo_produce_2" BEL
-        "uart_rx_fifo_produce_3" BEL "uart_rx_fifo_consume_0" BEL
+        "uart_tx_fifo_level0_4" BEL "uart_rx_fifo_consume_0" BEL
         "uart_rx_fifo_consume_1" BEL "uart_rx_fifo_consume_2" BEL
-        "uart_rx_fifo_consume_3" BEL "uart_rx_fifo_level0_0" BEL
+        "uart_rx_fifo_consume_3" BEL "uart_rx_fifo_produce_0" BEL
+        "uart_rx_fifo_produce_1" BEL "uart_rx_fifo_produce_2" BEL
+        "uart_rx_fifo_produce_3" BEL "uart_rx_fifo_level0_0" BEL
         "uart_rx_fifo_level0_1" BEL "uart_rx_fifo_level0_2" BEL
-        "uart_rx_fifo_level0_3" BEL "uart_rx_fifo_level0_4" BEL "count_0" BEL
-        "count_3" BEL "count_1" BEL "count_2" BEL "count_6" BEL "count_4" BEL
-        "count_5" BEL "count_9" BEL "count_7" BEL "count_8" BEL "count_10" BEL
-        "count_11" BEL "count_12" BEL "count_13" BEL "count_16" BEL "count_14"
+        "uart_rx_fifo_level0_3" BEL "uart_rx_fifo_level0_4" BEL "count_2" BEL
+        "count_0" BEL "count_1" BEL "count_5" BEL "count_3" BEL "count_4" BEL
+        "count_8" BEL "count_6" BEL "count_7" BEL "count_9" BEL "count_10" BEL
+        "count_13" BEL "count_11" BEL "count_12" BEL "count_16" BEL "count_14"
         BEL "count_15" BEL "count_19" BEL "count_17" BEL "count_18" BEL
         "ctrl_bus_errors_0" BEL "ctrl_bus_errors_1" BEL "ctrl_bus_errors_2"
         BEL "ctrl_bus_errors_3" BEL "ctrl_bus_errors_4" BEL
@@ -403,19 +395,19 @@ TIMEGRP PRDclk32 = BEL "xilinxmultiregimpl0_regs0" BEL
         BEL "ctrl_bus_errors_23" BEL "ctrl_bus_errors_24" BEL
         "ctrl_bus_errors_25" BEL "ctrl_bus_errors_26" BEL "ctrl_bus_errors_27"
         BEL "ctrl_bus_errors_28" BEL "ctrl_bus_errors_29" BEL
-        "ctrl_bus_errors_30" BEL "ctrl_bus_errors_31" BEL "inst_LPM_FF" BEL
-        "inst_LPM_FF1_1" BEL "inst_LPM_FF1_0" BEL "lm32_cpu/cc_31" BEL
-        "lm32_cpu/cc_30" BEL "lm32_cpu/cc_29" BEL "lm32_cpu/cc_28" BEL
-        "lm32_cpu/cc_27" BEL "lm32_cpu/cc_26" BEL "lm32_cpu/cc_25" BEL
-        "lm32_cpu/cc_24" BEL "lm32_cpu/cc_23" BEL "lm32_cpu/cc_22" BEL
-        "lm32_cpu/cc_21" BEL "lm32_cpu/cc_20" BEL "lm32_cpu/cc_19" BEL
-        "lm32_cpu/cc_18" BEL "lm32_cpu/cc_17" BEL "lm32_cpu/cc_16" BEL
-        "lm32_cpu/cc_15" BEL "lm32_cpu/cc_14" BEL "lm32_cpu/cc_13" BEL
-        "lm32_cpu/cc_12" BEL "lm32_cpu/cc_11" BEL "lm32_cpu/cc_10" BEL
-        "lm32_cpu/cc_9" BEL "lm32_cpu/cc_8" BEL "lm32_cpu/cc_7" BEL
-        "lm32_cpu/cc_6" BEL "lm32_cpu/cc_5" BEL "lm32_cpu/cc_4" BEL
-        "lm32_cpu/cc_3" BEL "lm32_cpu/cc_2" BEL "lm32_cpu/cc_1" BEL
-        "lm32_cpu/cc_0" BEL "lm32_cpu/write_enable_w" BEL
+        "ctrl_bus_errors_30" BEL "ctrl_bus_errors_31" BEL "inst_LPM_FF_3" BEL
+        "inst_LPM_FF_2" BEL "inst_LPM_FF_1" BEL "inst_LPM_FF_0" BEL
+        "lm32_cpu/cc_31" BEL "lm32_cpu/cc_30" BEL "lm32_cpu/cc_29" BEL
+        "lm32_cpu/cc_28" BEL "lm32_cpu/cc_27" BEL "lm32_cpu/cc_26" BEL
+        "lm32_cpu/cc_25" BEL "lm32_cpu/cc_24" BEL "lm32_cpu/cc_23" BEL
+        "lm32_cpu/cc_22" BEL "lm32_cpu/cc_21" BEL "lm32_cpu/cc_20" BEL
+        "lm32_cpu/cc_19" BEL "lm32_cpu/cc_18" BEL "lm32_cpu/cc_17" BEL
+        "lm32_cpu/cc_16" BEL "lm32_cpu/cc_15" BEL "lm32_cpu/cc_14" BEL
+        "lm32_cpu/cc_13" BEL "lm32_cpu/cc_12" BEL "lm32_cpu/cc_11" BEL
+        "lm32_cpu/cc_10" BEL "lm32_cpu/cc_9" BEL "lm32_cpu/cc_8" BEL
+        "lm32_cpu/cc_7" BEL "lm32_cpu/cc_6" BEL "lm32_cpu/cc_5" BEL
+        "lm32_cpu/cc_4" BEL "lm32_cpu/cc_3" BEL "lm32_cpu/cc_2" BEL
+        "lm32_cpu/cc_1" BEL "lm32_cpu/cc_0" BEL "lm32_cpu/write_enable_w" BEL
         "lm32_cpu/m_bypass_enable_m" BEL "lm32_cpu/branch_m" BEL
         "lm32_cpu/csr_write_enable_x" BEL "lm32_cpu/eret_x" BEL
         "lm32_cpu/scall_x" BEL "lm32_cpu/csr_x_2" BEL "lm32_cpu/csr_x_1" BEL
@@ -1315,11 +1307,11 @@ TIMEGRP PRDclk32 = BEL "xilinxmultiregimpl0_regs0" BEL
         "lm32_cpu/load_store_unit/dcache/state_FSM_FFd1_1" BEL
         "lm32_cpu/exception_m_1" BEL "lm32_cpu/instruction_unit/i_cyc_o_1" BEL
         "lm32_cpu/instruction_unit/icache/state_FSM_FFd1_1" BEL
-        "clk32_BUFGP/BUFG" PIN "Mram_mem_11_pins<9>" PIN "Mram_mem_12_pins<9>"
-        PIN "Mram_mem_21_pins<9>" PIN "Mram_mem_22_pins<9>" PIN
-        "Mram_mem_23_pins<9>" PIN "Mram_mem_24_pins<9>" PIN
-        "Mram_mem_25_pins<9>" PIN "Mram_mem_26_pins<9>" PIN
-        "Mram_mem_27_pins<9>" PIN "Mram_mem_28_pins<9>" PIN
+        "clk32_BUFGP/BUFG" PIN "Mram_mem_1_pins<9>" PIN "Mram_mem_21_pins<9>"
+        PIN "Mram_mem_24_pins<9>" PIN "Mram_mem_22_pins<9>" PIN
+        "Mram_mem_23_pins<9>" PIN "Mram_mem_25_pins<9>" PIN
+        "Mram_mem_26_pins<9>" PIN "Mram_mem_27_pins<9>" PIN
+        "Mram_mem_28_pins<9>" PIN "Mram_mem_29_pins<9>" PIN
         "lm32_cpu/instruction_unit/icache/memories[0].way_0_data_ram/Mram_mem2_pins<20>"
         PIN
         "lm32_cpu/instruction_unit/icache/memories[0].way_0_data_ram/Mram_mem2_pins<21>"
@@ -1343,99 +1335,95 @@ TIMEGRP PRDclk32 = BEL "xilinxmultiregimpl0_regs0" BEL
         "lm32_cpu/load_store_unit/dcache/memories[0].data_memories.way_0_data_ram/Mram_mem2_pins<20>"
         PIN
         "lm32_cpu/load_store_unit/dcache/memories[0].data_memories.way_0_data_ram/Mram_mem2_pins<21>"
-        PIN "Mram_mem16_pins<13>" PIN "Mram_mem15_pins<13>" PIN
-        "Mram_mem14_pins<13>" PIN "Mram_mem13_pins<13>" PIN
-        "Mram_mem12_pins<13>" PIN "Mram_mem11_pins<13>" PIN
-        "Mram_mem10_pins<13>" PIN "Mram_mem9_pins<13>" PIN
-        "Mram_mem8_pins<13>" PIN "Mram_mem7_pins<13>" PIN "Mram_mem6_pins<13>"
-        PIN "Mram_mem5_pins<13>" PIN "Mram_mem4_pins<13>" PIN
-        "Mram_mem3_pins<13>" PIN "Mram_mem2_pins<13>" PIN "Mram_mem1_pins<13>"
+        PIN "Mram_mem8_pins<12>" PIN "Mram_mem7_pins<12>" PIN
+        "Mram_mem6_pins<12>" PIN "Mram_mem5_pins<12>" PIN "Mram_mem4_pins<12>"
+        PIN "Mram_mem3_pins<12>" PIN "Mram_mem2_pins<12>" PIN
+        "Mram_mem1_pins<12>" BEL "Mram_storage_13/SP" BEL "Mram_storage_13/DP"
         BEL "Mram_storage_11/SP" BEL "Mram_storage_11/DP" BEL
-        "Mram_storage_12/SP" BEL "Mram_storage_12/DP" BEL "Mram_storage_13/SP"
-        BEL "Mram_storage_13/DP" BEL "Mram_storage_14/SP" BEL
+        "Mram_storage_12/SP" BEL "Mram_storage_12/DP" BEL "Mram_storage_16/SP"
+        BEL "Mram_storage_16/DP" BEL "Mram_storage_14/SP" BEL
         "Mram_storage_14/DP" BEL "Mram_storage_15/SP" BEL "Mram_storage_15/DP"
-        BEL "Mram_storage_16/SP" BEL "Mram_storage_16/DP" BEL
-        "Mram_storage_17/SP" BEL "Mram_storage_17/DP" BEL "Mram_storage_18/SP"
-        BEL "Mram_storage_18/DP" BEL "Mram_storage_21/SP" BEL
-        "Mram_storage_21/DP" BEL "Mram_storage_22/SP" BEL "Mram_storage_22/DP"
-        BEL "Mram_storage_23/SP" BEL "Mram_storage_23/DP" BEL
-        "Mram_storage_24/SP" BEL "Mram_storage_24/DP" BEL "Mram_storage_25/SP"
-        BEL "Mram_storage_25/DP" BEL "Mram_storage_26/SP" BEL
-        "Mram_storage_26/DP" BEL "Mram_storage_27/SP" BEL "Mram_storage_27/DP"
-        BEL "Mram_storage_28/SP" BEL "Mram_storage_28/DP" BEL
-        "lm32_cpu/Mram_registers40/SP" BEL "lm32_cpu/Mram_registers40/DP" BEL
-        "lm32_cpu/Mram_registers39/SP" BEL "lm32_cpu/Mram_registers39/DP" BEL
-        "lm32_cpu/Mram_registers41/SP" BEL "lm32_cpu/Mram_registers41/DP" BEL
-        "lm32_cpu/Mram_registers37/SP" BEL "lm32_cpu/Mram_registers37/DP" BEL
-        "lm32_cpu/Mram_registers36/SP" BEL "lm32_cpu/Mram_registers36/DP" BEL
-        "lm32_cpu/Mram_registers38/SP" BEL "lm32_cpu/Mram_registers38/DP" BEL
-        "lm32_cpu/Mram_registers34/SP" BEL "lm32_cpu/Mram_registers34/DP" BEL
-        "lm32_cpu/Mram_registers33/SP" BEL "lm32_cpu/Mram_registers33/DP" BEL
-        "lm32_cpu/Mram_registers35/SP" BEL "lm32_cpu/Mram_registers35/DP" BEL
-        "lm32_cpu/Mram_registers32/SP" BEL "lm32_cpu/Mram_registers32/DP" BEL
-        "lm32_cpu/Mram_registers31/SP" BEL "lm32_cpu/Mram_registers31/DP" BEL
-        "lm32_cpu/Mram_registers30/SP" BEL "lm32_cpu/Mram_registers30/DP" BEL
-        "lm32_cpu/Mram_registers29/SP" BEL "lm32_cpu/Mram_registers29/DP" BEL
-        "lm32_cpu/Mram_registers27/SP" BEL "lm32_cpu/Mram_registers27/DP" BEL
-        "lm32_cpu/Mram_registers26/SP" BEL "lm32_cpu/Mram_registers26/DP" BEL
-        "lm32_cpu/Mram_registers28/SP" BEL "lm32_cpu/Mram_registers28/DP" BEL
-        "lm32_cpu/Mram_registers25/SP" BEL "lm32_cpu/Mram_registers25/DP" BEL
-        "lm32_cpu/Mram_registers24/SP" BEL "lm32_cpu/Mram_registers24/DP" BEL
-        "lm32_cpu/Mram_registers23/SP" BEL "lm32_cpu/Mram_registers23/DP" BEL
-        "lm32_cpu/Mram_registers22/SP" BEL "lm32_cpu/Mram_registers22/DP" BEL
-        "lm32_cpu/Mram_registers20/SP" BEL "lm32_cpu/Mram_registers20/DP" BEL
-        "lm32_cpu/Mram_registers10/SP" BEL "lm32_cpu/Mram_registers10/DP" BEL
-        "lm32_cpu/Mram_registers21/SP" BEL "lm32_cpu/Mram_registers21/DP" BEL
-        "lm32_cpu/Mram_registers9/SP" BEL "lm32_cpu/Mram_registers9/DP" BEL
-        "lm32_cpu/Mram_registers8/SP" BEL "lm32_cpu/Mram_registers8/DP" BEL
-        "lm32_cpu/Mram_registers7/SP" BEL "lm32_cpu/Mram_registers7/DP" BEL
-        "lm32_cpu/Mram_registers6/SP" BEL "lm32_cpu/Mram_registers6/DP" BEL
-        "lm32_cpu/Mram_registers4/SP" BEL "lm32_cpu/Mram_registers4/DP" BEL
-        "lm32_cpu/Mram_registers3/SP" BEL "lm32_cpu/Mram_registers3/DP" BEL
-        "lm32_cpu/Mram_registers5/SP" BEL "lm32_cpu/Mram_registers5/DP" BEL
-        "lm32_cpu/Mram_registers2/SP" BEL "lm32_cpu/Mram_registers2/DP" BEL
-        "lm32_cpu/Mram_registers133/SP" BEL "lm32_cpu/Mram_registers133/DP"
-        BEL "lm32_cpu/Mram_registers132/SP" BEL
-        "lm32_cpu/Mram_registers132/DP" BEL "lm32_cpu/Mram_registers131/SP"
-        BEL "lm32_cpu/Mram_registers131/DP" BEL
-        "lm32_cpu/Mram_registers129/SP" BEL "lm32_cpu/Mram_registers129/DP"
-        BEL "lm32_cpu/Mram_registers128/SP" BEL
-        "lm32_cpu/Mram_registers128/DP" BEL "lm32_cpu/Mram_registers130/SP"
-        BEL "lm32_cpu/Mram_registers130/DP" BEL
-        "lm32_cpu/Mram_registers127/SP" BEL "lm32_cpu/Mram_registers127/DP"
-        BEL "lm32_cpu/Mram_registers126/SP" BEL
-        "lm32_cpu/Mram_registers126/DP" BEL "lm32_cpu/Mram_registers125/SP"
-        BEL "lm32_cpu/Mram_registers125/DP" BEL
-        "lm32_cpu/Mram_registers124/SP" BEL "lm32_cpu/Mram_registers124/DP"
-        BEL "lm32_cpu/Mram_registers122/SP" BEL
-        "lm32_cpu/Mram_registers122/DP" BEL "lm32_cpu/Mram_registers121/SP"
-        BEL "lm32_cpu/Mram_registers121/DP" BEL
-        "lm32_cpu/Mram_registers123/SP" BEL "lm32_cpu/Mram_registers123/DP"
-        BEL "lm32_cpu/Mram_registers120/SP" BEL
-        "lm32_cpu/Mram_registers120/DP" BEL "lm32_cpu/Mram_registers119/SP"
-        BEL "lm32_cpu/Mram_registers119/DP" BEL
-        "lm32_cpu/Mram_registers118/SP" BEL "lm32_cpu/Mram_registers118/DP"
-        BEL "lm32_cpu/Mram_registers117/SP" BEL
-        "lm32_cpu/Mram_registers117/DP" BEL "lm32_cpu/Mram_registers115/SP"
-        BEL "lm32_cpu/Mram_registers115/DP" BEL
-        "lm32_cpu/Mram_registers114/SP" BEL "lm32_cpu/Mram_registers114/DP"
-        BEL "lm32_cpu/Mram_registers116/SP" BEL
-        "lm32_cpu/Mram_registers116/DP" BEL "lm32_cpu/Mram_registers113/SP"
-        BEL "lm32_cpu/Mram_registers113/DP" BEL
-        "lm32_cpu/Mram_registers112/SP" BEL "lm32_cpu/Mram_registers112/DP"
-        BEL "lm32_cpu/Mram_registers111/SP" BEL
-        "lm32_cpu/Mram_registers111/DP" BEL "lm32_cpu/Mram_registers110/SP"
-        BEL "lm32_cpu/Mram_registers110/DP" BEL "lm32_cpu/Mram_registers18/SP"
-        BEL "lm32_cpu/Mram_registers18/DP" BEL "lm32_cpu/Mram_registers17/SP"
-        BEL "lm32_cpu/Mram_registers17/DP" BEL "lm32_cpu/Mram_registers19/SP"
-        BEL "lm32_cpu/Mram_registers19/DP" BEL "lm32_cpu/Mram_registers16/SP"
-        BEL "lm32_cpu/Mram_registers16/DP" BEL "lm32_cpu/Mram_registers15/SP"
-        BEL "lm32_cpu/Mram_registers15/DP" BEL "lm32_cpu/Mram_registers14/SP"
-        BEL "lm32_cpu/Mram_registers14/DP" BEL "lm32_cpu/Mram_registers13/SP"
-        BEL "lm32_cpu/Mram_registers13/DP" BEL "lm32_cpu/Mram_registers11/SP"
-        BEL "lm32_cpu/Mram_registers11/DP" BEL "lm32_cpu/Mram_registers12/SP"
-        BEL "lm32_cpu/Mram_registers12/DP" PIN
-        "lm32_cpu/multiplier/Mmult_n00231_pins<110>";
+        BEL "Mram_storage_17/SP" BEL "Mram_storage_17/DP" BEL
+        "Mram_storage_18/SP" BEL "Mram_storage_18/DP" BEL "Mram_storage_22/SP"
+        BEL "Mram_storage_22/DP" BEL "Mram_storage_21/SP" BEL
+        "Mram_storage_21/DP" BEL "Mram_storage_23/SP" BEL "Mram_storage_23/DP"
+        BEL "Mram_storage_24/SP" BEL "Mram_storage_24/DP" BEL
+        "Mram_storage_25/SP" BEL "Mram_storage_25/DP" BEL "Mram_storage_26/SP"
+        BEL "Mram_storage_26/DP" BEL "Mram_storage_27/SP" BEL
+        "Mram_storage_27/DP" BEL "Mram_storage_28/SP" BEL "Mram_storage_28/DP"
+        BEL "lm32_cpu/Mram_registers40/SP" BEL "lm32_cpu/Mram_registers40/DP"
+        BEL "lm32_cpu/Mram_registers39/SP" BEL "lm32_cpu/Mram_registers39/DP"
+        BEL "lm32_cpu/Mram_registers41/SP" BEL "lm32_cpu/Mram_registers41/DP"
+        BEL "lm32_cpu/Mram_registers37/SP" BEL "lm32_cpu/Mram_registers37/DP"
+        BEL "lm32_cpu/Mram_registers36/SP" BEL "lm32_cpu/Mram_registers36/DP"
+        BEL "lm32_cpu/Mram_registers38/SP" BEL "lm32_cpu/Mram_registers38/DP"
+        BEL "lm32_cpu/Mram_registers34/SP" BEL "lm32_cpu/Mram_registers34/DP"
+        BEL "lm32_cpu/Mram_registers33/SP" BEL "lm32_cpu/Mram_registers33/DP"
+        BEL "lm32_cpu/Mram_registers35/SP" BEL "lm32_cpu/Mram_registers35/DP"
+        BEL "lm32_cpu/Mram_registers32/SP" BEL "lm32_cpu/Mram_registers32/DP"
+        BEL "lm32_cpu/Mram_registers31/SP" BEL "lm32_cpu/Mram_registers31/DP"
+        BEL "lm32_cpu/Mram_registers30/SP" BEL "lm32_cpu/Mram_registers30/DP"
+        BEL "lm32_cpu/Mram_registers29/SP" BEL "lm32_cpu/Mram_registers29/DP"
+        BEL "lm32_cpu/Mram_registers27/SP" BEL "lm32_cpu/Mram_registers27/DP"
+        BEL "lm32_cpu/Mram_registers26/SP" BEL "lm32_cpu/Mram_registers26/DP"
+        BEL "lm32_cpu/Mram_registers28/SP" BEL "lm32_cpu/Mram_registers28/DP"
+        BEL "lm32_cpu/Mram_registers25/SP" BEL "lm32_cpu/Mram_registers25/DP"
+        BEL "lm32_cpu/Mram_registers24/SP" BEL "lm32_cpu/Mram_registers24/DP"
+        BEL "lm32_cpu/Mram_registers23/SP" BEL "lm32_cpu/Mram_registers23/DP"
+        BEL "lm32_cpu/Mram_registers22/SP" BEL "lm32_cpu/Mram_registers22/DP"
+        BEL "lm32_cpu/Mram_registers20/SP" BEL "lm32_cpu/Mram_registers20/DP"
+        BEL "lm32_cpu/Mram_registers10/SP" BEL "lm32_cpu/Mram_registers10/DP"
+        BEL "lm32_cpu/Mram_registers21/SP" BEL "lm32_cpu/Mram_registers21/DP"
+        BEL "lm32_cpu/Mram_registers9/SP" BEL "lm32_cpu/Mram_registers9/DP"
+        BEL "lm32_cpu/Mram_registers8/SP" BEL "lm32_cpu/Mram_registers8/DP"
+        BEL "lm32_cpu/Mram_registers7/SP" BEL "lm32_cpu/Mram_registers7/DP"
+        BEL "lm32_cpu/Mram_registers6/SP" BEL "lm32_cpu/Mram_registers6/DP"
+        BEL "lm32_cpu/Mram_registers4/SP" BEL "lm32_cpu/Mram_registers4/DP"
+        BEL "lm32_cpu/Mram_registers3/SP" BEL "lm32_cpu/Mram_registers3/DP"
+        BEL "lm32_cpu/Mram_registers5/SP" BEL "lm32_cpu/Mram_registers5/DP"
+        BEL "lm32_cpu/Mram_registers2/SP" BEL "lm32_cpu/Mram_registers2/DP"
+        BEL "lm32_cpu/Mram_registers133/SP" BEL
+        "lm32_cpu/Mram_registers133/DP" BEL "lm32_cpu/Mram_registers132/SP"
+        BEL "lm32_cpu/Mram_registers132/DP" BEL
+        "lm32_cpu/Mram_registers131/SP" BEL "lm32_cpu/Mram_registers131/DP"
+        BEL "lm32_cpu/Mram_registers129/SP" BEL
+        "lm32_cpu/Mram_registers129/DP" BEL "lm32_cpu/Mram_registers128/SP"
+        BEL "lm32_cpu/Mram_registers128/DP" BEL
+        "lm32_cpu/Mram_registers130/SP" BEL "lm32_cpu/Mram_registers130/DP"
+        BEL "lm32_cpu/Mram_registers127/SP" BEL
+        "lm32_cpu/Mram_registers127/DP" BEL "lm32_cpu/Mram_registers126/SP"
+        BEL "lm32_cpu/Mram_registers126/DP" BEL
+        "lm32_cpu/Mram_registers125/SP" BEL "lm32_cpu/Mram_registers125/DP"
+        BEL "lm32_cpu/Mram_registers124/SP" BEL
+        "lm32_cpu/Mram_registers124/DP" BEL "lm32_cpu/Mram_registers122/SP"
+        BEL "lm32_cpu/Mram_registers122/DP" BEL
+        "lm32_cpu/Mram_registers121/SP" BEL "lm32_cpu/Mram_registers121/DP"
+        BEL "lm32_cpu/Mram_registers123/SP" BEL
+        "lm32_cpu/Mram_registers123/DP" BEL "lm32_cpu/Mram_registers120/SP"
+        BEL "lm32_cpu/Mram_registers120/DP" BEL
+        "lm32_cpu/Mram_registers119/SP" BEL "lm32_cpu/Mram_registers119/DP"
+        BEL "lm32_cpu/Mram_registers118/SP" BEL
+        "lm32_cpu/Mram_registers118/DP" BEL "lm32_cpu/Mram_registers117/SP"
+        BEL "lm32_cpu/Mram_registers117/DP" BEL
+        "lm32_cpu/Mram_registers115/SP" BEL "lm32_cpu/Mram_registers115/DP"
+        BEL "lm32_cpu/Mram_registers114/SP" BEL
+        "lm32_cpu/Mram_registers114/DP" BEL "lm32_cpu/Mram_registers116/SP"
+        BEL "lm32_cpu/Mram_registers116/DP" BEL
+        "lm32_cpu/Mram_registers113/SP" BEL "lm32_cpu/Mram_registers113/DP"
+        BEL "lm32_cpu/Mram_registers112/SP" BEL
+        "lm32_cpu/Mram_registers112/DP" BEL "lm32_cpu/Mram_registers111/SP"
+        BEL "lm32_cpu/Mram_registers111/DP" BEL
+        "lm32_cpu/Mram_registers110/SP" BEL "lm32_cpu/Mram_registers110/DP"
+        BEL "lm32_cpu/Mram_registers18/SP" BEL "lm32_cpu/Mram_registers18/DP"
+        BEL "lm32_cpu/Mram_registers17/SP" BEL "lm32_cpu/Mram_registers17/DP"
+        BEL "lm32_cpu/Mram_registers19/SP" BEL "lm32_cpu/Mram_registers19/DP"
+        BEL "lm32_cpu/Mram_registers16/SP" BEL "lm32_cpu/Mram_registers16/DP"
+        BEL "lm32_cpu/Mram_registers15/SP" BEL "lm32_cpu/Mram_registers15/DP"
+        BEL "lm32_cpu/Mram_registers14/SP" BEL "lm32_cpu/Mram_registers14/DP"
+        BEL "lm32_cpu/Mram_registers13/SP" BEL "lm32_cpu/Mram_registers13/DP"
+        BEL "lm32_cpu/Mram_registers11/SP" BEL "lm32_cpu/Mram_registers11/DP"
+        BEL "lm32_cpu/Mram_registers12/SP" BEL "lm32_cpu/Mram_registers12/DP"
+        PIN "lm32_cpu/multiplier/Mmult_n00231_pins<110>";
 TSclk32 = PERIOD TIMEGRP "PRDclk32" 31.25 ns HIGH 50%;
 SCHEMATIC END;
 

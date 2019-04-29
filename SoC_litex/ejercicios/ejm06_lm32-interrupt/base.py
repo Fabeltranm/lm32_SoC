@@ -76,8 +76,9 @@ class BaseSoC(SC.SoCCore):
             clk_freq=32e6,
             csr_data_width=32,
             ident="CPU Test SoC", ident_version=True,
-            integrated_rom_size=0x8000,
-            integrated_main_ram_size=16*1024)
+            integrated_rom_size=0x4000,
+	    integrated_sram_size=2*1024,
+            integrated_main_ram_size=18*1024)
 
         # Clock Reset Generation
         self.submodules.crg = CRG(platform.request("clk32"), ~platform.request("cpu_reset"))

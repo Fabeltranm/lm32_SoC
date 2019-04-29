@@ -4,8 +4,8 @@ CPUFLAGS=-mbarrel-shift-enabled -mmultiply-enabled -mdivide-enabled -msign-exten
 CPUENDIANNESS=big
 CLANG=0
 LITEX=1
-EXECUTE_IN_PLACE=0
 COPY_TO_MAIN_RAM=1
+EXECUTE_IN_PLACE=0
 SOC_DIRECTORY=/opt/liteX/litex/litex/soc
 export BUILDINC_DIRECTORY
 BUILDINC_DIRECTORY=/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/software/include
