@@ -61,16 +61,26 @@ platform = Platform()
 # create our soc (fpga description)
 class BaseSoC(SC.SoCCore):
     # Peripherals CSR declaration
-    csr_peripherals = [
-      "button",
-      "led",
-    ]
+    csr_peripherals = {
+      "led": 2,
+      "button": 3,
+    }
+    SC.SoCCore.csr_map= csr_peripherals
+
+    interrupt_map = {
+        "button" : 4,
+    }
+
+    SC.SoCCore.interrupt_map= interrupt_map
+
     csr_map_update(SC.SoCCore.csr_map, csr_peripherals)
 
 
     def __init__(self, platform):
         sys_clk_freq = int(32e6)
         # SoC with CPU
+
+
         SC.SoCCore.__init__(self, platform,
             cpu_type="lm32",
             clk_freq=32e6,
@@ -91,8 +101,6 @@ class BaseSoC(SC.SoCCore):
         interrupt_map = {
             "button" : 4,
         }
-        SC.SoCCore.interrupt_map.update(interrupt_map)
-        print (SC.SoCCore.interrupt_map)
 
 
 soc = BaseSoC(platform)

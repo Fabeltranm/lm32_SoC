@@ -5,7 +5,7 @@ Loading device for application Rf_Device from file '6slx9.nph' in environment
    "top" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 Opened constraints file top.pcf.
 
-Sat Feb 23 09:30:24 2019
+Thu May 23 11:51:33 2019
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -g Binary:Yes -w top.ncd top.bit 
 

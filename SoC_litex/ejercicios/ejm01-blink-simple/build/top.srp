@@ -52,7 +52,7 @@ WARNING:Xst:29 - Optimization Effort not specified
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo01/blink1/build/top.v" into library work
+Analyzing Verilog file "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm01-blink-simple/build/top.v" into library work
 Parsing module <top>.
 
 =========================================================================
@@ -66,7 +66,7 @@ Elaborating module <top>.
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo01/blink1/build/top.v".
+    Related source file is "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm01-blink-simple/build/top.v".
     Found 30-bit register for signal <counter>.
     Found 1-bit register for signal <int_rst>.
     Found 30-bit adder for signal <counter[29]_GND_1_o_add_2_OUT> created at line 42.
@@ -317,13 +317,13 @@ clk32          |    2.607|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.59 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.37 secs
  
 --> 
 
 
-Total memory usage is 385028 kilobytes
+Total memory usage is 385984 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    3 (   0 filtered)

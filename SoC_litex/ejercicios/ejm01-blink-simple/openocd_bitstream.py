@@ -45,6 +45,6 @@ class OpenOCD(GenericProgrammer):
 
 
 op=OpenOCD("quacho_basic_at.cfg")
-op.load_bitstream("build/gateware/top.bit")
+op.load_bitstream("build/top.bit")
 #op.flash2("build/gateware/top.bit")
 

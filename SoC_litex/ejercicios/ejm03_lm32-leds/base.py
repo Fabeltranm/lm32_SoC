@@ -50,12 +50,8 @@ class Platform(XilinxPlatform):
 #        XilinxPlatform.__init__(self, "xc7a100t-CSG324-1", _io, toolchain="ise")
 
     def do_finalize(self, fragment):
-        XilinxPlatform.do_finalize(self, fragment)
+        XilinxPlatform.do_finalize(self, fragment, ngdbuild_opt="ngdbuild -p")
 
-
-def csr_map_update(csr_map, csr_peripherals):
-    csr_map.update(dict((n, v)
-        for v, n in enumerate(csr_peripherals, start=max(csr_map.values()) + 1)))
 
 #
 # design
@@ -67,11 +63,11 @@ platform = Platform()
 # create our soc (fpga description)
 class BaseSoC(SC.SoCCore):
     # Peripherals CSR declaration
-    csr_peripherals = [
-      "leds",
-    ]
-    csr_map_update(SC.SoCCore.csr_map, csr_peripherals)
-    print (SC.SoCCore.csr_map)
+    csr_peripherals = {
+      "leds": 2
+    }
+    SC.SoCCore.csr_map= csr_peripherals
+
     def __init__(self, platform):
         sys_clk_freq = int(32e6)
         # SoC with CPU
@@ -80,6 +76,7 @@ class BaseSoC(SC.SoCCore):
             clk_freq=32e6,
             ident="CPU Test SoC", ident_version=True,
             integrated_rom_size=0x8000,
+            csr_data_width=32,
             integrated_main_ram_size=16*1024)
 
         # Clock Reset Generation
@@ -93,7 +90,7 @@ class BaseSoC(SC.SoCCore):
 soc = BaseSoC(platform)
 
 
-       
+
 
 #
 # build

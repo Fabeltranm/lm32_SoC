@@ -25,10 +25,12 @@ int main(void)
 	irq_setmask(0);
 	irq_setie(1);
 	uart_init();
-
-	puts("\niniciando ejemplo 03 leds con lm32 "__DATE__" "__TIME__"\n");
+  char dat1=32;
+	puts("\niniciando ejemplo 03 leds con lm32 "__DATE__" "__TIME__"\n ");
 	uint8_t i, j;
-	
+	for (i=0;i<10;i++)
+	puts(dat1++);
+
 	leds_out_write(0xfff);
 	wait(10);
 	leds_out_write(0x000);
@@ -37,17 +39,16 @@ int main(void)
 	wait(10);
 	while(1) {
 
-		for (j=0; j < 2;j++){  
+		for (j=0; j < 2;j++){
 			for (i=0; i < 9;i++){
 				if (j==1)
 					leds_out_write((2<<i));
 				else
 					leds_out_write(0x100>>i);
-					
-			wait(1);
+
+			wait(3);
 			}
 		}
 	}
 	return 0;
 }
-

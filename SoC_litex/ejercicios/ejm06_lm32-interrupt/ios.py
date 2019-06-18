@@ -2,6 +2,7 @@ from migen import *
 
 from litex.soc.interconnect.csr import *
 from litex.soc.cores import gpio
+from litex.soc.interconnect.csr_eventmanager import *
 
 from pwm import PWM
 
@@ -18,7 +19,11 @@ class RGBLed(Module, AutoCSR):
         self.submodules.b = PWM(pads.b)
 
 class Button(gpio.GPIOIn):
-    pass
+    def __init__(self, pads):
+        self.submodules.ev = EventManager()
+        self.ev.zero = EventSourceProcess()
+        self.ev.finalize()
+
 
 class Switch(gpio.GPIOIn):
     pass

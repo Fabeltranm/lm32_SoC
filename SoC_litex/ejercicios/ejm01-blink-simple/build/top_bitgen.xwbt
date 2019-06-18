@@ -1,7 +1,7 @@
-INFILE=/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo01/blink1/build/top.ncd
-OUTFILE=/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo01/blink1/build/top.bit
+INFILE=/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm01-blink-simple/build/top.ncd
+OUTFILE=/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm01-blink-simple/build/top.bit
 FAMILY=Spartan6
 PART=xc6slx9-2tqg144
-WORKINGDIR=/home/labproto/Documentos/lab_digital2/ejemploQUACHOBASIC_AT/ejemplo01/blink1/build
+WORKINGDIR=/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm01-blink-simple/build
 LICENSE=WebPack
-USER_INFO=211095409_0_0_571
+USER_INFO=211538560_0_0_457

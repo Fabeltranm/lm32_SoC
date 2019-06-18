@@ -1,0 +1,24 @@
+NET "serial_tx" LOC=P105 | IOSTANDARD=LVCMOS33; # serial:0.tx
+NET "serial_rx" LOC=P101 | IOSTANDARD=LVCMOS33; # serial:0.rx
+NET "clk32" LOC=P126 | IOSTANDARD=LVCMOS33; # clk32:0
+NET "cpu_reset" LOC=P87 | IOSTANDARD=LVCMOS33; # cpu_reset:0
+NET "user_led0" LOC=P24 | IOSTANDARD=LVCMOS33; # user_led:0
+NET "user_led1" LOC=P27 | IOSTANDARD=LVCMOS33; # user_led:1
+NET "user_led2" LOC=P32 | IOSTANDARD=LVCMOS33; # user_led:2
+NET "user_led3" LOC=P34 | IOSTANDARD=LVCMOS33; # user_led:3
+NET "user_led4" LOC=P61 | IOSTANDARD=LVCMOS33; # user_led:4
+NET "user_led5" LOC=P74 | IOSTANDARD=LVCMOS33; # user_led:5
+NET "user_led6" LOC=P62 | IOSTANDARD=LVCMOS33; # user_led:6
+NET "user_led7" LOC=P78 | IOSTANDARD=LVCMOS33; # user_led:7
+NET "user_led8" LOC=P80 | IOSTANDARD=LVCMOS33; # user_led:8
+NET "spi_master_cs_n" LOC=P26 | IOSTANDARD=LVCMOS33; # spi_master:0.cs_n
+NET "spi_master_clk" LOC=P35 | IOSTANDARD=LVCMOS33; # spi_master:0.clk
+NET "spi_master_mosi" LOC=P33 | IOSTANDARD=LVCMOS33; # spi_master:0.mosi
+NET "spi_master_miso" LOC=P79 | IOSTANDARD=LVCMOS33; # spi_master:0.miso
+NET "control_lcd0" LOC=P29 | IOSTANDARD=LVCMOS33; # control_lcd:0
+NET "control_lcd1" LOC=P30 | IOSTANDARD=LVCMOS33; # control_lcd:1
+NET "control_lcd2" LOC=P59 | IOSTANDARD=LVCMOS33; # control_lcd:2
+
+
+NET "clk32" TNM_NET = "PRDclk32";
+TIMESPEC "TSclk32" = PERIOD "PRDclk32" 31.25 ns HIGH 50%;

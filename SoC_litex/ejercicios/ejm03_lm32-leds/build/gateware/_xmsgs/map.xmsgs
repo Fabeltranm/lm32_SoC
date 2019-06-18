@@ -12,8 +12,8 @@
 <arg fmt="%s" index="3">Mram_storage_12/SPO,
 Mram_storage_13/SPO,
 Mram_storage_14/SPO,
-Mram_storage_15/SPO,
-Mram_storage_16/SPO</arg>
+Mram_storage_17/SPO,
+Mram_storage_15/SPO</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 

@@ -21,8 +21,8 @@ from ios import Led
 
 
 _io = [
-   
-   
+
+
     ("user_led",  0, Pins("P24"), IOStandard("LVCMOS33")),
     ("user_led",  1, Pins("P27"), IOStandard("LVCMOS33")),
     ("user_led",  2, Pins("P32"), IOStandard("LVCMOS33")),
@@ -62,6 +62,7 @@ class Platform(XilinxPlatform):
 #
 
 def csr_map_update(csr_map, csr_peripherals):
+    print (csr_map.values())
     csr_map.update(dict((n, v)
         for v, n in enumerate(csr_peripherals, start=max(csr_map.values()) + 1)))
 
@@ -72,12 +73,16 @@ platform = Platform()
 # create our soc (fpga description)
 class BaseSoC(sc.SoCCore):
     # Peripherals CSR declaration
-    csr_peripherals = [
-        "leds"
-    ]
-    print (sc.SoCCore.csr_map)
+    csr_peripherals = {
+        "leds": 2,
+    }
+#    sc.SoCCore.csr_map.update(csr_peripherals)
+    sc.SoCCore.csr_map = csr_peripherals
 
-    csr_map_update(sc.SoCCore.csr_map, csr_peripherals)
+    for _name, _id in sc.SoCCore.csr_map.items():
+        print (_name, _id)
+
+#    csr_map_update(sc.SoCCore.csr_map, csr_peripherals)
 
     print (sc.SoCCore.csr_map)
 
@@ -88,10 +93,11 @@ class BaseSoC(sc.SoCCore):
             cpu_type=None,
             csr_data_width=32,
             with_uart=False,
-            with_timer=True,
+            with_timer=False,
             ident="My first System On Chip", ident_version=True,
-            shadow_base=0x00000000,
+        #    shadow_base=0x00000000,
         )
+        print (sc.SoCCore.csr_map)
 
         # Clock Reset Generation
         self.submodules.crg = CRG(platform.request("clk32"), ~platform.request("cpu_reset"))
@@ -101,13 +107,12 @@ class BaseSoC(sc.SoCCore):
 
         self.add_wb_master(self.cpu.wishbone)
 
-
         # FPGA identification
 
         # Led
         user_leds = Cat(*[platform.request("user_led", i) for i in range(9)])
         self.submodules.leds = Led(user_leds)
-
+        print (sc.SoCCore.csr_map)
 
 
 soc = BaseSoC(platform)

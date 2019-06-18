@@ -58,125 +58,128 @@ Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodul
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" included at line 61.
 WARNING:HDLCompiler:1591 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/config/lm32_config.v" Line 186: Root scope declaration is not allowed in verilog 95/2K mode
 Parsing module <lm32_multiplier>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_interrupt>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_shifter>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" into library work
-Parsing module <top>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_logic_op>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dp_ram.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 31.
 Parsing module <lm32_dp_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
+Parsing module <lm32_dcache>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
+Parsing module <lm32_addsub>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
+Parsing module <lm32_ram>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_shifter.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_shifter>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_interrupt>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_adder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_logic_op.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_logic_op>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
+Parsing module <lm32_mc_arithmetic>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
+Parsing module <lm32_load_store_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
+Parsing module <lm32_decoder>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
+Parsing module <lm32_instruction_unit>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
+Parsing module <lm32_icache>.
+Analyzing Verilog file "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" into library work
+Parsing module <top>.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_debug.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 53.
+Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_itlb.v" into library work
+Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
 Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" into library work
 Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 93.
 Parsing module <lm32_cpu>.
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 653: Attribute target identifier preserve_driver not found in this scope
 WARNING:HDLCompiler:924 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 652: Attribute target identifier preserve_signal not found in this scope
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_adder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_adder>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_instruction_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 71.
-Parsing module <lm32_instruction_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_mc_arithmetic.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 50.
-Parsing module <lm32_mc_arithmetic>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_decoder.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 56.
-Parsing module <lm32_decoder>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dcache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 52.
-Parsing module <lm32_dcache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_dtlb.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 32.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_load_store_unit.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 63.
-Parsing module <lm32_load_store_unit>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_icache.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 57.
-Parsing module <lm32_icache>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_ram.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 55.
-Parsing module <lm32_ram>.
-Analyzing Verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_addsub.v" into library work
-Parsing verilog file "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_include.v" included at line 49.
-Parsing module <lm32_addsub>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1200: Port I_LOCK_O is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1248: Port I_LOCK_O is not connected to this instance
 
 Elaborating module <top>.
 
 Elaborating module <$unit_1>.
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 13: Using initial value of ctrl_reset_reset_w since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 57: Using initial value of rom_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 70: Using initial value of sram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 85: Using initial value of main_ram_bus_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 104: Using initial value of bus_wishbone_err since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 121: Using initial value of uart_phy_source_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 122: Using initial value of uart_phy_source_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 158: Using initial value of uart_tx_fifo_sink_first since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 159: Using initial value of uart_tx_fifo_sink_last since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 175: Using initial value of uart_tx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 212: Using initial value of uart_rx_fifo_replace since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 230: Using initial value of uart_reset since it is never assigned
-WARNING:HDLCompiler:872 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 242: Using initial value of timer0_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 15: Using initial value of ctrl_reset_reset_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 59: Using initial value of rom_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 72: Using initial value of sram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 87: Using initial value of main_ram_bus_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 106: Using initial value of bus_wishbone_err since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 123: Using initial value of uart_phy_source_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 124: Using initial value of uart_phy_source_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 160: Using initial value of uart_tx_fifo_sink_first since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 161: Using initial value of uart_tx_fifo_sink_last since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 177: Using initial value of uart_tx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 214: Using initial value of uart_rx_fifo_replace since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 232: Using initial value of uart_reset since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 244: Using initial value of timer0_update_value_w since it is never assigned
+WARNING:HDLCompiler:872 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 272: Using initial value of button_trigger since it is never assigned
 Reading initialization file \"mem.init\".
-WARNING:HDLCompiler:1670 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1241: Signal <mem> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1289: Signal <mem> in initial block is partially initialized.
+Reading initialization file \"mem_1.init\".
+WARNING:HDLCompiler:1670 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1309: Signal <mem_1> in initial block is partially initialized.
 Reading initialization file \"mem_2.init\".
-WARNING:HDLCompiler:1670 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1277: Signal <mem_2> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1329: Signal <mem_2> in initial block is partially initialized.
 Reading initialization file \"mem_3.init\".
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 415: Assignment to uart_phy_sink_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 416: Assignment to uart_phy_sink_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 420: Assignment to uart_phy_source_ready ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 466: Assignment to uart_tx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 491: Assignment to uart_rx_fifo_source_first ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 492: Assignment to uart_rx_fifo_source_last ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 496: Assignment to uart_rx_fifo_level1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 551: Assignment to rom_bus_dat_w ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 552: Assignment to rom_bus_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 554: Assignment to rom_bus_we ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 555: Assignment to rom_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 556: Assignment to rom_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 562: Assignment to sram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 563: Assignment to sram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 569: Assignment to main_ram_bus_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 570: Assignment to main_ram_bus_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 573: Assignment to bus_wishbone_sel ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 576: Assignment to bus_wishbone_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 577: Assignment to bus_wishbone_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 598: Assignment to csrbank0_in_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 599: Assignment to csrbank0_in_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 602: Assignment to ctrl_reset_reset_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 606: Assignment to csrbank1_bus_errors_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 607: Assignment to csrbank1_bus_errors_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 608: Assignment to ctrl_storage ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 631: Assignment to timer0_update_value_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 633: Assignment to csrbank3_value_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 634: Assignment to csrbank3_value_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 635: Assignment to timer0_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 636: Assignment to timer0_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 653: Assignment to csrbank4_txfull_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 654: Assignment to csrbank4_txfull_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 655: Assignment to csrbank4_rxempty_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 656: Assignment to csrbank4_rxempty_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 657: Assignment to uart_eventmanager_status_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 658: Assignment to uart_eventmanager_status_re ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 685: Assignment to sram_bus_we1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 692: Assignment to sram_bus_dat_w1 ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 809: Result of 30-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 789: Assignment to ctrl_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 430: Assignment to uart_phy_sink_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 431: Assignment to uart_phy_sink_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 435: Assignment to uart_phy_source_ready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 481: Assignment to uart_tx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 506: Assignment to uart_rx_fifo_source_first ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 507: Assignment to uart_rx_fifo_source_last ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 511: Assignment to uart_rx_fifo_level1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 576: Assignment to rom_bus_dat_w ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 577: Assignment to rom_bus_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 579: Assignment to rom_bus_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 580: Assignment to rom_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 581: Assignment to rom_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 587: Assignment to sram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 588: Assignment to sram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 594: Assignment to main_ram_bus_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 595: Assignment to main_ram_bus_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 598: Assignment to bus_wishbone_sel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 601: Assignment to bus_wishbone_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 602: Assignment to bus_wishbone_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 623: Assignment to button_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 624: Assignment to button_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 632: Assignment to ctrl_reset_reset_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 636: Assignment to csrbank1_bus_errors_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 637: Assignment to csrbank1_bus_errors_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 638: Assignment to ctrl_storage ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 661: Assignment to timer0_update_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 663: Assignment to csrbank3_value_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 664: Assignment to csrbank3_value_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 665: Assignment to timer0_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 666: Assignment to timer0_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 683: Assignment to csrbank4_txfull_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 684: Assignment to csrbank4_txfull_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 685: Assignment to csrbank4_rxempty_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 686: Assignment to csrbank4_rxempty_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 687: Assignment to uart_eventmanager_status_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 688: Assignment to uart_eventmanager_status_re ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 715: Assignment to sram_bus_we1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 722: Assignment to sram_bus_dat_w1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 838: Result of 30-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 818: Assignment to button_re ignored, since the identifier is never used
 
 Elaborating module <lm32_cpu(eba_reset=32'b0)>.
 
@@ -221,37 +224,34 @@ WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/su
 WARNING:HDLCompiler:413 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_interrupt.v" Line 176: Assignment to im_csr_read_data ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "/opt/liteX/litex/litex/soc/cores/cpu/lm32/verilog/submodule/rtl/lm32_cpu.v" Line 2678: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1294: Assignment to uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1311: Assignment to uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1346: Assignment to uart_tx_fifo_wrport_dat_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" Line 1363: Assignment to uart_rx_fifo_wrport_dat_r ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v".
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl0_regs0>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs0>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl0_regs1>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl0_regs1>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl1_regs0>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl1_regs0>.
-    Set property "register_balancing = no" for signal <xilinxmultiregimpl1_regs1>.
-    Set property "shreg_extract = no" for signal <xilinxmultiregimpl1_regs1>.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1202: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1202: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1202: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1202: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1202: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/labproto/Documentos/lab_digital2/lm32_soc_HDL/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1202: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+    Related source file is "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v".
+    Set property "register_balancing = no" for signal <regs0>.
+    Set property "shreg_extract = no" for signal <regs0>.
+    Set property "register_balancing = no" for signal <regs1>.
+    Set property "shreg_extract = no" for signal <regs1>.
+WARNING:Xst:647 - Input <button010> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1250: Output port <I_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1250: Output port <I_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1250: Output port <D_CTI_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1250: Output port <D_BTE_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1250: Output port <I_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm06_lm32-interrupt/build/gateware/top.v" line 1250: Output port <D_LOCK_O> of the instance <lm32_cpu> is unconnected or connected to loadless signal.
 WARNING:Xst:2999 - Signal 'mem', unconnected in block 'top', is tied to its initial value.
 WARNING:Xst:2999 - Signal 'mem_3', unconnected in block 'top', is tied to its initial value.
     Found 4096x32-bit single-port Read Only RAM <Mram_mem> for signal <mem>.
     Found 512x32-bit dual-port RAM <Mram_mem_1> for signal <mem_1>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_2>, simulation mismatch.
     Found 4608x32-bit dual-port RAM <Mram_mem_2> for signal <mem_2>.
+    Found 16x10-bit dual-port RAM <Mram_storage> for signal <storage>.
     Found 16x10-bit dual-port RAM <Mram_storage_1> for signal <storage_1>.
-    Found 16x10-bit dual-port RAM <Mram_storage_2> for signal <storage_2>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>, simulation mismatch.
     Found 33x8-bit single-port Read Only RAM <Mram_mem_3> for signal <mem_3>.
     Found 32-bit register for signal <ctrl_bus_errors>.
@@ -295,10 +295,12 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>,
     Found 32-bit register for signal <timer0_value_status>.
     Found 1-bit register for signal <timer0_zero_pending>.
     Found 1-bit register for signal <timer0_zero_old_trigger>.
+    Found 1-bit register for signal <button_pending>.
     Found 1-bit register for signal <grant>.
     Found 4-bit register for signal <slave_sel_r>.
     Found 20-bit register for signal <count>.
     Found 32-bit register for signal <interface0_bank_bus_dat_r>.
+    Found 1-bit register for signal <button_storage_full>.
     Found 32-bit register for signal <interface1_bank_bus_dat_r>.
     Found 32-bit register for signal <ctrl_storage_full>.
     Found 1-bit register for signal <sel_r>.
@@ -313,10 +315,8 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>,
     Found 2-bit register for signal <uart_eventmanager_storage_full>.
     Found 32-bit register for signal <interface5_bank_bus_dat_r>.
     Found 32-bit register for signal <uart_phy_storage_full>.
-    Found 1-bit register for signal <xilinxmultiregimpl0_regs0>.
-    Found 1-bit register for signal <xilinxmultiregimpl0_regs1>.
-    Found 1-bit register for signal <xilinxmultiregimpl1_regs0>.
-    Found 1-bit register for signal <xilinxmultiregimpl1_regs1>.
+    Found 1-bit register for signal <regs0>.
+    Found 1-bit register for signal <regs1>.
     Found 12-bit register for signal <memadr>.
     Found 9-bit register for signal <memadr_1>.
     Found 13-bit register for signal <memadr_2>.
@@ -324,29 +324,30 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_3>,
     Found 10-bit register for signal <memdat_3>.
     Found 6-bit register for signal <memadr_3>.
     Found 1-bit register for signal <int_rst>.
-    Found 5-bit subtractor for signal <uart_tx_fifo_level0[4]_GND_1_o_sub_218_OUT> created at line 920.
-    Found 5-bit subtractor for signal <uart_rx_fifo_level0[4]_GND_1_o_sub_227_OUT> created at line 942.
-    Found 32-bit subtractor for signal <timer0_value[31]_GND_1_o_sub_231_OUT> created at line 963.
-    Found 20-bit subtractor for signal <count[19]_GND_1_o_sub_235_OUT> created at line 997.
-    Found 32-bit adder for signal <ctrl_bus_errors[31]_GND_1_o_add_173_OUT> created at line 792.
-    Found 2-bit adder for signal <counter[1]_GND_1_o_add_180_OUT> created at line 821.
-    Found 4-bit adder for signal <uart_phy_tx_bitcount[3]_GND_1_o_add_183_OUT> created at line 835.
-    Found 33-bit adder for signal <n0914> created at line 851.
-    Found 4-bit adder for signal <uart_phy_rx_bitcount[3]_GND_1_o_add_195_OUT> created at line 864.
-    Found 33-bit adder for signal <n0919> created at line 883.
-    Found 4-bit adder for signal <uart_tx_fifo_produce[3]_GND_1_o_add_211_OUT> created at line 909.
-    Found 4-bit adder for signal <uart_tx_fifo_consume[3]_GND_1_o_add_213_OUT> created at line 912.
-    Found 5-bit adder for signal <uart_tx_fifo_level0[4]_GND_1_o_add_215_OUT> created at line 916.
-    Found 4-bit adder for signal <uart_rx_fifo_produce[3]_GND_1_o_add_220_OUT> created at line 931.
-    Found 4-bit adder for signal <uart_rx_fifo_consume[3]_GND_1_o_add_222_OUT> created at line 934.
-    Found 5-bit adder for signal <uart_rx_fifo_level0[4]_GND_1_o_add_224_OUT> created at line 938.
-    Found 32-bit 4-to-1 multiplexer for signal <interface1_bank_bus_adr[1]_GND_1_o_wide_mux_239_OUT> created at line 1012.
-    Found 32-bit 8-to-1 multiplexer for signal <interface3_bank_bus_adr[2]_GND_1_o_wide_mux_244_OUT> created at line 1043.
-    Found 32-bit 7-to-1 multiplexer for signal <interface4_bank_bus_adr[2]_GND_1_o_wide_mux_248_OUT> created at line 1088.
+    Found 5-bit subtractor for signal <uart_tx_fifo_level0[4]_GND_1_o_sub_220_OUT> created at line 949.
+    Found 5-bit subtractor for signal <uart_rx_fifo_level0[4]_GND_1_o_sub_229_OUT> created at line 971.
+    Found 32-bit subtractor for signal <timer0_value[31]_GND_1_o_sub_233_OUT> created at line 992.
+    Found 20-bit subtractor for signal <count[19]_GND_1_o_sub_237_OUT> created at line 1033.
+    Found 32-bit adder for signal <ctrl_bus_errors[31]_GND_1_o_add_175_OUT> created at line 821.
+    Found 2-bit adder for signal <counter[1]_GND_1_o_add_182_OUT> created at line 850.
+    Found 4-bit adder for signal <uart_phy_tx_bitcount[3]_GND_1_o_add_185_OUT> created at line 864.
+    Found 33-bit adder for signal <n0928> created at line 880.
+    Found 4-bit adder for signal <uart_phy_rx_bitcount[3]_GND_1_o_add_197_OUT> created at line 893.
+    Found 33-bit adder for signal <n0933> created at line 912.
+    Found 4-bit adder for signal <uart_tx_fifo_produce[3]_GND_1_o_add_213_OUT> created at line 938.
+    Found 4-bit adder for signal <uart_tx_fifo_consume[3]_GND_1_o_add_215_OUT> created at line 941.
+    Found 5-bit adder for signal <uart_tx_fifo_level0[4]_GND_1_o_add_217_OUT> created at line 945.
+    Found 4-bit adder for signal <uart_rx_fifo_produce[3]_GND_1_o_add_222_OUT> created at line 960.
+    Found 4-bit adder for signal <uart_rx_fifo_consume[3]_GND_1_o_add_224_OUT> created at line 963.
+    Found 5-bit adder for signal <uart_rx_fifo_level0[4]_GND_1_o_add_226_OUT> created at line 967.
+    Found 32-bit 4-to-1 multiplexer for signal <interface1_bank_bus_adr[1]_GND_1_o_wide_mux_241_OUT> created at line 1058.
+    Found 32-bit 8-to-1 multiplexer for signal <interface3_bank_bus_adr[2]_GND_1_o_wide_mux_246_OUT> created at line 1089.
+    Found 32-bit 7-to-1 multiplexer for signal <interface4_bank_bus_adr[2]_GND_1_o_wide_mux_250_OUT> created at line 1134.
+    WARNING:Xst:2404 -  FFs/Latches <button_old_trigger<0:0>> (without init value) have a constant value of 0 in block <top>.
     Summary:
 	inferred   6 RAM(s).
 	inferred  14 Adder/Subtractor(s).
-	inferred 735 D-type flip-flop(s).
+	inferred 734 D-type flip-flop(s).
 	inferred  50 Multiplexer(s).
 Unit <top> synthesized.
 
@@ -790,8 +791,8 @@ Macro Statistics
  5-bit addsub                                          : 2
  6-bit subtractor                                      : 1
  8-bit subtractor                                      : 2
-# Registers                                            : 201
- 1-bit register                                        : 104
+# Registers                                            : 200
+ 1-bit register                                        : 103
  10-bit register                                       : 4
  12-bit register                                       : 1
  13-bit register                                       : 1
@@ -1008,7 +1009,7 @@ INFO:Xst:3226 - The RAM <Mram_mem_2> will be implemented as a BLOCK RAM, absorbi
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_storage_1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_storage> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1024,7 +1025,7 @@ INFO:Xst:3231 - The small RAM <Mram_storage_1> will be implemented on LUTs in or
     |     addrB          | connected to signal <uart_tx_fifo_consume> |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_storage_2> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_storage_1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1095,8 +1096,8 @@ Macro Statistics
  5-bit updown counter                                  : 2
  6-bit down counter                                    : 1
  8-bit down counter                                    : 2
-# Registers                                            : 1823
- Flip-Flops                                            : 1823
+# Registers                                            : 1822
+ Flip-Flops                                            : 1822
 # Comparators                                          : 11
  1-bit comparator equal                                : 1
  21-bit comparator equal                               : 2
@@ -1162,10 +1163,10 @@ Optimizing FSM <lm32_cpu/mc_arithmetic/FSM_2> on signal <state[1:2]> with sequen
  010   | 10
 -------------------
 WARNING:Xst:2677 - Node <Mmult_n00233> of sequential type is unconnected in block <lm32_multiplier>.
+WARNING:Xst:2677 - Node <Mram_storage9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Mram_storage10> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Mram_storage_19> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Mram_storage_110> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Mram_storage_29> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Mram_storage_210> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <memop_pc_w_2> of sequential type is unconnected in block <lm32_cpu>.
 WARNING:Xst:2677 - Node <memop_pc_w_3> of sequential type is unconnected in block <lm32_cpu>.
 WARNING:Xst:2677 - Node <memop_pc_w_4> of sequential type is unconnected in block <lm32_cpu>.
@@ -1401,8 +1402,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1785
- Flip-Flops                                            : 1785
+# Registers                                            : 1784
+ Flip-Flops                                            : 1784
 
 =========================================================================
 
@@ -1425,23 +1426,23 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3157
+# BELS                             : 3162
 #      GND                         : 1
 #      INV                         : 59
 #      LUT1                        : 94
 #      LUT2                        : 409
-#      LUT3                        : 463
-#      LUT4                        : 131
-#      LUT5                        : 472
-#      LUT6                        : 798
+#      LUT3                        : 467
+#      LUT4                        : 128
+#      LUT5                        : 446
+#      LUT6                        : 828
 #      MUXCY                       : 369
 #      MUXF7                       : 6
 #      VCC                         : 1
 #      XORCY                       : 354
-# FlipFlops/Latches                : 1785
-#      FD                          : 19
+# FlipFlops/Latches                : 1784
+#      FD                          : 17
 #      FDE                         : 103
-#      FDR                         : 542
+#      FDR                         : 543
 #      FDRE                        : 1032
 #      FDS                         : 2
 #      FDSE                        : 87
@@ -1452,8 +1453,8 @@ Primitive and Black Box Usage:
 #      RAMB8BWER                   : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 5
-#      IBUF                        : 3
+# IO Buffers                       : 4
+#      IBUF                        : 2
 #      OBUF                        : 2
 # DSPs                             : 3
 #      DSP48A1                     : 3
@@ -1465,22 +1466,22 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1785  out of  11440    15%  
- Number of Slice LUTs:                 2586  out of   5720    45%  
-    Number used as Logic:              2426  out of   5720    42%  
+ Number of Slice Registers:            1784  out of  11440    15%  
+ Number of Slice LUTs:                 2591  out of   5720    45%  
+    Number used as Logic:              2431  out of   5720    42%  
     Number used as Memory:              160  out of   1440    11%  
        Number used as RAM:              160
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3118
-   Number with an unused Flip Flop:    1333  out of   3118    42%  
-   Number with an unused LUT:           532  out of   3118    17%  
-   Number of fully used LUT-FF pairs:  1253  out of   3118    40%  
+ Number of LUT Flip Flop pairs used:   3122
+   Number with an unused Flip Flop:    1338  out of   3122    42%  
+   Number with an unused LUT:           531  out of   3122    17%  
+   Number of fully used LUT-FF pairs:  1253  out of   3122    40%  
    Number of unique control sets:        46
 
 IO Utilization: 
  Number of IOs:                           6
- Number of bonded IOBs:                   6  out of    102     5%  
+ Number of bonded IOBs:                   5  out of    102     4%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               23  out of     32    71%  
@@ -1509,7 +1510,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk32                              | BUFGP                  | 1892  |
+clk32                              | BUFGP                  | 1891  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1532,7 +1533,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk32'
   Clock period: 13.917ns (frequency: 71.855MHz)
-  Total number of paths / destination ports: 271398 / 6504
+  Total number of paths / destination ports: 271405 / 6505
 -------------------------------------------------------------------------
 Delay:               13.917ns (Levels of Logic = 1)
   Source:            lm32_cpu/multiplier/Mmult_n0023 (DSP)
@@ -1553,7 +1554,7 @@ Delay:               13.917ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk32'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              3.019ns (Levels of Logic = 2)
   Source:            cpu_reset (PAD)
@@ -1576,15 +1577,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk32'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              4.202ns (Levels of Logic = 1)
-  Source:            storage_full (FF)
+  Source:            led_storage_full (FF)
   Destination:       led010 (PAD)
   Source Clock:      clk32 rising
 
-  Data Path: storage_full to led010
+  Data Path: led_storage_full to led010
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.525   0.765  storage_full (storage_full)
+     FDR:C->Q              3   0.525   0.765  led_storage_full (led_storage_full)
      OBUF:I->O                 2.912          led010_OBUF (led010)
     ----------------------------------------
     Total                      4.202ns (3.437ns logic, 0.765ns route)
@@ -1606,15 +1607,15 @@ clk32          |   13.917|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.82 secs
+Total REAL time to Xst completion: 73.00 secs
+Total CPU time to Xst completion: 72.89 secs
  
 --> 
 
 
-Total memory usage is 425536 kilobytes
+Total memory usage is 426912 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  262 (   0 filtered)
+Number of warnings :  266 (   0 filtered)
 Number of infos    :   46 (   0 filtered)
 
