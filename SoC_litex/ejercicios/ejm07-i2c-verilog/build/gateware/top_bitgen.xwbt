@@ -1,0 +1,7 @@
+INFILE=/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm07-i2c-verilog/build/gateware/top.ncd
+OUTFILE=/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm07-i2c-verilog/build/gateware/top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/ferney/FERNEY/NACHO/Digital2/GITHUB/lm32_SoC/SoC_litex/ejercicios/ejm07-i2c-verilog/build/gateware
+LICENSE=WebPack
+USER_INFO=211538560_0_0_457
