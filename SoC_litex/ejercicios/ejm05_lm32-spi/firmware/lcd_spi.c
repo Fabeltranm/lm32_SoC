@@ -41,7 +41,7 @@ void spi_init(void){
 
 void spi_write(uint8_t dato){
 
-  spi_mosi_data_write(dato<<16);
+  spi_mosi_data_write(dato<<24);
 	spi_start_write(1);
 	while(spi_active_read());
 
